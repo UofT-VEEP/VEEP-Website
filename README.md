@@ -1,7 +1,5 @@
 # VEEP Club Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Project Scope
 
 This project was to improve Volunteer Engineering Experience Program Club website for promoting and branding our club.

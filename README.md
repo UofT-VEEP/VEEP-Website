@@ -14,7 +14,7 @@ Temporarily front end only using:
 
 ### Set Up
 
-1. Run the following command under `./veep`
+1. Run the following command in the root directory
 
 ```
 npm install

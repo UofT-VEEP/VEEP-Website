@@ -7,7 +7,7 @@ class HomePage extends React.Component {
       <div>
         {/* Complete your training in here*/}
         <div>Welcome to VEEP Website!</div>
-        <h1>Testing </h1>
+        <h1>Testing auth</h1>
       </div>
     )
   }

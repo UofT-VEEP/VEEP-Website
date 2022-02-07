@@ -11,9 +11,21 @@ class HomePage extends React.Component {
   // }
   
   render() {
+    document.title = "Yicheng Wei";
     return (
       <div>
+<<<<<<< HEAD
         
+=======
+        {/* Complete your training in here*/}
+        <img src="logo192.png"/>
+        <h1>Yicheng Wei</h1>
+        <p>
+          ECE 2T2 + PEY<br/>
+          <br/>
+          Hi I'm Yicheng, I Love playing ukulele and guitar
+        </p>
+>>>>>>> 8cdc0d3 (Completed the 1st training session)
       </div>
     )
   }

@@ -11,7 +11,7 @@ class HomePage extends React.Component {
         <br></br>
         <hr></hr>
         <h3>Here's training a. Add an image of your choice</h3>
-        <img src="/src/logo.svg" alt="logo for something" sytle={{width:"128px", height:"128px"}}/>
+        <img src="logo192.png" alt="logo for something" width="128" height="128"/>
 
         <br></br>
         <hr></hr>

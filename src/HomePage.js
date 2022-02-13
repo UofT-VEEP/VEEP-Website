@@ -1,9 +1,6 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
-import { Accordion } from 'react-bootstrap';
-import { Navbar } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
-import { Container } from 'react-bootstrap';
+import { Card, Accordion, Navbar, Nav, Container } from 'react-bootstrap';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -23,8 +20,8 @@ class HomePage extends React.Component {
           <Navbar.Brand href="#home">UofT VEEP</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Projects</Nav.Link>
-            <Nav.Link href="#pricing">About Us</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#aboutUs">About Us</Nav.Link>
           </Nav>
           </Container>
         </Navbar>

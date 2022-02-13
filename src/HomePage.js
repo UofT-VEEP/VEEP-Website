@@ -1,27 +1,56 @@
 import React from 'react';
+import { Card } from 'react-bootstrap';
+import { Accordion } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class HomePage extends React.Component {
+  // Un-comment this for week 4 content 
+  // constructor(props){
+  //   super(props);
+
+  //   this.state = {}
+  // }
   
   render() {
     return (
       <div>
-        {/* Complete your training in here*/}
-        <div>Welcome to VEEP Website!</div>
+        <Navbar bg="success" variant="dark">
+          <Container>
+          <Navbar.Brand href="#home">UofT VEEP</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Projects</Nav.Link>
+            <Nav.Link href="#pricing">About Us</Nav.Link>
+          </Nav>
+          </Container>
+        </Navbar>
 
-        <br></br>
-        <hr></hr>
-        <h3>Here's training a. Add an image of your choice</h3>
-        <img src="logo192.png" alt="logo for something" width="128" height="128"/>
+        <br/>
 
-        <br></br>
-        <hr></hr>
-        <h3>Here's traning b. Add a tilte of your name</h3>
-        <h1 sytle="font-size:200px;">Yuhao Guan</h1>
+        <Card border="success" style={{ width: '18rem' }}>
+          <Card.Img variant="top" src="KG01.png" alt="Kevin" width="286" height="161" />
+          <Card.Body>
+            <Card.Title>Yuhao Guan</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">2nd Year ECE</Card.Subtitle>
+            <Card.Text>
+              My name is Kevin. I like mining.
+            </Card.Text>
 
-        <br></br>
-        <hr></hr>
-        <h3>Here's traning c. Add a shor inroduction aobut yourself</h3>
-        <p>Hey guys! I'm Kevin, and I'm a second year ECE student.</p>
+            <Accordion>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>View More</Accordion.Header>
+                <Accordion.Body>
+                  I am a friend of Steve.
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+
+          </Card.Body>
+        </Card>
       </div>
     )
   }

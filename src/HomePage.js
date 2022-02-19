@@ -25,7 +25,10 @@ class HomePage extends React.Component {
           <br/>
           Hi I'm Yicheng, I Love playing ukulele and guitar
         </p>
+<<<<<<< HEAD
 >>>>>>> 8cdc0d3 (Completed the 1st training session)
+=======
+>>>>>>> 8cdc0d395afe88d137f59b00784d6b146ea9a2a7
       </div>
     )
   }

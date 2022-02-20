@@ -1,11 +1,7 @@
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/navbar';
-import Nav from 'react-bootstrap/Nav';
-import Accordion from 'react-bootstrap/Accordion';
+import { Card, Container, Navbar, Nav, Accordion } from 'react-bootstrap';
 
 class HomePage extends React.Component {
   // Un-comment this for week 4 content 

@@ -7,12 +7,12 @@ class HomePage extends React.Component {
   render() {
     return (
       <div>
-      {/* Week 1 Training */}
+      {/* Week 1 Training
         <img src="https://i.ytimg.com/vi/Nlbc0RbVjM8/maxresdefault.jpg" alt="Snoopy" weight= "120" height= "130" ></img>
         <h1>This is Snoopy</h1>
-        <p>Hi, I'm Snoopy.</p>   
+        <p>Hi, I'm Snoopy.</p>    */}
         
-      {/* Week 2 Training
+      {/* Week 2 Training */}
         <Navbar bg="primary" variant="dark" sticky="top">
           <Container>
             <Navbar.Brand href="#home">Snoopy Home</Navbar.Brand>
@@ -41,7 +41,7 @@ class HomePage extends React.Component {
             </Accordion>
           </Card.Body>
         </Card> 
-      */}
+     
       </div>
     )
   }

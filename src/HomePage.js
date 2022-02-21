@@ -2,7 +2,15 @@ import React from 'react';
 import {Accordion, Card, Nav, Navbar, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 class HomePage extends React.Component {
+  // Un-comment this for week 4 content 
+  // constructor(props){
+  //   super(props);
+
+  //   this.state = {}
+  // }
   
   render() {
     return (

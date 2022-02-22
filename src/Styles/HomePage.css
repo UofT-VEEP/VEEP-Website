@@ -1,0 +1,36 @@
+.HeaderEnter{
+    width: 100%;
+}
+
+.HeaderEnter div{
+    display: flex;
+    justify-content: center;
+}
+
+#MediumBannerLogo{
+    width: 30%;
+}
+
+.HeaderText{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: rgba(0, 0, 0, 0.54);
+    text-align: center;
+}
+
+@media (min-width: 1280px){
+    .HeaderText{
+        font-size: 5.9983rem;
+    }
+}
+
+@media (min-width: 960px){
+    .HeaderText{
+        font-size: 5.3556rem;
+    }
+}
+
+@media (min-width: 600px){
+    .HeaderText{
+        font-size: 4.7129rem;
+    }
+}

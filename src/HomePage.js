@@ -1,12 +1,12 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container'
+import Accordion from 'react-bootstrap/Accordion';
+import Container from 'react-bootstrap/Container';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './Components/NavBar';
+import './Styles/HomePage.css';
+
 class HomePage extends React.Component {
   // Un-comment this for week 4 content 
   // constructor(props){
@@ -18,33 +18,68 @@ class HomePage extends React.Component {
   render() {
     return (
       <div>
-        <Navbar bg="primary" variant="dark">
-          <Container>
-            <Navbar.Brand >UofT Veep</Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link >Home</Nav.Link>
-              <Nav.Link >Projects</Nav.Link>
-              <Nav.Link >About Us</Nav.Link>
-            </Nav>
-          </Container>   
-        </Navbar>
-        <div>
-            <Card style={{ width: '15rem' }}>
-              <Card.Img variant="top" src="uoft_logo.jpg" alt="UofT Logo" />
+        <NavBar></NavBar>
+        <div class='card_list'>
+            <div class ='card text-black bg-info' style={{ width: '18rem' }}>
+              <Card.Img src="animu_logo.png" alt="Logo" />
               <Card.Body>
-                <Card.Title><b><u>About me</u></b></Card.Title>
+                <Card.Title><p class='title'>About me</p></Card.Title>
                 <Card.Text>
                   <Container>
-                    <b>Name :</b> Binaru Appuhamy<br />
-                    <b>Current year :</b> ECE PEY<br />
-                    <b>Hobbies :</b> Read manga and watch anime!<br />
+                    <p class='info_grid'>
+                      <p class='attributeName'>Name : </p>
+                      <p class='attributeValue'>Binaru Appuhamy</p>
+                    </p>
+                    <p class='info_grid'>
+                      <p class='attributeName'>Current year : </p>
+                      <p class='attributeValue'>ECE PEY</p>
+                    </p>
+                    <p class='info_grid'>  
+                      <p class='attributeName'>Hobbies : </p>
+                      <p class='attributeValue'>Read manga and watch anime!</p>
+                    </p>
                   </Container>
                 </Card.Text>
-                  <DropdownButton id="dropdown-basic-button" title="More Hobbies">
-                    <Dropdown.Item href="more_hobbies.gif" >Click here to get admin permission to view this information.</Dropdown.Item>
-                  </DropdownButton>
+                <Accordion flush>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>More Hobbies</Accordion.Header>
+                    <Accordion.Body>
+                      Nope nothin here.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
               </Card.Body>
-            </Card>
+            </div>
+            <div class ='card text-black bg-info' style={{ width: '18rem' }}>
+              <Card.Img class = "circle_crop" src="animu_logo.png" alt="Logo" />
+              <Card.Body>
+                <Card.Title><p class='title'>About me</p></Card.Title>
+                <Card.Text>
+                  <Container>
+                    <p class='info_grid'>
+                      <p class='attributeName'>Name : </p>
+                      <p class='attributeValue'>Binaru Appuhamy</p>
+                    </p>
+                    <p class='info_grid'>
+                      <p class='attributeName'>Current year : </p>
+                      <p class='attributeValue'>ECE PEY</p>
+                    </p>
+                    <p class='info_grid'>  
+                      <p class='attributeName'>Hobbies : </p>
+                      <p class='attributeValue'>Read manga and watch anime!</p>
+                    </p>
+                  </Container>
+                </Card.Text>
+                <Accordion flush>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>More Hobbies</Accordion.Header>
+                    <Accordion.Body>
+                      Nope nothin here.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </Card.Body>
+            </div>
         </div>
       </div>
     )

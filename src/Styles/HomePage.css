@@ -1,0 +1,41 @@
+p.title{
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+p.info{
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+p.info_grid{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 1px;
+    grid-template-areas: "attributeName attributeValue";
+}
+p.attributeName {
+    font-size: 14px;
+    font-weight: bold;
+    grid-area: attributeName;
+    text-align: left;
+}
+p.attributeValue {
+    font-size: 14px;
+    grid-area: attributeValue;
+    text-align: right;
+}
+div.card_list{
+    padding: 2px 16px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 5fr;
+}
+div.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+div.card:hover{
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.2);
+}
+Img.circle_crop{
+    border-radius: 50%;
+}

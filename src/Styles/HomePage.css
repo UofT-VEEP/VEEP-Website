@@ -23,6 +23,9 @@ p.attributeValue {
     grid-area: attributeValue;
     text-align: right;
 }
+p.redfont {
+    color: red;
+}
 div.card_list{
     padding: 2px 16px;
     display: grid;

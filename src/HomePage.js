@@ -27,7 +27,7 @@ class HomePage extends React.Component {
                 <Card.Text>
                   <Container>
                     <p class='info_grid'>
-                      <p class='attributeName'>Name : </p>
+                      <p class='attributeName redfont'>Name : </p>
                       <p class='attributeValue'>Binaru Appuhamy</p>
                     </p>
                     <p class='info_grid'>

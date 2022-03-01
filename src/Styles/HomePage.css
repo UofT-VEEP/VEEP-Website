@@ -1,0 +1,25 @@
+.CardTitle {
+    color: white;
+    font-weight: 700;
+}
+
+.CardStyle {
+    width: 20rem;
+    height: 40rem;
+    background-color: lightgreen;
+    border-style: dashed;
+    border-width: 1mm;
+}
+
+.MainParagraph {
+    font-size: medium;
+    color: white;
+}
+
+.ButtonStyle {
+    margin-top: 25mm;
+}
+
+#RoundImage {
+    border-radius: 4cm;
+}

@@ -1,7 +1,9 @@
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, Container, Navbar, Nav, Accordion } from 'react-bootstrap';
+import { Row, Col, Button, Card, Container, Accordion } from 'react-bootstrap';
+import NavBar from './Components/NavBar';
+import './Styles/HomePage.css'
 
 class HomePage extends React.Component {
   // Un-comment this for week 4 content 
@@ -14,38 +16,64 @@ class HomePage extends React.Component {
   render() {
     document.title = "VEEP";
     return (
+      
+      <div>
+        <NavBar/>
       <Container fluid>
-        <Navbar bg="dark" expand="lg" variant = "dark">
-          <Container>
-            <Navbar.Brand href="#home">U of T VEEP</Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#Projects">Projects</Nav.Link>
-              <Nav.Link href="#About Us">About Us</Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
-
-        <Card border = "dark" style={{ width: '20rem'}}>
+        <Row xs="auto">
+          <Col>
+          <Card className = "CardStyle">
           <Card.Body>
-            <Card.Img variant = "top" src = "logo192.png" alt = "logo"/>
-            <Card.Title>Yicheng Wei</Card.Title>
+            <Card.Img variant = "top" src = "card1.jpeg" alt = "uku"/>
+            <Card.Title>
+              <h1 className = "CardTitle">
+                Yicheng Wei
+              </h1>
+            </Card.Title>
             <Card.Text>
-              ECE 2T2 + PEY <br/>
-              Hi I'm Yicheng, I Love playing ukulele and guitar
+              <p className = "MainParagraph">
+                ECE 2T2 + PEY <br/>
+                Hi I'm Yicheng, I Love playing ukulele
+              </p>
             </Card.Text>
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header> View More </Accordion.Header>
                 <Accordion.Body>
-                  I also have a cute cat
+                  and guitar
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
           </Card.Body>  
         </Card>
+          </Col>
+          <Col>
+          <Card className = "CardStyle">
+          <Card.Body>
+            <Card.Img id = "RoundImage" variant = "top" src = "cat.jpeg" alt = "cat"/>
+            <Card.Title>
+              <h1 className = "CardTitle">
+                Coco
+              </h1>
+            </Card.Title>
+            <Card.Text>
+              <p className = "MainParagraph">
+                Hi, my name is Coco <br/>
+                I'm Yicheng's cat
+              </p>
+            </Card.Text>
+            <Button variant = "info" size = "lg" className = "ButtonStyle"> Learn More About Me </Button>
+          </Card.Body>
+        </Card>
+          </Col>
+        </Row>
+        
+
+        
+        
       </Container>
         
+      </div>
       
     )
   }

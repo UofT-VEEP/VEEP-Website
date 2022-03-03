@@ -1,7 +1,9 @@
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, Accordion, Navbar, Nav, Container } from 'react-bootstrap';
+import { Col, Row, Card, Accordion } from 'react-bootstrap';
+import Navbar from './Components/NavBar.js';
+import './Styles/HomePage.css';
 
 class HomePage extends React.Component {
   // Un-comment this for week 4 content 
@@ -14,24 +16,18 @@ class HomePage extends React.Component {
   render() {
     return (
       <div>
-        <Navbar bg="primary" expand="lg">
-          <Container>
-            <Navbar.Brand href="#home">UofT VEEP</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Link</Nav.Link>
-                <Nav.Link href="#other">Link</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="logo512.png" />
+        <div>
+        <Navbar/>
+        </div>
+        {/* card 1 */}
+        <Row xs="auto">
+          <Col>
+        <div className='separation'>
+        <Card className='cardStyle'>
+          <Card.Img className='imgStyle' variant="top" src="logo512.png" />
           <Card.Body>
-            <Card.Title>Justin Zhong's about page</Card.Title>
-            <Card.Text>
+            <Card.Title className='cardTitleStyle'>Justin Zhong's about page</Card.Title>
+            <Card.Text className='cardTextStyle'>
               Hello, my name is Justin. I'm a 3rd year ECE student
             </Card.Text>
             <Accordion>
@@ -44,6 +40,32 @@ class HomePage extends React.Component {
             </Accordion>
           </Card.Body>
         </Card>
+
+        </div>
+        </Col>
+        {/* card 2 */}
+        <Col>
+        <div className='separation'>
+        <Card className='cardStyle'>
+          <Card.Img className="circle" variant="top" src="dog.jpg"/>
+          <Card.Body>
+            <Card.Title className='cardTitleStyle'>Justin Zhong's about page</Card.Title>
+            <Card.Text className='cardTextStyle'>
+              Hello, my name is Justin. I'm a 3rd year ECE student
+            </Card.Text>
+            <Accordion>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>View More</Accordion.Header>
+                <Accordion.Body>
+                  The image is a random cute dog I found online.
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </Card.Body>
+        </Card>
+        </div>
+        </Col>
+        </Row>
       </div>
     )
   }

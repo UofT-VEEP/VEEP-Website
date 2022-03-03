@@ -1,0 +1,46 @@
+.cardStyle {
+    background-color: beige;
+    width: 30rem;
+    height: 40rem;
+    border-width: 1rem;
+    border-style: double;
+}
+
+.cardTitleStyle{
+    
+    font-size: 30px;
+    color: rgb(173, 228, 230);
+
+}
+
+.cardTextStyle{
+    font-size: 20px;
+}
+
+.roundImage {
+    border-radius: 10cm;
+    max-width: 100%;
+    height: auto;
+}
+
+.separation{
+    margin: 10px 0px 10px 10px;
+}
+
+.imgStyle{
+    width: 25rem;
+    height: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.circle{
+    border-radius: 5cm;
+    width: 25rem;
+    height: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

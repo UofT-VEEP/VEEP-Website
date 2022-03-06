@@ -4,6 +4,7 @@ import {Routes, Route} from "react-router-dom";
 
 import HomePage from "./HomePage";
 import Projects from "./Components/ProjectsPage/Projects";
+import Events from "./Components/EventPage/Events";
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/events" element={<Events />} />
         </Routes>
       </div>
     )

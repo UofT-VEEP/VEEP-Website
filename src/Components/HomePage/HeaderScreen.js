@@ -4,12 +4,6 @@ import { Container, Button } from 'react-bootstrap';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-// import { Typography, Box, IconButton } from '@material-ui';
-// import { BoxFade } from 'app/containers/Common/BoxFade/BoxFade';
-// import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-// import { SocialMediaRow } from './SocialMediaRow';
-// import { WithPhone } from 'types/app';
-// import SmallLogo from 'assets/logos/small.png';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/HeaderScreen.css';

@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 
-import { Container, Button, Tabs, Tab, Card, Accordion } from 'react-bootstrap';
+import { Button, ListGroup,  Card, Accordion } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class ProjectBox extends Component {
     render(){
-        const {organizationName, projectTitle, description, roles, apply, aboutOrg} = this.props.project;
+        const {organizationName, projectTitle, description, apply, teamMembers, roles, aboutOrg} = this.props.project;
         return(
             <Card>
               <Card.Body>
-                <Card.Title>{projectTitle}</Card.Title>
-                <Card.Subtitle>{organizationName}</Card.Subtitle>
+                <Card.Title>{organizationName}</Card.Title>
+                <Card.Subtitle>{projectTitle}</Card.Subtitle>
+                <Card.Text>{description}</Card.Text>
                 {apply && (
                   <Button>Apply</Button>
                 )}
-                <Card.Text>{description}</Card.Text>
                 <Accordion>
                   <Accordion.Item eventKey="aboutOrg">
                     <Accordion.Header>About {organizationName} </Accordion.Header>
@@ -25,9 +25,28 @@ class ProjectBox extends Component {
                     <Accordion.Item eventKey="roles">
                       <Accordion.Header>Roles</Accordion.Header>
                       <Accordion.Body>
+                        <ListGroup>
                         {roles.map(role => (
-                          <Button key={role}>{role}</Button>
+                          <ListGroup.Item key={role}>{role}</ListGroup.Item>
                         ))}
+                        </ListGroup>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  )}
+                  {!apply && (
+                    <Accordion.Item eventKey="teamMembers">
+                      <Accordion.Header>Team Members</Accordion.Header>
+                      <Accordion.Body>
+                        <ListGroup>
+                          {teamMembers.map(member => (
+                            <ListGroup.Item key={member.name}>
+                              <div className="ms-2 me-auto">
+                                <div> <b>{member.name}</b> {member.year}</div>
+                                {member.position} 
+                              </div>
+                            </ListGroup.Item>
+                          ))}
+                        </ListGroup>
                       </Accordion.Body>
                     </Accordion.Item>
                   )}

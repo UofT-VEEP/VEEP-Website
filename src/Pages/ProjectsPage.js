@@ -1,19 +1,11 @@
 import React from 'react';
-import {Container, Tabs, Tab} from 'react-bootstrap';
+import {Container, Tabs, Tab, Accordion} from 'react-bootstrap';
 
 import ProjectBox from '../Components/ProjectsPage/ProjectBox.component';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class ProjectsPage extends React.Component {
-  constructor(props){
-    super(props);
-
-    this.state = {
-      
-    }
-  }
-  
   render() {
     return (
       <div>
@@ -52,14 +44,24 @@ class ProjectsPage extends React.Component {
                 </div>
               </Tab>
               <Tab eventKey="Previous" title="Previous Projects">
-                <h2>2020-2021</h2>
-                {this.props.Projects2020.map(project => (
-                  <ProjectBox key={project.key} project={project} />
-                ))}
-                <h2>2018-2019</h2>
-                {this.props.Projects2019.map(project => (
-                  <ProjectBox key={project.key} project={project} />
-                ))}
+                <Accordion>
+                  <Accordion.Item eventKey="2020">
+                    <Accordion.Header>2020-2021</Accordion.Header>
+                    <Accordion.Body>
+                      {this.props.Projects2020.map(project => (
+                      <ProjectBox key={project.key} project={project} />
+                      ))}
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="2018">
+                    <Accordion.Header>2018-2019</Accordion.Header>
+                    <Accordion.Body>
+                      {this.props.Projects2019.map(project => (
+                      <ProjectBox key={project.key} project={project} />
+                      ))}
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
               </Tab>
           </Tabs>
         </Container>

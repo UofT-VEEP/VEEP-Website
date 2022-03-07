@@ -24,15 +24,15 @@ class HeaderScreen extends React.Component {
         <div className="HeaderScreenBox">
             <TitleBox />
             <Container className='row'>
-                <Button className="SocialButton col-4" fullWidth variant="light"
+                <Button className="SocialButton col-4" fullwidth="true" variant="light"
                     onClick={() =>(window.location.href = 'https://www.facebook.com/uoftveep')}>
                 <FacebookIcon className="IconButton"/>
                 </Button>
-                <Button className="SocialButton col-4" fullWidth variant="light"
+                <Button className="SocialButton col-4" fullwidth="true" variant="light"
                     onClick={() =>(window.location.href = 'https://instagram.com/uoft_veep?utm_medium=copy_link')}>
                     <InstagramIcon className="IconButton"/>
                 </Button>
-                <Button className="SocialButton col-4" fullWidth variant="light"> 
+                <Button className="SocialButton col-4" fullwidth="true" variant="light"> 
                     <MailOutlineIcon className="IconButton"/>
                 </Button>
             </Container>

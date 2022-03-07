@@ -6,6 +6,7 @@ import HomePage from "./HomePage";
 import Projects from "./Components/ProjectsPage/Projects";
 import Events from "./Components/EventPage/Events";
 import Team from "./Components/TeamPage/Team";
+import ContactUs from "./Pages/ContactUs";
 
 class App extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
           <Route path="/projects" element={<Projects />} />
           <Route path="/events" element={<Events />} />
           <Route path="/teams" element={<Team />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </div>
     )

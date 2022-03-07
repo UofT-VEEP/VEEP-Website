@@ -9,9 +9,9 @@ class TitleBox extends React.Component {
   
       this.state = {
         titles:[
-            'Community Engagement.',
-            'Learning Opportunities.',
-            'Industry Experience.',
+          {number: 1, content: "Community Engagement."},
+          {number: 2, content: "Learning Opportunities."},
+          {number: 3, content: "Industry Experience."},
         ],
       }
     }
@@ -21,7 +21,7 @@ class TitleBox extends React.Component {
         <FadeIn className="HeaderEnter">
             <img src={BannerLogo} alt="VEEP Logo" id="MediumBannerLogo"/>
             {this.state.titles.map(title => (
-                <h1 className="HeaderText">{title}</h1>
+                <h1 key={title.number} className="HeaderText">{title.content}</h1>
             ))}
         </FadeIn>
       )

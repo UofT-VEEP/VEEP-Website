@@ -26,7 +26,7 @@ class Projects extends React.Component {
             //    "",
             // Note: 
             // 1. For projectType: 1. Community Projects 2. Campus Club 3. Startups
-            // 2. If the project is current project, don't fill out roles and delete the element
+            // 2. If the project is current/past project, don't fill out roles and delete the element
             // 3. If the project is upcoming project, don't fill out teamMembers and delete the element
             currentProjects: [
                 {
@@ -40,6 +40,21 @@ class Projects extends React.Component {
                     teamMembers: [
                         {name:"Iris Zuo", position:"Technical Manager", year:"ECE 2T4"},
                         {name:"Felix Deng", position:"Technical Manager", year:"Mechanical 2T3"},
+                    ],
+                    aboutOrg:
+                        "VEEP is a student run organization that focuses on providing meaningful services to the community through student led projects design to prepare student for internships in industry.",
+                },
+                {
+                    organizationName: "test",
+                    projectTitle: "Web App Development",
+                    description:
+                        "Design",
+                    key: "web",
+                    apply: true,
+                    projectType: 2,
+                    roles: [
+                        "Frontend",
+                        "designer"
                     ],
                     aboutOrg:
                         "VEEP is a student run organization that focuses on providing meaningful services to the community through student led projects design to prepare student for internships in industry.",

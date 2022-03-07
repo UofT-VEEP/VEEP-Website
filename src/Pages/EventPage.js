@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Tabs, Tab, Accordion} from 'react-bootstrap';
+import {Container, Tabs, Tab} from 'react-bootstrap';
 
 import EventBox from '../Components/EventPage/EventBox.component';
 

@@ -1,7 +1,8 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Card } from 'react-bootstrap';
-import { DropdownButton} from 'react-bootstrap';
+import { Accordion } from 'react-bootstrap';
 import { Dropdown } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
@@ -12,20 +13,18 @@ class HomePage extends React.Component {
     return (
         
       <div>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="primary" variant="dark">
           <Container>
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Link</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
+          <Navbar.Brand href="#home">UofT VEEP</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Projects</Nav.Link>
+            <Nav.Link href="#pricing">About Us</Nav.Link>
+          </Nav>
           </Container>
         </Navbar>
 
-        <Card>
+        <Card style={{ width: '25rem'}}>
           <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/500px-Utoronto_coa.svg.png"
                    width="350" height = "300"/>
             <Card.Body>
@@ -39,9 +38,12 @@ class HomePage extends React.Component {
                   </p>
                 </div>
               </Card.Text>
-                <DropdownButton id="dropdown-item-button" title="View More">
-                <Dropdown.Item as="button">I love coding!</Dropdown.Item>
-               </DropdownButton>
+               <Accordion defaultActiveKey="0">
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>View More</Accordion.Header>
+                  <Accordion.Body>I also like reading and playing piano!</Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
             </Card.Body>
         </Card>
       </div>

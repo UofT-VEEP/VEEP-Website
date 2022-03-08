@@ -1,0 +1,32 @@
+#Uoft_logo {
+    width: 300;
+    height: 250;
+}
+
+#Introduction {
+    width: 25rem;
+    background-color: bisque;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+#Uoft_logo2 {
+    width: 300;
+    height: 250;
+    border-radius: 50%;
+}
+
+#New {
+    width: 25rem;
+    background-color: lightblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+#Name {
+    color: slateblue;
+}

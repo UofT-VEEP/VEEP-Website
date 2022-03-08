@@ -1,47 +1,49 @@
 import React from 'react';
 
-import Card from 'react-bootstrap/Card';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
+import { Card } from 'react-bootstrap';
+import { DropdownButton} from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 class HomePage extends React.Component {
-  
   render() {
     return (
-      <div> 
-        <div>
-        <Navbar bg="light" variant="light">
+        
+      <div>
+        <Navbar bg="light" expand="lg">
           <Container>
-            <Navbar.Brand href="#home">Uoft VEEP</Navbar.Brand>
-            <Nav className="me-auto">
+            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#projects">Projects</Nav.Link>
-                <Nav.Link href="#about">About Me</Nav.Link>
-            </Nav>
+                <Nav.Link href="#link">Link</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
           </Container>
         </Navbar>
-        </div>
-    
-        <Card>
-            <Card.Body>
-              <Card.Img src="https://www.pngitem.com/pimgs/m/470-4702809_transparent-spirited-away-png-cute-spirited-away-no.png"
-              width="400" height = "400"/>
-              <h2>Bella Huang</h2>
-              <h4>Technical Member at VEEP</h4>
-              <h4>Intdroduction:</h4>
-              <p>Hi, my name is Bella and I am currently
-             in my second year of studies of Computer Engineering 
-              at UofT! 
-              </p>
-              <DropdownButton title="View More">
-                <Dropdown.Item>Looking forward to working and getting to know everyone! :)</Dropdown.Item>
-              </DropdownButton>
-            </Card.Body>
-          </Card>
 
+        <Card>
+          <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/500px-Utoronto_coa.svg.png"
+                   width="350" height = "300"/>
+            <Card.Body>
+              <Card.Text>
+                <div>
+                  <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<b>Bella Huang</b><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;ECE2T4<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;Technical Member at VEEP<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;Hi, my name is Bella and I love coding!<br />
+                  </p>
+                </div>
+              </Card.Text>
+                <DropdownButton id="dropdown-item-button" title="View More">
+                <Dropdown.Item as="button">I love coding!</Dropdown.Item>
+               </DropdownButton>
+            </Card.Body>
+        </Card>
       </div>
     )
   }

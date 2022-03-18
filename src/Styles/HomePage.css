@@ -20,7 +20,7 @@
 
 
 
-.Card{
+.HomeCard{
     width: 100%;
 
     background-color: rgba(143, 255, 208, 0.432);
@@ -33,7 +33,7 @@
 
 
 
-.Card_Img{
+.HomeCard .Card_Img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -44,7 +44,7 @@
 
 
 
-.Card_Img2{
+.HomeCard .Card_Img2{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -55,7 +55,7 @@
 
 
 
-.Card_Title{
+.HomeCard .Card_Title{
     color: #085a23;
     font-size: 25px;
     font-weight: bold;
@@ -63,9 +63,22 @@
 
 
 
-.Card_Subtitle{
+.HomeCard .Card_Subtitle{
     color: rgb(114, 114, 114);
     font-size: 10px;
+}
+
+
+
+.HomeCard .Toasts{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.HomeCard .Toasts_Img{
+    width: 7%;
 }
 
 

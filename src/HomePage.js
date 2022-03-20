@@ -1,17 +1,27 @@
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Col, Row, Card, Accordion } from 'react-bootstrap';
+import { Col, Row, Card, Accordion, Button, Toast } from 'react-bootstrap';
 import Navbar from './Components/NavBar.js';
 import './Styles/HomePage.css';
 
 class HomePage extends React.Component {
   // Un-comment this for week 4 content 
-  // constructor(props){
-  //   super(props);
+   constructor(props){
+     super(props);
+     this.state = {
+        buttonState: false
+     }
+     this.setButtonState = this.setButtonState.bind(this);
+     
+  }
 
-  //   this.state = {}
-  // }
+  setButtonState() {
+    const temp = this.state.buttonState;
+    this.setState({
+      buttonState: !temp
+    })
+  }  
   
   render() {
     return (
@@ -30,14 +40,14 @@ class HomePage extends React.Component {
             <Card.Text className='cardTextStyle'>
               Hello, my name is Justin. I'm a 3rd year ECE student
             </Card.Text>
-            <Accordion>
-              <Accordion.Item eventKey="0">
-                <Accordion.Header>View More</Accordion.Header>
-                <Accordion.Body>
-                  Not gonna let you know more about me :D
-                </Accordion.Body>
-              </Accordion.Item>
-            </Accordion>
+            <Button onClick={this.setButtonState} className="mb-2">Click me for more info</Button>
+        <Toast show={this.state.buttonState} onClose={this.setButtonState}>
+          <Toast.Header>
+            <strong className="me-auto">More info</strong>
+            <small>some more info</small>
+          </Toast.Header>
+          <Toast.Body>Javascript class is so weird</Toast.Body>
+        </Toast>
           </Card.Body>
         </Card>
 

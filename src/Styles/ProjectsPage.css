@@ -1,0 +1,65 @@
+.projectContainer h1{
+    width: 100%;
+    text-align: center;
+    color: #71518A;
+}
+
+.projectContainer .tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+}
+
+.projectContainer .nav-tabs {
+    margin-bottom: -1;
+}
+
+.projectContainer .nav-link{
+    color: #71518A;
+    font-weight: bold;
+}
+
+.projectContainer .nav-link:hover{
+    background-color: #71518A;
+    opacity: 50%;
+    color: #ddd;
+    font-weight: bold;
+}
+
+.projectTypeTitle{
+    width: 100%;
+    text-align: center;
+    color: #71518A;
+}
+
+.projectCard{
+    margin-top: 2rem;
+}
+
+.projectCard .accordion-button:not(.collapsed){
+    color:#71518A;
+    background-color: #F3F6FA;
+
+}
+
+.projectCard .accordion-button:focus{
+    border-color: #bb99b7;
+    box-shadow: 0 0 0 0.15rem #bb99b7;
+}
+
+.projectCard .accordion-button:not(.collapsed)::after{
+    background-image: url(https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-plus-user-interface-tanah-basah-glyph-tanah-basah-2.pnghttps://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-minus-user-interface-tanah-basah-glyph-tanah-basah.png);
+}
+
+.projectCard .accordion-button::after{
+    background-image: url(https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-plus-user-interface-tanah-basah-glyph-tanah-basah-2.png);
+}
+
+.projectCard .cardButton{
+    width: 100%;
+    background-color: #F3F6FA;
+    color: #71518A;
+    border-color: #71518A;
+}

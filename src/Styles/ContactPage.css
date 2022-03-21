@@ -1,0 +1,49 @@
+.contactUs h1,h2{
+    width: 100%;
+    text-align: center;
+}
+
+.contactUs h1{
+    color: #71518A;
+}
+
+.contactForm .textInput{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid rgba(0, 0, 0, 0.048);
+    padding: 15px;
+    font-size: 16px;
+    background: #F3F6FA;
+    margin-top: 2vw;
+}
+
+.contactForm select{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid rgba(0, 0, 0, 0.048);
+    padding: 15px;
+    font-size: 16px;
+    background: #F3F6FA;
+    margin-top: 2vw;
+}
+
+.contactForm #questionField{
+    height: 15vw;
+}
+
+.contactForm #submitBtn{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid rgba(0, 0, 0, 0.048);
+    padding: 15px;
+    font-size: 16px;
+    background: #71518A;
+    color: #F3F6FA;
+    font-weight: bold;
+    margin-top: 2vw;
+}

@@ -1,16 +1,16 @@
 import React from 'react';
-import {Accordion, Card, Nav, Navbar, Container} from 'react-bootstrap';
+import NavBar from './Components/NavBar';
+import {Accordion, Card, Container, Row} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Styles/HomePage.css';
+import './Styles/NavBar.css';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 class HomePage extends React.Component {
-  // Un-comment this for week 4 content 
-  // constructor(props){
-  //   super(props);
-
-  //   this.state = {}
-  // }
+  constructor(props){
+    super(props);
+    this.state = {}
+  }
   
   render() {
     return (
@@ -18,38 +18,49 @@ class HomePage extends React.Component {
       {/* Week 1 Training
         <img src="https://i.ytimg.com/vi/Nlbc0RbVjM8/maxresdefault.jpg" alt="Snoopy" weight= "120" height= "130" ></img>
         <h1>This is Snoopy</h1>
-        <p>Hi, I'm Snoopy.</p>    */}
+        <p>Hi, I'm Snoopy.</p>*/}
         
       {/* Week 2 Training */}
-        <Navbar bg="primary" variant="dark" sticky="top">
-          <Container>
-            <Navbar.Brand href="#home">Snoopy Home</Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features"></Nav.Link>
-              <Nav.Link href="#pricing">About Snoopy</Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
+        <NavBar/>
+        <Container fluid>
+          <Row>
+            <Card className="Snoopy">
+              <Card.Img id = "Snoopypic" variant="top" src="https://i.ytimg.com/vi/Nlbc0RbVjM8/maxresdefault.jpg" alt="Snoopy" />
+              <Card.Body>
+                <Card.Title id = "Snoopyname">This is Snoopy</Card.Title>
+                <Card.Text>
+                  Hello, I'm Snoopy. Nice to meet you.
+                </Card.Text>
+                <Accordion>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>Hobby</Accordion.Header>
+                    <Accordion.Body>
+                    Eating ice cream 
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </Card.Body>
+            </Card> 
+            <Card className = "Snoopy" id = "Snoopyhome">
+              <Card.Img id = "homepic" variant = "top" src="https://pbs.twimg.com/media/BUhyQkPCcAAkFlZ.png"  alt = "snoopyhome"  />
+              <Card.Body>
+                <Card.Title id = "homename">Snoopy's Home</Card.Title>
+                <Card.Text>
+                  This is where Snoopy lives. Snoopy likes here very much.
 
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="https://i.ytimg.com/vi/Nlbc0RbVjM8/maxresdefault.jpg" alt="Snoopy" weight= "120" height= "130" />
-          <Card.Body>
-            <Card.Title>This is Snoopy</Card.Title>
-            <Card.Text>
-              Hello, I'm Snoopy. Nice to meet you.
-            </Card.Text>
-            <Accordion>
-              <Accordion.Item eventKey="0">
-                <Accordion.Header>Hobby</Accordion.Header>
-                <Accordion.Body>
-                 Eating ice cream 
-                </Accordion.Body>
-              </Accordion.Item>
-            </Accordion>
-          </Card.Body>
-        </Card> 
-     
+                </Card.Text>
+                <Accordion>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>:)</Accordion.Header>
+                    <Accordion.Body>
+                      Hello
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </Card.Body>
+            </Card> 
+          </Row>
+        </Container>
       </div>
     )
   }

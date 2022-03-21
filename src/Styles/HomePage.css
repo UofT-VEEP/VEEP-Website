@@ -1,0 +1,16 @@
+.Snoopy{
+    width: 18rem;
+    background-color: rgba(255, 246, 169, 0.486);
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+#homepic{
+    height: 170px;
+    border-radius: 50%; 
+}
+#Snoopypic{
+    height: 170px;
+}
+#Snoopyname,#homename{
+    color:rgb(113, 182, 251);
+}

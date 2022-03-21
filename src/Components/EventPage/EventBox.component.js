@@ -3,12 +3,13 @@ import React, { Component } from 'react';
 import { ListGroup,  Card, Accordion } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../Styles/EventPage.css';
 
 class ProjectBox extends Component {
     render(){
         const {eventName, eventTime, onlineEvent, eventLocation, eventDescription, eventDone, eventReplay, eventGuest} = this.props.event;
         return(
-            <Card>
+            <Card className="eventCard">
               <Card.Body>
                 <Card.Title>{eventName}</Card.Title>
                 <Card.Subtitle>

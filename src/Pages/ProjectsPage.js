@@ -4,20 +4,21 @@ import {Container, Tabs, Tab, Accordion} from 'react-bootstrap';
 import ProjectBox from '../Components/ProjectsPage/ProjectBox.component';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Styles/ProjectsPage.css';
 
 class ProjectsPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>Projects</h1>
-        <Container>
-          <Tabs defaultActiveKey="upcoming" className="mb-12">
+        <Container className="projectContainer">
+          <h1>Projects</h1>
+          <Tabs defaultActiveKey="upcoming">
               <Tab eventKey="upcoming" title="Upcoming Projects">
                 Check back in September for this year's projects.
               </Tab>
               <Tab eventKey="current" title="Current Projects">
                 <div>
-                  <h2>Community Projects</h2>
+                  <h3 className="projectTypeTitle">Community Projects</h3>
                   <p>No community project this year</p>
                   {this.props.currentProjects.map(project => (
                     project.projectType === 1 ? (
@@ -26,7 +27,7 @@ class ProjectsPage extends React.Component {
                   ))}
                 </div>
                 <div>
-                  <h2>Campus Club</h2>
+                  <h3 className="projectTypeTitle">Campus Club</h3>
                   {this.props.currentProjects.map(project => (
                     project.projectType === 2 ? (
                       <ProjectBox key={project.key} project={project} />
@@ -34,7 +35,7 @@ class ProjectsPage extends React.Component {
                   ))}
                 </div>
                 <div>
-                  <h2>Startup Projects</h2>
+                  <h3 className="projectTypeTitle">Startup Projects</h3>
                   <p>No startup project this year</p>
                   {this.props.currentProjects.map(project => (
                     project.projectType === 3 ? (
@@ -44,7 +45,7 @@ class ProjectsPage extends React.Component {
                 </div>
               </Tab>
               <Tab eventKey="Previous" title="Previous Projects">
-                <Accordion>
+                <Accordion className="projectCard">
                   <Accordion.Item eventKey="2020">
                     <Accordion.Header>2020-2021</Accordion.Header>
                     <Accordion.Body>

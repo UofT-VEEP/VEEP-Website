@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Button, Tabs, Tab, Card } from 'react-bootstrap';
+import { Container, Row, Col, Button, Tabs, Tab, Card } from 'react-bootstrap';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,8 +18,8 @@ class MainContent extends React.Component {
     render() {
       return (
         <div className="mainContent">
-            <Container className="contentContainer">
-                <Tabs fill justify defaultActiveKey="AboutUs" className="mb-3">
+            <Container className="contentContainer introTabs">
+                <Tabs fill justify defaultActiveKey="AboutUs">
                     <Tab eventKey="AboutUs" title="About Us">
                         The Volunteer Engineering Experience Program (VEEP) is an undergraduate club based 
                         at the University of Toronto that pairs local, 
@@ -50,35 +50,43 @@ class MainContent extends React.Component {
                     </Tab>
                 </Tabs>
             </Container>
-            <Container className="contentContainer">
-                <h1>Project Types</h1>
-                <Card>
-                    <Card.Body>
-                        <Card.Title>Community</Card.Title>
-                        <Card.Text>
-                            Work with local NFPs to address needs within the local Toronto Community.
-                        </Card.Text>
-                        <Button variant="link" href="/projects">VIEW PROJECTS</Button>
-                    </Card.Body>
-                </Card>
-                <Card>
-                    <Card.Body>
-                        <Card.Title>Campus Clubs</Card.Title>
-                        <Card.Text>
-                            Work with campus clubs to address needs specific to the UofT community. 
-                        </Card.Text>
-                        <Button variant="link" href="/projects">VIEW PROJECTS</Button>
-                    </Card.Body>
-                </Card>
-                <Card>
-                    <Card.Body>
-                        <Card.Title>Startups</Card.Title>
-                        <Card.Text>
-                            Partner with startup companies to address needs to the company development.
-                        </Card.Text>
-                        <Button variant="link" href="/projects">VIEW PROJECTS</Button>
-                    </Card.Body>
-                </Card>
+            <Container className="contentContainer projectType">
+                <h2>Project Types</h2>
+                <Row>
+                    <Col>
+                        <Card className="projectTypeCard">
+                            <Card.Body>
+                                <Card.Title>Community</Card.Title>
+                                <Card.Text>
+                                    Work with local NFPs to address needs within the local Toronto Community.
+                                </Card.Text>
+                                <Button variant="link" href="/projects">VIEW PROJECTS</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card className="projectTypeCard">
+                            <Card.Body>
+                                <Card.Title>Campus Clubs</Card.Title>
+                                <Card.Text>
+                                    Work with campus clubs to address needs specific to the UofT community. 
+                                </Card.Text>
+                                <Button variant="link" href="/projects">VIEW PROJECTS</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card className="projectTypeCard">
+                            <Card.Body>
+                                <Card.Title>Startups</Card.Title>
+                                <Card.Text>
+                                    Partner with startup companies to address needs to the company development.
+                                </Card.Text>
+                                <Button variant="link" href="/projects">VIEW PROJECTS</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
             </Container>
         </div> 
       )

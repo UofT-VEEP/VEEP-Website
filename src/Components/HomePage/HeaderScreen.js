@@ -32,7 +32,8 @@ class HeaderScreen extends React.Component {
                     onClick={() =>(window.location.href = 'https://instagram.com/uoft_veep?utm_medium=copy_link')}>
                     <InstagramIcon className="IconButton"/>
                 </Button>
-                <Button className="SocialButton col-4" fullwidth="true" variant="light"> 
+                <Button className="SocialButton col-4" fullwidth="true" variant="light"
+                onClick={() =>(window.location.href = 'mailto:utveep@gmail.com')}> 
                     <MailOutlineIcon className="IconButton"/>
                 </Button>
             </Container>

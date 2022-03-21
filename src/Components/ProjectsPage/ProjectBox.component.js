@@ -3,18 +3,19 @@ import React, { Component } from 'react';
 import { Button, ListGroup,  Card, Accordion } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../Styles/ProjectsPage.css';
 
 class ProjectBox extends Component {
     render(){
         const {organizationName, projectTitle, description, apply, teamMembers, roles, aboutOrg} = this.props.project;
         return(
-            <Card>
+            <Card className="projectCard">
               <Card.Body>
                 <Card.Title>{organizationName}</Card.Title>
                 <Card.Subtitle>{projectTitle}</Card.Subtitle>
                 <Card.Text>{description}</Card.Text>
                 {apply && (
-                  <Button>Apply</Button>
+                  <Button className="cardButton">Apply</Button>
                 )}
                 <Accordion>
                   <Accordion.Item eventKey="aboutOrg">

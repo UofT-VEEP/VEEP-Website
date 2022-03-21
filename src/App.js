@@ -6,7 +6,7 @@ import HomePage from "./HomePage";
 import Projects from "./Components/ProjectsPage/Projects";
 import Events from "./Components/EventPage/Events";
 import Team from "./Components/TeamPage/Team";
-import ContactUs from "./Pages/ContactUs";
+import ContactUs from "./Pages/ContactPage";
 
 class App extends React.Component {
   render() {

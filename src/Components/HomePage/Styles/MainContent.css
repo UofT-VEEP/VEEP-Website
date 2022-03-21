@@ -1,5 +1,50 @@
-.mainContent .contentContainer{
-    border-color: #706C75;
-    border-radius: 5%;
-    border: 1mm;
+.introTabs .tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+}
+
+.introTabs .nav-tabs {
+    margin-bottom: -1;
+}
+
+.introTabs .nav-link{
+    color: #71518A;
+    font-weight: bold;
+}
+
+.introTabs .nav-link:hover{
+    background-color: #71518A;
+    opacity: 50%;
+    color: #ddd;
+    font-weight: bold;
+}
+
+.contentContainer{
+    margin-top: 2rem;
+}
+
+.projectType{
+    padding: 2%;
+    background-color:#E3E3E3;
+}
+
+.projectType h2{
+    color: #706C75;
+}
+
+.projectTypeCard .card-title{
+    text-align: center;
+}
+
+.projectTypeCard .btn{
+    width: 100%;
+    text-align: center;
+}
+
+.projectTypeCard .btn-link{
+    color: #71518A;
+    font-weight: bold;
 }

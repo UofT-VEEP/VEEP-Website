@@ -4,13 +4,14 @@ import {Container, Tabs, Tab} from 'react-bootstrap';
 import EventBox from '../Components/EventPage/EventBox.component';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Styles/EventPage.css';
 
 class EventPage extends React.Component {
   render() {
     return (
       <div>
-        <h1>Events</h1>
-        <Container>
+        <Container className="eventContainer">
+          <h1>Events</h1>
           <Tabs defaultActiveKey="thisYear" className="mb-12">
               <Tab eventKey="thisYear" title="This Year's Events">
                 <div>

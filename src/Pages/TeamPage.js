@@ -1,77 +1,89 @@
 import React from 'react';
-import {Container, Card} from 'react-bootstrap';
+import {Container, Row, Col, Card, Button} from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../imgs/logos/icon.png';
+import '../Styles/TeamPage.css';
 
 class TeamPage extends React.Component {
   render() {
     const {president, BD, Event, Marketing, Technical} = this.props.currentTeam;
     return (
       <div>
-        <h1>2021-2022 Executives Team</h1>
-        <Container>
-            <h2>President</h2>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={logo} />
-                <Card.Body>
-                    <Card.Title>{president.name}</Card.Title>
-                    <Card.Subtitle>{president.year}</Card.Subtitle>
-                    <Card.Link href={president.email}>Contact Me</Card.Link>
-                </Card.Body>
-            </Card>
-            <h2>Business Development Vice-Presidents</h2>
-            <div className="row">
+        <h1 className="teamTitle">2021-2022 Executives Team</h1>
+        <Container className="teamIntro">
+            <h2 className="teamTitle">President</h2>
+            <Row className="align-items-center">
+                <Col>
+                    <Card className="teamCard">
+                        <Card.Img variant="top" src={president.pic} />
+                        <Card.Body>
+                            <Card.Title>{president.name}</Card.Title>
+                            <Card.Subtitle>{president.year}</Card.Subtitle>
+                            <Button href={"mailto:" + president.email}>Contact Me</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+            <h2 className="teamTitle">Business Development Vice-Presidents</h2>
+            <Row className="justify-content-center">
                 {BD.map(bdvp => (
-                <Card key={bdvp.name} style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={logo} />
-                    <Card.Body>
-                        <Card.Title>{bdvp.name}</Card.Title>
-                        <Card.Subtitle>{bdvp.year}</Card.Subtitle>
-                        <Card.Link href={bdvp.email}>Contact Me</Card.Link>
-                    </Card.Body>
-                </Card>
+                    <Col key={bdvp.name}>
+                        <Card className="teamCard">
+                        <Card.Img variant="top" src={bdvp.pic} />
+                        <Card.Body>
+                            <Card.Title>{bdvp.name}</Card.Title>
+                            <Card.Subtitle>{bdvp.year}</Card.Subtitle>
+                            <Button href={"mailto:" + bdvp.email}>Contact Me</Button>
+                        </Card.Body>
+                        </Card>
+                    </Col>
                 ))}
-            </div>
-            <h2>Event Vice-Presidents</h2>
-            <div className="row">
+            </Row>
+            <h2 className="teamTitle">Event Vice-Presidents</h2>
+            <Row className="justify-content-md-center">
                 {Event.map(eventvp => (
-                <Card key={eventvp.name} style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={logo} />
-                    <Card.Body>
-                        <Card.Title>{eventvp.name}</Card.Title>
-                        <Card.Subtitle>{eventvp.year}</Card.Subtitle>
-                        <Card.Link href={eventvp.email}>Contact Me</Card.Link>
-                    </Card.Body>
-                </Card>
+                    <Col key={eventvp.name}>
+                        <Card className="teamCard">
+                            <Card.Img variant="top" src={eventvp.pic} />
+                            <Card.Body>
+                                <Card.Title>{eventvp.name}</Card.Title>
+                                <Card.Subtitle>{eventvp.year}</Card.Subtitle>
+                                <Button href={"mailto:" + eventvp.email}>Contact Me</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                 ))}
-            </div>
-            <h2>Marketing Vice-Presidents</h2>
-            <div className="row">
+            </Row>
+            <h2 className="teamTitle">Marketing Vice-Presidents</h2>
+            <Row className="justify-content-md-center">
                 {Marketing.map(marketvp => (
-                <Card key={marketvp.name} style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={logo} />
-                    <Card.Body>
-                        <Card.Title>{marketvp.name}</Card.Title>
-                        <Card.Subtitle>{marketvp.year}</Card.Subtitle>
-                        <Card.Link href={marketvp.email}>Contact Me</Card.Link>
-                    </Card.Body>
-                </Card>
+                    <Col key={marketvp.name}>
+                        <Card className="teamCard">
+                            <Card.Img variant="top" src={marketvp.pic} />
+                            <Card.Body>
+                                <Card.Title>{marketvp.name}</Card.Title>
+                                <Card.Subtitle>{marketvp.year}</Card.Subtitle>
+                                <Button href={"mailto:" + marketvp.email}>Contact Me</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                 ))}
-            </div>
-            <h2>Technical Managers</h2>
-            <div className="row">
+            </Row>
+            <h2 className="teamTitle">Technical Managers</h2>
+            <Row className="justify-content-md-center">
                 {Technical.map(techMan => (
-                <Card key={techMan.name} style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={logo} />
-                    <Card.Body>
-                        <Card.Title>{techMan.name}</Card.Title>
-                        <Card.Subtitle>{techMan.year}</Card.Subtitle>
-                        <Card.Link href={techMan.email}>Contact Me</Card.Link>
-                    </Card.Body>
-                </Card>
+                    <Col key={techMan.name}>
+                        <Card className="teamCard">
+                            <Card.Img variant="top" src={techMan.pic} />
+                            <Card.Body>
+                                <Card.Title>{techMan.name}</Card.Title>
+                                <Card.Subtitle>{techMan.year}</Card.Subtitle>
+                                <Button href={"mailto:" + techMan.email}>Contact Me</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                 ))}
-            </div>
+            </Row>
         </Container>
       </div>
     )

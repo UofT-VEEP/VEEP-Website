@@ -1,17 +1,39 @@
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row, Col, Button, Card, Container, Accordion } from 'react-bootstrap';
+import { Row, Col, Button, Card, Container, Accordion, Toast } from 'react-bootstrap';
 import NavBar from './Components/NavBar';
 import './Styles/HomePage.css'
 
 class HomePage extends React.Component {
-  // Un-comment this for week 4 content 
-  // constructor(props){
-  //   super(props);
+  // Un-comment this for week 4 content
 
-  //   this.state = {}
-  // }
+  constructor(props){
+    super(props);
+
+    this.state = {
+      showToast : false
+    };
+
+    this.toggleShowToast = this.toggleShowToast.bind(this);
+
+  }
+
+  toggleShowToast(){
+    if(this.state.showToast == true){
+      this.setState({
+        showToast : false
+      });
+    }
+    else{
+      this.setState({
+        showToast : true
+      });
+    }
+    
+  }
+
+
   
   render() {
     document.title = "VEEP";
@@ -47,6 +69,7 @@ class HomePage extends React.Component {
           </Card.Body>  
         </Card>
           </Col>
+
           <Col>
           <Card className = "CardStyle">
           <Card.Body>
@@ -62,7 +85,15 @@ class HomePage extends React.Component {
                 I'm Yicheng's cat
               </p>
             </Card.Text>
-            <Button variant = "info" size = "lg" className = "ButtonStyle"> Learn More About Me </Button>
+            <Button variant = "info" size = "lg" className = "ButtonStyle" onClick = {this.toggleShowToast}> Show Message </Button>
+            <Toast className = "ToastStyle" show = {this.state.showToast} onClose = {this.toggleShowToast}>
+              <Toast.Header>
+                <img src="logo192.png" id = "ToastImage" alt="toast" />
+                <strong className = "me-auto">Coco</strong>
+                <small>2 mins ago</small>
+              </Toast.Header>
+              <Toast.Body>Do you like me?</Toast.Body>
+            </Toast>
           </Card.Body>
         </Card>
           </Col>

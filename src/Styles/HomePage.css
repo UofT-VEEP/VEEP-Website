@@ -17,9 +17,19 @@
 }
 
 .ButtonStyle {
-    margin-top: 25mm;
+    margin-top: 5mm;
+}
+
+.ToastStyle {
+    margin-top : 7mm;
 }
 
 #RoundImage {
     border-radius: 4cm;
+}
+
+#ToastImage {
+    width: 5mm;
+    height: 5mm;
+    margin: 2mm;
 }

@@ -14,7 +14,7 @@ Temporarily front end only using:
 
 ### Set Up
 
-1. Install Node.js from the [ofical website](https://nodejs.org/en/download/)
+1. Install Node.js from the [offical website](https://nodejs.org/en/download/)
 2. Clone this repo onto your coding IDE
 3. Run the following command in the root directory
 

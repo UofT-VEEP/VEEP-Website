@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from 'react-bootstrap';
 
-import NavBar from './Components/Navbar';
+import NavBar from './Components/NavBar';
 import HeaderScreen from './Components/HomePage/HeaderScreen';
 import MainContent from './Components/HomePage/MainContent';
 

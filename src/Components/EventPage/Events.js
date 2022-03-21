@@ -1,7 +1,7 @@
 import React from 'react';
 
 import EventPage from '../../Pages/EventPage';
-import NavBar from '../Navbar';
+import NavBar from '../NavBar';
 
 class Events extends React.Component {
     constructor(props){

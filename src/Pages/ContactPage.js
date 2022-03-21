@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-import NavBar from '../Components/Navbar';
+import NavBar from '../Components/NavBar';
 import ContactForm from '../Components/ContactPage/ContactForm';
 
 import 'bootstrap/dist/css/bootstrap.min.css';

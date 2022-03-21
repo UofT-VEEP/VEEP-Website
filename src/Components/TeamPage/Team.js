@@ -1,7 +1,7 @@
 import React from 'react';
 
 import TeamPage from '../../Pages/TeamPage';
-import NavBar from '../Navbar';
+import NavBar from '../NavBar';
 
 import Catherine from '../../imgs/teamMembers/CatherineZhou.JPG';
 import Ahsan from '../../imgs/teamMembers/AhsanEslami.png';

@@ -11,43 +11,51 @@ import Ethan from '../../imgs/teamMembers/EthanMa.JPG';
 import Alisa from '../../imgs/teamMembers/AlisaZhu.JPG';
 import Cony from '../../imgs/teamMembers/ConyQin.JPG';
 import Felix from '../../imgs/teamMembers/FelixDeng.JPG';
-import Iris from'../../imgs/teamMembers/IrisZuo.JPG';
+import Iris from '../../imgs/teamMembers/IrisZuo.JPG';
 
 class Team extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             currentTeam: {
-                key:"curTeam",
-                president: {name:"Catherine Zhou", pic:Catherine, year:"ECE 2T1+1+PEY", email:"catherinemo.zhou@mail.utoronto.ca"},
+                key: "curTeam",
+                president: {
+                    name: "Catherine Zhou", pic: Catherine, year: "ECE 2T1+1+PEY", email: "catherinemo.zhou@mail.utoronto.ca", _linkedIn: "https://www.linkedin.com/in/catherine-zhou-1016/",
+                    get linkedIn() {
+                        return this._linkedIn;
+                    },
+                    set linkedIn(value) {
+                        this._linkedIn = value;
+                    },
+                },
                 BD: [
-                    {name:"Ahsan Eslami", pic:Ahsan, year:"Mechanical 2T3", email:"a.eslami@mail.utoronto.ca"},
-                    {name:"Scott Yu", pic:Scott, year:"ECE 2T2+PEY", email:"scott.yu@mail.utoronto.ca"},
+                    { name: "Ahsan Eslami", pic: Ahsan, year: "Mechanical 2T3", email: "a.eslami@mail.utoronto.ca" },
+                    { name: "Scott Yu", pic: Scott, year: "ECE 2T2+PEY", email: "scott.yu@mail.utoronto.ca" },
                 ],
                 Event: [
-                    {name:"Cynthia Chen", pic:Cynthia, year:"Mechanical 2T3", email:"yunyi.chen0614@gmail.com"},
-                    {name:"Ethan Ma", pic:Ethan, year:"ECE 2T4", email:"haodong.ma@mail.utoronto.ca"},
+                    { name: "Cynthia Chen", pic: Cynthia, year: "Mechanical 2T3", email: "yunyi.chen0614@gmail.com" },
+                    { name: "Ethan Ma", pic: Ethan, year: "ECE 2T4", email: "haodong.ma@mail.utoronto.ca" },
                 ],
                 Marketing: [
-                    {name:"Alisa Zhu", pic:Alisa, year:"Industrial 2T4", email:"alisazhu811@gmail.com"},
-                    {name:"Cony Qin", pic:Cony, year:"Chemical 2T3", email:"cony.qin@mail.utoronto.ca"},
+                    { name: "Alisa Zhu", pic: Alisa, year: "Industrial 2T4", email: "alisazhu811@gmail.com" },
+                    { name: "Cony Qin", pic: Cony, year: "Chemical 2T3", email: "cony.qin@mail.utoronto.ca" },
                 ],
                 Technical: [
-                    {name:"Felix Deng", pic:Felix, year:"Mechanical 2T3", email:"yuanzhe.deng@mail.utoronto.ca"},
-                    {name:"Iris Zuo", pic:Iris, year:"ECE 2T4", email:"yixian.zuo@mail.utoronto.ca"},
+                    { name: "Felix Deng", pic: Felix, year: "Mechanical 2T3", email: "yuanzhe.deng@mail.utoronto.ca" },
+                    { name: "Iris Zuo", pic: Iris, year: "ECE 2T4", email: "yixian.zuo@mail.utoronto.ca" },
                 ],
             },
         }
     }
 
     render() {
-        return(
+        return (
             <div>
                 <NavBar />
-                <TeamPage currentTeam={this.state.currentTeam}/>
+                <TeamPage currentTeam={this.state.currentTeam} />
             </div>
         )
     }
-} 
+}
 
 export default Team;

@@ -20,6 +20,7 @@ class TeamPage extends React.Component {
                             <Card.Title>{president.name}</Card.Title>
                             <Card.Subtitle>{president.year}</Card.Subtitle>
                             <Button href={"mailto:" + president.email}>Contact Me</Button>
+                            <Card.Link href={president.linkedIn}>{president.linkedIn}</Card.Link>
                         </Card.Body>
                     </Card>
                 </Col>

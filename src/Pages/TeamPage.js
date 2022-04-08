@@ -3,9 +3,11 @@ import {Container, Row, Col, Card, Button} from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styles/TeamPage.css';
+//import Icon from '../imgs/logos/linkedin-logo.png';
 
 class TeamPage extends React.Component {
   render() {
+    //const { icon } = this.props;
     const {president, BD, Event, Marketing, Technical} = this.props.currentTeam;
     return (
       <div>
@@ -19,8 +21,8 @@ class TeamPage extends React.Component {
                         <Card.Body>
                             <Card.Title>{president.name}</Card.Title>
                             <Card.Subtitle>{president.year}</Card.Subtitle>
-                            <Button href={"mailto:" + president.email}>Contact Me</Button>
-                            <Card.Link href={president.linkedIn}>{president.linkedIn}</Card.Link>
+                            <Button href={"mailto:" + president.email}>Contact Me By Email</Button>
+                            <Button href={president.linkedIn}>Contact Me By linkedIn</Button>
                         </Card.Body>
                     </Card>
                 </Col>

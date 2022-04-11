@@ -22,3 +22,9 @@
     border-color: #71518A;
     margin-top: 1vw;
 }
+
+.teamPage_icon{
+    display:inline;
+    margin-left: 5px;
+    margin-right: 10px;
+}

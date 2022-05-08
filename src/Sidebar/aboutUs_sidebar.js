@@ -1,6 +1,6 @@
 import {CgProfile, CgSearch, CgHomeAlt, CgHeart, CgPen, CgLogOut} from 'react-icons/cg'
 import React, {useEffect} from 'react';
-import '../styles/Sidebar.css';
+import '../Sidebar/sidebar.css';
 import SideBarButton from "../components/input/SideBarButton";
 import {useNavigate} from "react-router-dom";
 

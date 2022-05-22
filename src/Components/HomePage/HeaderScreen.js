@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Button } from 'react-bootstrap';
+import { Container, Button, Row, Col, Card } from 'react-bootstrap';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -9,6 +9,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/HeaderScreen.css';
 
 import TitleBox from './TitleBox';
+
+import BannerLogo from '../../imgs/logos/medium.png';
+
+import CardFlipProjects from './flip_card';
 
 class HeaderScreen extends React.Component {
     constructor(props){
@@ -22,21 +26,31 @@ class HeaderScreen extends React.Component {
     render() {
       return (
         <div className="HeaderScreenBox">
-            <TitleBox />
-            <Container className='row'>
-                <Button className="SocialButton col-4" fullwidth="true" variant="light"
-                    onClick={() =>(window.location.href = 'https://www.facebook.com/uoftveep')}>
-                <FacebookIcon className="IconButton"/>
-                </Button>
-                <Button className="SocialButton col-4" fullwidth="true" variant="light"
-                    onClick={() =>(window.location.href = 'https://instagram.com/uoft_veep?utm_medium=copy_link')}>
-                    <InstagramIcon className="IconButton"/>
-                </Button>
-                <Button className="SocialButton col-4" fullwidth="true" variant="light"
-                onClick={() =>(window.location.href = 'mailto:utveep@gmail.com')}> 
-                    <MailOutlineIcon className="IconButton"/>
-                </Button>
-            </Container>
+            {/* <TitleBox /> */}
+            <Row>
+                <Col sm={12} md={4}>
+                  <Row className="justify-content-center"> 
+                    <img src={BannerLogo} alt="VEEP Logo" id="MediumBannerLogo"/>
+                  </Row>
+                  <Row>
+                    <Button className="SocialButton col-4" fullwidth="true" variant="light"
+                        onClick={() =>(window.location.href = 'https://www.facebook.com/uoftveep')}>
+                    <FacebookIcon className="IconButton"/>
+                    </Button>
+                    <Button className="SocialButton col-4" fullwidth="true" variant="light"
+                        onClick={() =>(window.location.href = 'https://instagram.com/uoft_veep?utm_medium=copy_link')}>
+                        <InstagramIcon className="IconButton"/>
+                    </Button>
+                    <Button className="SocialButton col-4" fullwidth="true" variant="light"
+                    onClick={() =>(window.location.href = 'mailto:utveep@gmail.com')}> 
+                        <MailOutlineIcon className="IconButton"/>
+                    </Button>
+                  </Row>
+                </Col>
+                <Col sm={12} md={8}>
+                  <CardFlipProjects />
+                </Col>
+            </Row>
         </div> 
       )
     }

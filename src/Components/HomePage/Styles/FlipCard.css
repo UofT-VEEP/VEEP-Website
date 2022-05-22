@@ -1,0 +1,20 @@
+.FlipCardImage{
+    flex: 1;
+    width: 100;
+    height: "200px";
+}
+  
+.CarouselCard{
+    border: "1px solid black";
+    padding: "20px";
+    margin: "20px";
+    width: "810px";
+    height: "500px";
+}
+  
+.CarouselCaption{
+    color: #fff;
+    text-align: "left";
+    background: rgba(0, 0, 0, 0.75);
+    /* text-shadow: 0 1px 2px rgba(0, 0, 0, .6); */
+}

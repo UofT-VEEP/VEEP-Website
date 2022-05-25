@@ -1,20 +1,22 @@
 .FlipCardImage{
-    flex: 1;
-    width: 100;
-    height: "200px";
+    flex : 1;
+    width: 770px;
+    height : 450px;
 }
   
 .CarouselCard{
-    border: "1px solid black";
-    padding: "20px";
-    margin: "20px";
-    width: "810px";
-    height: "500px";
+    border : 1px solid black;
+    padding : 20px;
+    margin : 20px;
+    width : 810px;
+    height : 500px;
 }
   
 .CarouselCaption{
-    color: #fff;
-    text-align: "left";
-    background: rgba(0, 0, 0, 0.75);
-    /* text-shadow: 0 1px 2px rgba(0, 0, 0, .6); */
+    color : white;
+    width: 770px;
+    text-align : left;
+    background : rgba(0, 0, 0, .4);
+    text-shadow : 0 1px 2px rgba(0, 0, 0, .6);
+    transform: translate(-12%)
 }

@@ -2,27 +2,15 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import ReactCardFlip from "react-card-flip";
 import './Styles/FlipCard.css';
-// import project_src from '../../imgs/logos/medium.png';
-// const project_src = require("../../imgs/tech/c.png");
-let project_list = [
-  {
-    project_name: "project 1",
-    img_source: require("../../imgs/tech/c.png"),
-    organization: "company 1",
-    desc: "Somthing random about the project 1"
-  },
-  {
-    project_name: "project 2",
-    img_source: require("../../imgs/tech/css.jpg"),
-    organization: "company 2",
-    desc: "Somthing random about the project 2"
-  }
-];
+import proj_data from "../projects.json"
 
-//For some reason iterating and calling require fails to find the image source
-// project_list.forEach((item)=>{
-//   item.img_source = require(item.img_source);
-// });
+const carousel_proj_index_list = proj_data.tags_to_project.homepage_carousel
+function filter_proj(proj_index){
+  const proj = proj_data.proj_list[proj_index];
+  proj.img_source = require(proj.img_source);
+  return proj
+}
+const project_list = carousel_proj_index_list.map(filter_proj);
 
 const FlipCardImage = {
   flex: 1,

@@ -1,0 +1,33 @@
+{
+  "tags_to_project": {
+    "homepage_carousel": [0, 1],
+    "internal_projects": [0],
+    "external_projects": [1] 
+  },
+  "proj_list": [
+    {
+      "project_name": "project 1",
+      "img_source": "../../imgs/tech/c.png",
+      "organization": "company 1",
+      "desc": "Somthing random about the project 1"
+    },
+    {
+      "project_name": "project 2",
+      "img_source": "../../imgs/tech/css.jpg",
+      "organization": "company 2",
+      "desc": "Somthing random about the project 2"
+    },
+    {
+      "project_name": "project 3",
+      "img_source": "../../imgs/tech/excel.png",
+      "organization": "company 1",
+      "desc": "Somthing random about the project 3"
+    },
+    {
+      "project_name": "project 4",
+      "img_source": "../../imgs/tech/html.jpg",
+      "organization": "company 1",
+      "desc": "Somthing random about the project 4"
+    }
+  ]
+}

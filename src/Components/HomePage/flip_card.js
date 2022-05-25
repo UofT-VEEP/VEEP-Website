@@ -7,46 +7,23 @@ import proj_data from "../projects.json"
 const carousel_proj_index_list = proj_data.tags_to_project.homepage_carousel
 function filter_proj(proj_index){
   const proj = proj_data.proj_list[proj_index];
-  proj.img_source = require(proj.img_source);
+  proj.img_source = require(`../../imgs/tech/${proj.img_filename}`);
   return proj
 }
 const project_list = carousel_proj_index_list.map(filter_proj);
-
-const FlipCardImage = {
-  flex: 1,
-  width: 100,
-  height: 450
-}
-
-const CarouselCard = {
-  border: "1px solid black",
-  padding: "20px",
-  margin: "20px",
-  width: "810px",
-  height: "500px"
-}
-
-const CarouselCaption = {
-  color: '#fff',
-  width: "770px",
-  textAlign: "left",
-  background: 'rgba(0, 0, 0, 0.6)',
-  textShadow: '0 1px 2px rgba(0, 0, 0, .6)',
-  transform: 'translate(-12%)'
-}
 
 const CardItem = ({ project }) => {
   const [isFlipped, setIsFlipped] = React.useState(false);
   return (
       <ReactCardFlip isFlipped={isFlipped} className="justify-content-center" flipDirection="horizontal">
-        <div className="CardFront CarouselCard" style={CarouselCard} onClick={()=> setIsFlipped((prev) => !prev)}>
-          <img className="d-block w-100 FlipCardImage" style={FlipCardImage} src={project.img_source} alt="" />
-          <Carousel.Caption className="CarouselCaption" style={CarouselCaption} >
+        <div className="CardFront CarouselCard" onClick={()=> setIsFlipped((prev) => !prev)}>
+          <img className="d-block w-100 FlipCardImage" src={project.img_source} alt="" />
+          <Carousel.Caption className="CarouselCaption">
             <h3>{project.project_name}</h3>
             <p>{project.organization}</p>
           </Carousel.Caption>
         </div>
-        <div className="CardBack CarouselCard" style={CarouselCard} onClick={()=> setIsFlipped((prev) => !prev)}>
+        <div className="CardBack CarouselCard" onClick={()=> setIsFlipped((prev) => !prev)}>
           <p>{project.desc}</p>
         </div>
       </ReactCardFlip>

@@ -25,30 +25,35 @@ class HeaderScreen extends React.Component {
     
     render() {
       return (
-        <div className="HeaderScreenBox">
+        <div className='HeaderScreenBox'>
             {/* <TitleBox /> */}
             <Row>
                 <Col sm={12} md={4}>
                   <Row className="justify-content-center"> 
                     <img src={BannerLogo} alt="VEEP Logo" id="MediumBannerLogo"/>
                   </Row>
-                  <Row>
-                    <Button className="SocialButton col-4" fullwidth="true" variant="light"
+                  <Row className="SocialButtonContainer">
+                    <Button className="SocialButton col-4" fullwidth="true" variant="dark"
                         onClick={() =>(window.location.href = 'https://www.facebook.com/uoftveep')}>
                     <FacebookIcon className="IconButton"/>
                     </Button>
-                    <Button className="SocialButton col-4" fullwidth="true" variant="light"
+                    <Button className="SocialButton col-4" fullwidth="true" variant="dark"
                         onClick={() =>(window.location.href = 'https://instagram.com/uoft_veep?utm_medium=copy_link')}>
                         <InstagramIcon className="IconButton"/>
                     </Button>
-                    <Button className="SocialButton col-4" fullwidth="true" variant="light"
+                    <Button className="SocialButton col-4" fullwidth="true" variant="dark"
                     onClick={() =>(window.location.href = 'mailto:utveep@gmail.com')}> 
                         <MailOutlineIcon className="IconButton"/>
                     </Button>
                   </Row>
+                  <Row>
+                    <TitleBox />
+                  </Row>
                 </Col>
                 <Col sm={12} md={8}>
-                  <CardFlipProjects />
+                  <Row className="CarouselContainer">
+                    <CardFlipProjects />
+                  </Row>
                 </Col>
             </Row>
         </div> 

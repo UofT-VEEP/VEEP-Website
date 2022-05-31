@@ -32,7 +32,7 @@ const CardItem = ({ project }) => {
 
 const CardFlipProjects = () => {
   return (
-    <Carousel variant='dark'>
+    <Carousel fade variant='dark'>
       {project_list.map((item, index) => (
         <Carousel.Item>
           <CardItem project={item} key={`card-${index}`} />

@@ -7,7 +7,7 @@
 .CarouselCard{
     border : 1px solid black;
     padding : 20px;
-    margin : 20px;
+    /* margin : 20px; */
     width : 810px;
     height : 500px;
 }

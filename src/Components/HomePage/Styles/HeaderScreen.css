@@ -1,9 +1,34 @@
+.SocialButtonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .SocialButton{
-    background-color: white;
-    height: 100%;
+    background-color: transparent;
+    height: auto;
+    width: auto;
     border-color: white;
 }
 
 .IconButton{
     font-size: 2rem;
+}
+
+.HeaderScreenBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 350px;
+    background: #9e89b8 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/city.jpg) no-repeat center / cover;
+    background-blend-mode: luminosity;
+    color: white;
+}
+
+.CarouselContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5rem;
 }

@@ -1,22 +1,38 @@
 .FlipCardImage{
     flex : 1;
-    width: 770px;
-    height : 450px;
+    object-fit: cover;
+    height: 700px;
+}
+
+.flippedImage{
+    transform: scaleX(-1);
 }
   
 .CarouselCard{
-    border : 1px solid black;
-    padding : 20px;
-    /* margin : 20px; */
-    width : 810px;
-    height : 500px;
+    border : 1px solid white;
+    padding : 10px;
+    width: 1255px;
 }
-  
-.CarouselCaption{
-    color : white;
-    width: 770px;
-    text-align : left;
-    background : rgba(0, 0, 0, .4);
-    text-shadow : 0 1px 2px rgba(0, 0, 0, .6);
-    transform: translate(-12%)
+
+.carousel-caption {
+  background : rgba(251, 249, 249, 0.45);
+  text-shadow: 0 0 0.8rem black;
+  width: 1235px;
+  transform: translate(-14.5%, 10%)
+}
+
+.projectDetails{
+    height: 700px;
+    text-align: left;
+    padding-left: 275px;
+    padding-top: 225px;
+    transform: translate(-14.5%, 1%)
+}
+
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' stroke='%23777' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' stroke='%23777' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }

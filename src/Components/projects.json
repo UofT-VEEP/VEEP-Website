@@ -7,26 +7,26 @@
   "proj_list": [
     {
       "project_name": "project 1",
-      "img_filename": "c.png",
+      "img_filename": "proj1.jpg",
       "organization": "company 1",
       "desc": "Somthing random about the project 1"
     },
     {
       "project_name": "project 2",
-      "img_filename": "css.jpg",
+      "img_filename": "proj2.jpg",
       "organization": "company 2",
       "desc": "Somthing random about the project 2"
     },
     {
       "project_name": "project 3",
-      "img_filename": "excel.png",
-      "organization": "company 1",
+      "img_filename": "proj3.png",
+      "organization": "company 3",
       "desc": "Somthing random about the project 3"
     },
     {
       "project_name": "project 4",
-      "img_filename": "html.jpg",
-      "organization": "company 1",
+      "img_filename": "proj4.jpg",
+      "organization": "company 4",
       "desc": "Somthing random about the project 4"
     }
   ]

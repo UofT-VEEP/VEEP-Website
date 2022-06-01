@@ -7,7 +7,7 @@ import proj_data from "../projects.json"
 const carousel_proj_index_list = proj_data.tags_to_project.homepage_carousel
 function filter_proj(proj_index){
   const proj = proj_data.proj_list[proj_index];
-  proj.img_source = require(`../../imgs/tech/${proj.img_filename}`);
+  proj.img_source = require(`../../imgs/project/${proj.img_filename}`);
   return proj
 }
 const project_list = carousel_proj_index_list.map(filter_proj);
@@ -18,13 +18,20 @@ const CardItem = ({ project }) => {
       <ReactCardFlip isFlipped={isFlipped} className="justify-content-center" flipDirection="horizontal">
         <div className="CardFront CarouselCard" onClick={()=> setIsFlipped((prev) => !prev)}>
           <img className="d-block w-100 FlipCardImage" src={project.img_source} alt="" />
-          <Carousel.Caption className="CarouselCaption">
+          <Carousel.Caption>
             <h3>{project.project_name}</h3>
             <p>{project.organization}</p>
           </Carousel.Caption>
         </div>
         <div className="CardBack CarouselCard" onClick={()=> setIsFlipped((prev) => !prev)}>
-          <p>{project.desc}</p>
+          <img className="d-block w-100 FlipCardImage flippedImage" src={project.img_source} alt="" />
+          <Carousel.Caption className='projectDetails'>
+            <h3>Project description</h3>
+            <p>{project.desc}</p>
+            <p>Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah</p>
+            <p>Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah</p>
+            <p>Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah</p>
+          </Carousel.Caption>
         </div>
       </ReactCardFlip>
   );

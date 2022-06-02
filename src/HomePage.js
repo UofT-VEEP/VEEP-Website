@@ -20,10 +20,12 @@ class HomePage extends React.Component {
   render() {
     return (
       <div className='mainWrapper'>
-        <NavBar />
+        <Container fluid>
+          <NavBar />
+        </Container>
         <div className='mainContent'>
           <HeaderScreen />
-          <MainContent />
+          <MainContent />          
         </div>
       </div>
     )

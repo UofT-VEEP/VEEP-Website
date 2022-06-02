@@ -25,8 +25,7 @@ class HeaderScreen extends React.Component {
     
     render() {
       return (
-        <div className='HeaderScreenBox'>
-            {/* <TitleBox /> */}
+        <Container fluid className='HeaderScreenBox'>
             <Row>
                 <Col sm={12} md={4}>
                   <Row className="justify-content-center"> 
@@ -56,7 +55,7 @@ class HeaderScreen extends React.Component {
                   </Row>
                 </Col>
             </Row>
-        </div> 
+        </Container> 
       )
     }
   }

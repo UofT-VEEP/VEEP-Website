@@ -1,6 +1,7 @@
 .NavBar{
-    height: 20%;
+    height: 7.5%;
     width: 100%;
+    background-color: rgba(0, 0, 9, 0.892);
 }
 
 .NavBar img{

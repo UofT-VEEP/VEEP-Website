@@ -31,4 +31,7 @@
     flex-direction: column;
     justify-content: space-around;
     margin-top: 5rem;
+    /* overflow: hidden;
+    white-space: nowrap;
+    min-width: 0; */
 }

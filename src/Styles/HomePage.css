@@ -1,7 +1,7 @@
 .mainWrapper{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .mainContent{
@@ -27,7 +27,7 @@
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     color: white;
     text-align: center;
-    text-shadow : 0 1px 2px rgba(0, 0, 0, .6);
+    text-shadow: 0 0 1.25rem black;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
 }

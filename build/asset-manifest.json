@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d2d8925a.css",
+    "main.js": "/static/js/main.4a48063d.js",
+    "static/js/787.1d2150ef.chunk.js": "/static/js/787.1d2150ef.chunk.js",
+    "static/media/AlisaZhu.JPG": "/static/media/AlisaZhu.c5b08c3315a3e5f713a7.JPG",
+    "static/media/EthanMa.JPG": "/static/media/EthanMa.6e594121163d506f00de.JPG",
+    "static/media/FelixDeng.JPG": "/static/media/FelixDeng.7c134f509dbd4825cb30.JPG",
+    "static/media/CatherineZhou.JPG": "/static/media/CatherineZhou.b98bee6f238cafae081c.JPG",
+    "static/media/IrisZuo.JPG": "/static/media/IrisZuo.8b09aea84e036e2b7da3.JPG",
+    "static/media/ConyQin.JPG": "/static/media/ConyQin.6ad29aa61d04b32a8076.JPG",
+    "static/media/CynthiaChen.JPG": "/static/media/CynthiaChen.9118f502f3963077a2d2.JPG",
+    "static/media/AhsanEslami.png": "/static/media/AhsanEslami.86a38078b6eb9fbe9c2d.png",
+    "static/media/ScottYu.jpeg": "/static/media/ScottYu.823a55c9cfe6d4ab821e.jpeg",
+    "static/media/medium.png": "/static/media/medium.b78790dc3ec97f3b8def.png",
+    "static/media/small.png": "/static/media/small.4e07ba1279da5116c4e0.png",
+    "index.html": "/index.html",
+    "main.d2d8925a.css.map": "/static/css/main.d2d8925a.css.map",
+    "main.4a48063d.js.map": "/static/js/main.4a48063d.js.map",
+    "787.1d2150ef.chunk.js.map": "/static/js/787.1d2150ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2d8925a.css",
+    "static/js/main.4a48063d.js"
+  ]
+}

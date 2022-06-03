@@ -1,5 +1,4 @@
 import React from 'react';
-import {Container} from 'react-bootstrap';
 
 import NavBar from './Components/NavBar';
 import HeaderScreen from './Components/HomePage/HeaderScreen';
@@ -19,11 +18,9 @@ class HomePage extends React.Component {
   
   render() {
     return (
-      <div className='mainWrapper'>
-        <Container fluid>
-          <NavBar />
-        </Container>
-        <div className='mainContent'>
+      <div>
+        <NavBar />
+        <div>
           <HeaderScreen />
           <MainContent />          
         </div>

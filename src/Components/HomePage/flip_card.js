@@ -17,20 +17,19 @@ const CardItem = ({ project }) => {
   return (
       <ReactCardFlip isFlipped={isFlipped} className="justify-content-center" flipDirection="horizontal">
         <div className="CardFront CarouselCard" onClick={()=> setIsFlipped((prev) => !prev)}>
-          <img className="d-block w-100 FlipCardImage" src={project.img_source} alt="" />
+          <img className="FlipCardImage" src={project.img_source} alt="" />
           <Carousel.Caption>
             <h3>{project.project_name}</h3>
             <p>{project.organization}</p>
           </Carousel.Caption>
         </div>
         <div className="CardBack CarouselCard" onClick={()=> setIsFlipped((prev) => !prev)}>
-          <img className="d-block w-100 FlipCardImage flippedImage" src={project.img_source} alt="" />
+          <img className="FlipCardImage flippedImage" src={project.img_source} alt="" />
           <Carousel.Caption className='projectDetails'>
             <h3>Project description</h3>
-            <p>{project.desc}</p>
-            <p>Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah</p>
-            <p>Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah</p>
-            <p>Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah Blah blah</p>
+            {project.desc.map((item) => (
+              <p>{item}</p>
+            ))}
           </Carousel.Caption>
         </div>
       </ReactCardFlip>

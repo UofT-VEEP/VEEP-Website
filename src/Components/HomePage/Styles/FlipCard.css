@@ -1,31 +1,48 @@
+.CarouselCard{
+    height:740px;
+}
+
 .FlipCardImage{
-    flex : 1;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    height: 700px;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .flippedImage{
     transform: scaleX(-1);
 }
-  
-.CarouselCard{
-    padding : 10px;
-    width: 1255px;
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+    margin-bottom: 5px;
+}
+
+.carousel-inner {
+    height: 100%;
 }
 
 .carousel-caption {
   background : rgba(251, 249, 249, 0.45);
   text-shadow: 0 0 0.8rem black;
-  width: 1235px;
-  transform: translate(-14.5%, 10%)
+  max-width: 100%;
+  width:100%;
+  left: 0;
+  bottom:0;
 }
 
 .projectDetails{
-    height: 700px;
     text-align: left;
-    padding-left: 275px;
-    padding-top: 225px;
-    transform: translate(-14.5%, 1.5%)
+    max-height: 100%;
+    height:100%;
+    padding-top: 25%;
+    padding-left: 20%;
 }
 
 .carousel-control-next-icon{

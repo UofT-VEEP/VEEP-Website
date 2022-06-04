@@ -13,7 +13,7 @@ class App extends React.Component {
     return(
       <div className="App">
         <Routes>
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/events" element={<Events />} />
           <Route path="/teams" element={<Team />} />

@@ -2,9 +2,9 @@ import React from 'react';
 import {Container, Row, Col, Card, Button} from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../Styles/TeamPage.css';
+import '../Styles/AboutPage.css';
 
-class TeamPage extends React.Component {
+class AboutPage extends React.Component {
   render() {
     const {president, BD, Event, Marketing, Technical} = this.props.currentTeam;
     return (
@@ -90,4 +90,4 @@ class TeamPage extends React.Component {
   }
 }
 
-export default TeamPage;
+export default AboutPage;

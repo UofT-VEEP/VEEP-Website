@@ -22,7 +22,7 @@ class HomePage extends React.Component {
         <NavBar />
         <div>
           <HeaderScreen />
-          <MainContent />          
+          <MainContent />
         </div>
       </div>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TeamPage from '../../Pages/TeamPage';
+import AboutPage from '../../Pages/AboutPage';
 import NavBar from '../NavBar';
 
 import Catherine from '../../imgs/teamMembers/CatherineZhou.JPG';
@@ -13,7 +13,7 @@ import Cony from '../../imgs/teamMembers/ConyQin.JPG';
 import Felix from '../../imgs/teamMembers/FelixDeng.JPG';
 import Iris from'../../imgs/teamMembers/IrisZuo.JPG';
 
-class Team extends React.Component {
+class AboutUs extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -44,10 +44,10 @@ class Team extends React.Component {
         return(
             <div>
                 <NavBar />
-                <TeamPage currentTeam={this.state.currentTeam}/>
+                <AboutPage currentTeam={this.state.currentTeam}/>
             </div>
         )
     }
 } 
 
-export default Team;
+export default AboutUs;

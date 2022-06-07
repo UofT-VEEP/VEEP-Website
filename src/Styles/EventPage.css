@@ -1,4 +1,4 @@
-.eventContainer h1{
+.contentCol h1{
     width: 100%;
     text-align: center;
     color: #71518A;
@@ -29,7 +29,7 @@
 }
 
 .eventCard{
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 .eventCard .accordion-button:not(.collapsed){
@@ -49,4 +49,38 @@
 
 .eventCard .accordion-button::after{
     background-image: url(https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-plus-user-interface-tanah-basah-glyph-tanah-basah-2.png);
+}
+
+.eventCard .event-title-border{
+    border-bottom-style: solid;
+    margin-bottom: 1rem;
+    border-color: #e0c4dd;
+}
+
+.eventCard .event-title{
+    margin-bottom: 1rem;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.eventCard .event-subtitle{
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.eventCard .event-guest-name{
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 2mm;
+}
+
+.eventCard .event-guest-image{
+    width: 14rem;
+    height: 16rem;
+    margin-bottom: 2mm;
+}
+
+.eventCard .registration-link{
+    margin-top: 1rem;
 }

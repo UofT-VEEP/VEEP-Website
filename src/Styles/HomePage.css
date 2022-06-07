@@ -1,7 +1,6 @@
 .mainWrapper{
     display: flex;
     flex-direction: column;
-    /* height: 100vh; */
 }
 
 .mainContent{
@@ -25,27 +24,12 @@
 
 .HeaderText{
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    font-style: normal;
     color: white;
     text-align: center;
     text-shadow: 0 0 1.25rem black;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
-}
-
-@media (min-width: 1280px){
-    .HeaderText{
-        font-size: 5.9983rem;
-    }
-}
-
-@media (min-width: 960px){
-    .HeaderText{
-        font-size: 5.3556rem;
-    }
-}
-
-@media (min-width: 600px){
-    .HeaderText{
-        font-size: 4rem;
-    }
+    font-size: calc(1.6 * (1.9vh + 1.1vw));
 }

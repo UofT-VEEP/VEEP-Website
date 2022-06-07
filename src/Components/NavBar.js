@@ -11,18 +11,21 @@ class NavBar extends React.Component {
   
   render() {
     return (
-        <Navbar sticky="top" className="row-0 NavBar" variant='dark'>
+        <Navbar sticky="top" className="row-0 NavBar" variant='dark' expand="sm">
           <Container fluid>
             <Navbar.Brand className="col-4 NavLogo" href="/">
               <img src={logo} className="d-inline-block align-top" alt="VEEP Logo" />
             </Navbar.Brand>
-            <Nav pullRight className="NavLinks">
-              <Nav.Link href="/">HOME</Nav.Link>
-              <Nav.Link href="/projects">PROJECTS</Nav.Link>
-              <Nav.Link href="/events">EVENTS</Nav.Link>
-              <Nav.Link href="/about">ABOUT US</Nav.Link>
-              <Nav.Link href="/contact">CONTACT US</Nav.Link>
-            </Nav>
+            <Navbar.Toggle aria-controls='responsive' />
+              <Navbar.Collapse>
+                <Nav pullRight className="NavLinks">
+                  <Nav.Link href="/">HOME</Nav.Link>
+                  <Nav.Link href="/projects">PROJECTS</Nav.Link>
+                  <Nav.Link href="/events">EVENTS</Nav.Link>
+                  <Nav.Link href="/about">ABOUT US</Nav.Link>
+                  <Nav.Link href="/contact">CONTACT US</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
           </Container>
         </Navbar>
     )

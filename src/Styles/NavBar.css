@@ -4,6 +4,10 @@
     background-color: rgba(0, 0, 9, 0.892);
 }
 
+.navbar-collapse{
+    flex-grow: unset;
+}
+
 .NavBar img{
     width: 30%;
 }

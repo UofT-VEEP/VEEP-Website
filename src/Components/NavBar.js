@@ -20,7 +20,7 @@ class NavBar extends React.Component {
               <Nav.Link href="/">HOME</Nav.Link>
               <Nav.Link href="/projects">PROJECTS</Nav.Link>
               <Nav.Link href="/events">EVENTS</Nav.Link>
-              <Nav.Link href="/teams">TEAMS</Nav.Link>
+              <Nav.Link href="/about">ABOUT US</Nav.Link>
               <Nav.Link href="/contact">CONTACT US</Nav.Link>
             </Nav>
           </Container>

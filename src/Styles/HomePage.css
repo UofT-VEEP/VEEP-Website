@@ -1,20 +1,35 @@
+.mainWrapper{
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+}
+
+.mainContent{
+    flex-grow: 1;
+}
+
+#MediumBannerLogo{
+    width: 85%;
+}
+
 .HeaderEnter{
     width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
 }
 
 .HeaderEnter div{
     display: flex;
-    justify-content: center;
-}
-
-#MediumBannerLogo{
-    width: 30%;
+    justify-content: space-around;
 }
 
 .HeaderText{
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    color: rgba(0, 0, 0, 0.54);
+    color: white;
     text-align: center;
+    text-shadow: 0 0 1.25rem black;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
 }
 
 @media (min-width: 1280px){
@@ -31,6 +46,6 @@
 
 @media (min-width: 600px){
     .HeaderText{
-        font-size: 4.7129rem;
+        font-size: 4rem;
     }
 }

@@ -17,7 +17,7 @@ class MainContent extends React.Component {
     
     render() {
       return (
-        <div className="mainContent">
+        <div>
             <Container className="contentContainer introTabs">
                 <Tabs fill justify defaultActiveKey="AboutUs">
                     <Tab eventKey="AboutUs" title="About Us">

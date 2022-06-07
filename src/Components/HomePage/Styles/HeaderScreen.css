@@ -17,13 +17,15 @@
 }
 
 .HeaderScreenBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 350px;
-    background: #9e89b8 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/city.jpg) no-repeat center / cover;
+    background: #9e89b8 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/city.jpg) no-repeat center  / cover;
     background-blend-mode: luminosity;
     color: white;
+    position: relative;
+    top:0; 
+    left: 0;  
+    min-height: 92vh;
+    max-height: max-content;
+    width: 100%;
 }
 
 .CarouselContainer{
@@ -31,7 +33,4 @@
     flex-direction: column;
     justify-content: space-around;
     margin-top: 5rem;
-    /* overflow: hidden;
-    white-space: nowrap;
-    min-width: 0; */
 }

@@ -1,0 +1,93 @@
+{
+  "tags_to_project": {
+    "homepage_carousel": [0, 1],
+    "internal_projects": [0],
+    "external_projects": [1],
+    "currentProjects": [0, 1],
+    "upcomingProjects": [],
+    "Projects2020": [2],
+    "Projects2019": [3]
+  },
+  "proj_list": [
+    {
+      "organizationName": "Volunteer Engineering Experience Program (VEEP)",
+      "projectTitle": "Web App Development",
+      "img_filename": "proj1.jpg",
+      "desc": [
+        "Something random about the project 1", 
+        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 1-1 Blah blah Blah blah Blah blah Blah blah Blah blah",
+        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 1-2 Blah blah Blah blah Blah blah Blah blah Blah blah",
+        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 1-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
+      ],
+      "description": "Design and improve the User Interface (UI) of the current club website",
+      "key": "VEEP",
+      "apply": false,
+      "projectType": 2,
+      "teamMembers": [
+        {"name":"Iris Zuo", "position":"Technical Manager", "year":"ECE 2T4"},
+        {"name":"Felix Deng", "position":"Technical Manager", "year":"Mechanical 2T3"}
+      ],
+      "aboutOrg": "VEEP is a student run organization that focuses on providing meaningful services to the community through student led projects design to prepare student for internships in industry."
+    },
+    {
+      "organizationName": "test",
+      "projectTitle": "Web App Development",
+      "img_filename": "proj2.jpg",
+      "desc": [
+        "Something random about the project 2", 
+        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 2-1 Blah blah Blah blah Blah blah Blah blah Blah blah",
+        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 2-2 Blah blah Blah blah Blah blah Blah blah Blah blah",
+        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 2-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
+      ],
+      "description": "Design",
+      "key": "web",
+      "apply": true,
+      "projectType": 2,
+      "roles": [
+          "Frontend",
+          "designer"
+      ],
+      "aboutOrg": "VEEP is a student run organization that focuses on providing meaningful services to the community through student led projects design to prepare student for internships in industry."
+    },
+    {
+      "organizationName": "Spelling Bee of Canada (SBOC)",
+      "projectTitle": "Web App Development",
+      "img_filename": "proj3.jpg",
+      "desc": [
+        "Something random about the project 3", 
+        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 3-1 Blah blah Blah blah Blah blah Blah blah Blah blah",
+        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 3-2 Blah blah Blah blah Blah blah Blah blah Blah blah",
+        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 3-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
+      ],
+      "description": "To support the enrichment of youth literacy, SBOC offers a website learning platform which engages children with flashcards, practice tests, and various learning games. However, the website only supports PC. This project improved their learning platform by making it compatible across all devices",
+      "key": "sbocWeb",
+      "apply": false,
+      "projectType": 2,
+      "teamMembers": [
+        {"name":"Catherine Zhou", "position":"Technical Manager", "year":"ECE 2T2"},
+        {"name":"Fatima Sadia", "position":"Frontend Developer", "year":"Math 2T4"}
+      ],
+      "aboutOrg": "Spelling Bee of Canada (SBOC) is an educational organization that inspires youth, parents, teachers and the community at large to participate in the education process and celebrate scholastic achievement through an annual spelling bee and other educational programs."
+    },
+    {
+      "organizationName": "Girls eMentorship (GEM)",
+      "projectTitle": "CRM System Development",
+      "img_filename": "proj4.jpg",
+      "desc": [
+        "Something random about the project 4", 
+        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 4-1 Blah blah Blah blah Blah blah Blah blah Blah blah",
+        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 4-2 Blah blah Blah blah Blah blah Blah blah Blah blah",
+        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 4-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
+      ],
+      "description": "This project encompasses the development of a GEM specific CRM system to include data from all mentees/mentors, committee & board members, partners, donors. Specific emphasis and importance placed on the quality and governance of the data and potentially developing a tool/GUI to easily get analytics",
+      "key": "Girls eMentorship (GEM) - CRM System Development",
+      "apply": false,
+      "projectType": 2,
+      "teamMembers": [
+          {"name":"Catherine Zhou", "position":"Technical Manager", "year":"ECE 2T2"},
+          {"name":"Fatima Sadia", "position":"Frontend Developer", "year":"Math 2T4"}
+       ],
+      "aboutOrg": "Girls E-Mentorship (GEM) is a charitable organization that offers an innovative mentorship program for high school girls facing multiple barriers. GEM equips girls with the necessary skills to achieve their grown-up aspirations, building a diverse network of talented, vibrant women and girls to inspire and support one another. "
+    }
+  ]
+}

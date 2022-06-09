@@ -40,7 +40,7 @@
 }
 
 .timelineButton {
-    display: inline-flex;
+    display: block;
 }
 
 .timelineRow{

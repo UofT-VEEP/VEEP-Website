@@ -1,12 +1,5 @@
 import React from 'react';
-
-import { Container, Row, Col, Button, Tabs, Tab, Card } from 'react-bootstrap';
-
-import Box from '@mui/material/Box';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-
+import { Container, Row, Col, ToggleButton, ToggleButtonGroup, Card } from 'react-bootstrap';
 import HorizontalNonLinearStepper from './Timeline'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,6 +11,7 @@ class MainContent extends React.Component {
   
       this.state = {
           role: 0, //role 0 -> student , 1 -> client
+          rolelist: ['Students', 'Clients'],
           roleDataList: [
             {
                 Steps: [ "Choose Project", "Apply", "Establish Team", "Begin Work", "Mid-Year Design Review", "Year-End Showcase"],
@@ -36,7 +30,7 @@ class MainContent extends React.Component {
                 Important_Dates: ["nothing here yet"],
                 Important_Desc: ["nope not yet"],
               }
-          ],
+          ]
       }
     }
     
@@ -101,12 +95,25 @@ class MainContent extends React.Component {
                     <Card.Body>
                         <Card.Title>Roles</Card.Title>
                         <Row>
-                            <Col>
-                                <Button className="timelineButton" variant="dark" onClick={() => this.setState({role: 0})}>Students</Button>
-                            </Col>
-                            <Col>
-                                <Button className="timelineButton" variant="dark" onClick={() => this.setState({role: 1})}>Clients</Button>
-                            </Col>
+                            <ToggleButtonGroup type="radio" name="options">
+                                {this.state.rolelist.map((role, idx) => (
+                                    <Col>
+                                        <ToggleButton
+                                            key={idx}
+                                            id={`radio-${idx}`}
+                                            type="radio"
+                                            variant="outline-dark"
+                                            name="radio"
+                                            value={role}
+                                            checked={this.state.rolelist[this.state.role] === this.state.rolelist[idx]}
+                                            onClick={(event) => this.setState({role: this.state.rolelist.indexOf(event.currentTarget.textContent)})}
+                                            className="timelineButton"
+                                        >
+                                            {role}
+                                        </ToggleButton>
+                                    </Col>
+                                ))}
+                            </ToggleButtonGroup>
                         </Row>
                         <Row className="timelineRow">
                             <HorizontalNonLinearStepper data={this.state.roleDataList[this.state.role]}/>

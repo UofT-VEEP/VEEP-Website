@@ -18,7 +18,7 @@ class NavBar extends React.Component {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='responsive' />
               <Navbar.Collapse>
-                <Nav pullRight className="NavLinks">
+                <Nav pullright='true' className="NavLinks">
                   <Nav.Link href="/">HOME</Nav.Link>
                   <Nav.Link href="/projects">PROJECTS</Nav.Link>
                   <Nav.Link href="/events">EVENTS</Nav.Link>

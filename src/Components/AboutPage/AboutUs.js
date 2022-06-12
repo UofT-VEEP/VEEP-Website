@@ -2,6 +2,7 @@ import React from 'react';
 
 import AboutPage from '../../Pages/AboutPage';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 import Catherine from '../../imgs/teamMembers/CatherineZhou.JPG';
 import Ahsan from '../../imgs/teamMembers/AhsanEslami.png';
@@ -45,6 +46,7 @@ class AboutUs extends React.Component {
             <div>
                 <NavBar />
                 <AboutPage currentTeam={this.state.currentTeam}/>
+                <Footer />
             </div>
         )
     }

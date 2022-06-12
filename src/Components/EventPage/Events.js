@@ -2,6 +2,7 @@ import React from 'react';
 
 import EventPage from '../../Pages/EventPage';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 import { Col, Accordion } from 'react-bootstrap';
 import '../../Styles/SideBar.css';
 import '../../Styles/EventPage.css';
@@ -182,6 +183,7 @@ class Events extends React.Component {
                         )}
                     </Col>
                 </div>
+                <Footer />
             </div>
         )
     }

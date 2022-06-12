@@ -42,7 +42,7 @@ class HeaderScreen extends React.Component {
                       <InstagramIcon className="IconButton"/>
                   </Button>
                   <Button className="SocialButton col-4" fullwidth="true" variant="dark"
-                  onClick={() =>(window.location.href = 'mailto:utveep@gmail.com')}> 
+                  onClick={() =>(window.location.href = 'mailto:president@veep.skule.ca')}> 
                       <MailOutlineIcon className="IconButton"/>
                   </Button>
                 </Row>

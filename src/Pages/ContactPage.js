@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 
 import NavBar from '../Components/NavBar';
+import Footer from '../Components/Footer';
 import ContactForm from '../Components/ContactPage/ContactForm';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,6 +27,7 @@ class ContactPage extends React.Component {
           <h2>Send us an email</h2>
           <ContactForm />
         </Container>
+        <Footer />
       </div>
     )
   }

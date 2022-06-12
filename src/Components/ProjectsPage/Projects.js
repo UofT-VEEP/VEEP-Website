@@ -2,6 +2,7 @@ import React from 'react';
 
 import ProjectsPage from '../../Pages/ProjectsPage';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 import proj_data from "../../Data/projects.json"
 
@@ -50,6 +51,7 @@ class Projects extends React.Component {
                 <ProjectsPage currentProjects={this.state.currentProjects}
                               Projects2020={this.state.Projects2020}
                               Projects2019={this.state.Projects2019}/>
+                <Footer />
             </div>
         )
     }

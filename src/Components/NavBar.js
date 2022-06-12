@@ -5,7 +5,7 @@ import '../Styles/NavBar.css';
 
 import {Container, Navbar, Nav} from 'react-bootstrap';
 
-import logo from '../imgs/logos/small.png';
+import logo from '../imgs/logos/white.png';
 
 class NavBar extends React.Component {
   

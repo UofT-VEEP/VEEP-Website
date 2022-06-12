@@ -24,7 +24,7 @@
 
 .contentContainer{
     padding: 1%;
-    background-image: linear-gradient(to right, rgba(76, 0, 255, 0.4), 35%, rgba(76, 0, 255, 0.1));
+    background-image: linear-gradient(to right, rgba(76, 0, 255, 0.4), 20%, rgba(76, 0, 255, 0.1));
 }
 
 .projectType{
@@ -51,6 +51,8 @@
 }
 
 .projectTypeCard{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     box-shadow: 10px 10px 5px rgb(160, 160, 160);
     border: 1px solid rgb(46, 46, 46);
 }

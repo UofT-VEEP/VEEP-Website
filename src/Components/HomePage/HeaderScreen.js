@@ -10,7 +10,7 @@ import './Styles/HeaderScreen.css';
 
 import TitleBox from './TitleBox';
 
-import BannerLogo from '../../imgs/logos/medium.png';
+import BannerLogo from '../../imgs/logos/white.png';
 
 import CardFlipProjects from './flip_card';
 
@@ -28,7 +28,7 @@ class HeaderScreen extends React.Component {
         <div>
           <Container fluid className='HeaderScreenBox'>
               <Row>
-                  <Col sm={12} md={4}>
+                  <Col sm={12} md={4} className="headerLeft">
                     <Row className="justify-content-center"> 
                       <img src={BannerLogo} alt="VEEP Logo" id="MediumBannerLogo"/>
                     </Row>

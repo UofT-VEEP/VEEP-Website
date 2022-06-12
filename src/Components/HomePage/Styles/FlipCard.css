@@ -1,5 +1,5 @@
 .CarouselCard{
-    height:740px;
+    height:75vh;
 }
 
 .FlipCardImage{
@@ -37,12 +37,25 @@
   bottom:0;
 }
 
+.carousel-caption h3 {
+    font-size: calc(1 * (1.5vh + 1.1vw));
+    font-weight: bold;
+    font-style: normal;
+}
+
+.carousel-caption p {
+    font-size: calc(.7 * (1.5vh + 1.1vw));
+    font-weight: normal;
+    font-style: normal;
+}
+
 .projectDetails{
     text-align: left;
     max-height: 100%;
     height:100%;
-    padding-top: 25%;
+    padding-top: 15vh;
     padding-left: 20%;
+    padding-right: 20%;
 }
 
 .carousel-control-next-icon{

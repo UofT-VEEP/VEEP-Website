@@ -1,5 +1,4 @@
 import React from 'react';
-
 import NavBar from './Components/NavBar';
 import HeaderScreen from './Components/HomePage/HeaderScreen';
 import MainContent from './Components/HomePage/MainContent';
@@ -20,10 +19,8 @@ class HomePage extends React.Component {
     return (
       <div>
         <NavBar />
-        <div>
-          <HeaderScreen />
-          <MainContent />
-        </div>
+        <HeaderScreen /> 
+        <MainContent />
       </div>
     )
   }

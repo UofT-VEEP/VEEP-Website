@@ -5,7 +5,7 @@ import '../Styles/NavBar.css';
 
 import {Container, Navbar, Nav} from 'react-bootstrap';
 
-import logo from '../imgs/logos/small.png';
+import logo from '../imgs/logos/white.png';
 
 class NavBar extends React.Component {
   
@@ -18,7 +18,7 @@ class NavBar extends React.Component {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='responsive' />
               <Navbar.Collapse>
-                <Nav pullRight className="NavLinks">
+                <Nav pullright='true' className="NavLinks">
                   <Nav.Link href="/">HOME</Nav.Link>
                   <Nav.Link href="/projects">PROJECTS</Nav.Link>
                   <Nav.Link href="/events">EVENTS</Nav.Link>

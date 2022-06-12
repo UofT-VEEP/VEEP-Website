@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import ReactCardFlip from "react-card-flip";
 import './Styles/FlipCard.css';
-import proj_data from "../projects.json"
+import proj_data from "../../Data/projects.json"
 
 const carousel_proj_index_list = proj_data.tags_to_project.homepage_carousel
 function filter_proj(proj_index){
@@ -19,14 +19,14 @@ const CardItem = ({ project }) => {
         <div className="CardFront CarouselCard" onClick={()=> setIsFlipped((prev) => !prev)}>
           <img className="FlipCardImage" src={project.img_source} alt="" />
           <Carousel.Caption>
-            <h3>{project.project_name}</h3>
-            <p>{project.organization}</p>
+            <h3>{project.projectTitle}</h3>
+            <p>{project.organizationName}</p>
           </Carousel.Caption>
         </div>
         <div className="CardBack CarouselCard" onClick={()=> setIsFlipped((prev) => !prev)}>
           <img className="FlipCardImage flippedImage" src={project.img_source} alt="" />
           <Carousel.Caption className='projectDetails'>
-            <h3>Project description</h3>
+            <h3>{project.projectTitle} - Project description</h3>
             {project.desc.map((item) => (
               <p>{item}</p>
             ))}

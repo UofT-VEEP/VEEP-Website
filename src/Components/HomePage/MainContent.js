@@ -11,6 +11,7 @@ class MainContent extends React.Component {
   
       this.state = {
           role: 0, //role 0 -> student , 1 -> client
+          activeStep: 0,
           rolelist: ['Students', 'Clients'],
           roleDataList: [
             {
@@ -26,14 +27,24 @@ class MainContent extends React.Component {
                                 ],
               },
               {
-                Steps: [ "temp"],
-                Important_Dates: ["nothing here yet"],
-                Important_Desc: ["nope not yet"],
+                Steps: [ "Meet with Business Development Team", "Receive Our Decision", "Meet with the Technical team", "Mid-Year Design Review", "Year-End Showcase"],
+                Important_Dates: ["May-July", "August", "Early October", "January", "April"],
+                Important_Desc: [
+                                    "During these months, our business development team will reach out to you or you could reach out to our team. The team will set up a meeting with you to discuss what project you would like us to do.",
+                                    "After the meeting(s), our team will evaluate all the projects, decide which project(s) would be the best fit for our students, and inform you of the final decision.",
+                                    "Congratulations - Your project is picked! The technical manager will set up a meeting with you to go over the details of the project, the team's goals and expectations. After the meeting, the team will start working on your project. During the next 6-8 months, the team will set up several progress report meetings with you to update their progress and ask questions.",
+                                    "This is a valuable mid-year event where your team will give a quick ~20-minute demo/presentation of what they have accomplished and future plans. You are more than welcome to attend this event and give your feedback.",
+                                    "This is a major event where your team will give a ~30-minute presentation of the final product as well as their growth as a team and professional individuals. You are more than welcome to attend this event and give your feedback."
+                                ],
               }
           ]
       }
     }
     
+    setActiveStep = (index) => {
+        this.setState({activeStep: index})
+    }
+
     render() {
       return (
         <div>
@@ -106,7 +117,10 @@ class MainContent extends React.Component {
                                             name="radio"
                                             value={role}
                                             checked={this.state.rolelist[this.state.role] === this.state.rolelist[idx]}
-                                            onClick={(event) => this.setState({role: this.state.rolelist.indexOf(event.currentTarget.textContent)})}
+                                            onClick={(event) => this.setState({
+                                                                                role: this.state.rolelist.indexOf(event.currentTarget.textContent),
+                                                                                activeStep: 0
+                                                                                })}
                                             className="timelineButton"
                                         >
                                             {role}
@@ -116,7 +130,7 @@ class MainContent extends React.Component {
                             </ToggleButtonGroup>
                         </Row>
                         <Row className="timelineRow">
-                            <HorizontalNonLinearStepper data={this.state.roleDataList[this.state.role]}/>
+                            <HorizontalNonLinearStepper setActiveStep={this.setActiveStep.bind(this)} activeStep={this.state.activeStep} data={this.state.roleDataList[this.state.role]}/>
                         </Row>
                     </Card.Body>
                 </Card>

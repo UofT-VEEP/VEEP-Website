@@ -6,3 +6,15 @@
     margin-top: 2rem;
     width: 75vw;
 }
+
+.MuiTooltip-tooltip-arrow{
+    color: white!important;
+}
+
+.MuiTooltip-tooltip{
+    background-color: rgb(1, 1, 1)!important;
+    display: block;
+    font-size: 1em!important;
+    min-width: 80vw!important;
+    position: relative!important;
+}

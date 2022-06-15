@@ -9,6 +9,7 @@ import { Card } from 'react-bootstrap';
 
 import './Styles/Timeline.css';
 
+
 class HorizontalNonLinearStepper extends React.Component {
   constructor(props){
     super(props);
@@ -38,7 +39,7 @@ class HorizontalNonLinearStepper extends React.Component {
         <Stepper nonLinear activeStep={activeStep} alternativeLabel>
           {Steps.map((label, index) => (
             <Step key={label}>
-              <Tooltip title="test" arrow>
+              <Tooltip arrow title={Important_Desc[index]}>
                 <StepButton color="inherit" onClick= {() => this.props.setActiveStep(index)}>
                   {label}<br/>({Important_Dates[index]})
                 </StepButton>

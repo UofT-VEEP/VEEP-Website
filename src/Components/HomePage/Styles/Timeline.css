@@ -5,6 +5,7 @@
 .TimelineDesc{
     margin-top: 2rem;
     width: 75vw;
+    background-color: rgba(255, 255, 255, 0.281);
 }
 
 .MuiTooltip-tooltip-arrow{

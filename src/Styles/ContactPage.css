@@ -1,32 +1,103 @@
-.contactUs h1,h2{
-    width: 100%;
-    text-align: center;
+body{
+    background-image: url(./../../public/C000BG01.svg);
+    background-size: cover;
 }
 
-.contactUs h1{
-    color: #71518A;
+.contactWordLocation{
+    float: left;
+    width: 55%;
+    padding-left: 120px;
+    padding-top: 80px;
+    padding-right: 0px;
+}
+
+.contactWord h1{
+    font-weight: bold;
+    width: 100%;
+    font-family: Kristen ITC;
+    font-size: 200xp;
+    color: #ffffff;
+}
+
+.contactWord h2{
+    width: 100%;
+    font-family: Kristen ITC;
+    font-size: 200xp;
+    color: #e6c8fe;
+}
+
+.contactInfo{
+    padding-left: 20px;
+    width: 100%;
+    font-family: helvetica rounded;
+    font-size:larger;
+    color: #e6c8fe;
+}
+
+.imgmargin{
+    margin-left: 50px;
+}
+
+.Padding{
+    padding-left: 100px;
+}
+
+.contactCardLocation{
+    float: right;
+    width: 45%;
+    padding-left: 0px;
+    padding-top: 50px;
+    padding-right: 150px;
+}
+
+.contactCard{
+    width: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    border-color: transparent;
+    box-shadow: 5px 5px 15px #000000;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
 }
 
 .contactForm .textInput{
+
     display: block;
     box-sizing: border-box;
     width: 100%;
     border-radius: 8px;
-    border: 3px solid rgba(0, 0, 0, 0.048);
+    border: 3px solid rgba(224, 184, 255, 0.5);
     padding: 15px;
+    font-family: Arial;
     font-size: 16px;
-    background: #F3F6FA;
+    background: rgba(224, 184, 255, 0.1);
     margin-top: 2vw;
+    font-weight: bold;
+}
+
+.contactForm #Name{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid rgba(224, 184, 255, 0.5);
+    padding: 15px;
+    font-family: Arial;
+    font-size: 16px;
+    background: rgba(224, 184, 255, 0.1);
+    font-weight: bold;
 }
 
 .contactForm select{
     box-sizing: border-box;
     width: 100%;
     border-radius: 8px;
-    border: 3px solid rgba(0, 0, 0, 0.048);
+    border: 3px solid rgba(224, 184, 255, 0.5);
     padding: 15px;
+    color: #71518A;
     font-size: 16px;
-    background: #F3F6FA;
+    background: rgba(224, 184, 255, 0.1);
     margin-top: 2vw;
 }
 
@@ -43,7 +114,14 @@
     padding: 15px;
     font-size: 16px;
     background: #71518A;
-    color: #F3F6FA;
+    color: #ffffff;
     font-weight: bold;
     margin-top: 2vw;
 }
+
+@media screen and (max-width: 950px) {
+    .contactWordLocation, .contactCardLocation {   
+      width: 100%;
+      padding: 0;
+    }
+  }

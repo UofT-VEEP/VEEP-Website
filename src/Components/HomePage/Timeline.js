@@ -32,7 +32,7 @@ class HorizontalNonLinearStepper extends React.Component {
                     <StepButton color="inherit" onClick= {() => this.props.setActiveStep(index)}>
                       {label}<br/>({Important_Dates[index]})
                     </StepButton>
-                    {this.props.activeStep == index && <ArrowDropUpRoundedIcon style={{fontSize: 60}}/>}
+                    {this.props.activeStep === index && <ArrowDropUpRoundedIcon style={{fontSize: 60}}/>}
                   </Step>
                 )
               )

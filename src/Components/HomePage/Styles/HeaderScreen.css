@@ -1,8 +1,13 @@
+.BannerLogoContainer{
+    padding-top: calc(0.7 * (6vh + 4vw));
+}
+
 .SocialButtonContainer{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 2vh;
 }
 
 .SocialButton{

@@ -54,7 +54,7 @@
     margin-top: 3vh;
     margin-bottom: 3vh;
     box-shadow: 10px 10px 5px rgb(160, 160, 160);
-    border: 1px solid rgb(46, 46, 46);
+    background-color: rgba(255, 255, 255, 0.473);
 }
 
 .projectTypeCard p{

@@ -7,11 +7,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/HeaderScreen.css';
-
-import TitleBox from './TitleBox';
-
-import BannerLogo from '../../imgs/logos/white.png';
-
+import BannerLogo from '../../imgs/logos/banner_logo_no_border.png';
 import CardFlipProjects from './flip_card';
 
 class HeaderScreen extends React.Component {
@@ -29,7 +25,7 @@ class HeaderScreen extends React.Component {
           <Container fluid className='HeaderScreenBox'>
             <Row>
               <Col sm={12} md={4} className="headerLeft">
-                <Row className="justify-content-center"> 
+                <Row className="justify-content-center BannerLogoContainer"> 
                   <img src={BannerLogo} alt="VEEP Logo" id="MediumBannerLogo"/>
                 </Row>
                 <Row className="SocialButtonContainer">
@@ -45,9 +41,6 @@ class HeaderScreen extends React.Component {
                   onClick={() =>(window.location.href = 'mailto:president@veep.skule.ca')}> 
                       <MailOutlineIcon className="IconButton"/>
                   </Button>
-                </Row>
-                <Row>
-                  <TitleBox />
                 </Row>
               </Col>
               <Col sm={12} md={8}>

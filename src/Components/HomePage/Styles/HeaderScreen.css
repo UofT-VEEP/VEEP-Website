@@ -22,16 +22,12 @@
 }
 
 .HeaderScreenBox{
-    background: linear-gradient(300deg,#71518A,#BB82EB,#D591DD, #EDC980,#D591DD,#BB82EB,#71518A);
-    background-size: 420% 420%;
-    animation: gradient-animation 15s ease infinite;
     position: relative;
     top:0; 
     left: 0;  
     min-height: 92vh;
     max-height: max-content;
-    width: 100%;
-    color: white;
+    width: 98vw;
 }
   
 @keyframes gradient-animation {

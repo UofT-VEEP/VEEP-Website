@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, ToggleButton, ToggleButtonGroup, Card } from 'react-bootstrap';
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
 import HorizontalNonLinearStepper from './Timeline'
+import HeaderScreen from './HeaderScreenv2';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/MainContent.css';
@@ -46,97 +48,130 @@ class MainContent extends React.Component {
     }
 
     render() {
-      return (
-        <div>
-            <Container fluid className="contentContainer">
-                <div className="projectType">
-                    <Row>
-                        <Col>
-                            <Card className="projectTypeCard">
-                                <Card.Body>
-                                    <Card.Title>Photos/Video</Card.Title>
-                                    <Card.Text>
-                                        Insert photos/videos when they are available
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className="projectTypeCard">
-                                <Card.Body>
-                                    <Card.Title>Our Program</Card.Title>
-                                    <Card.Text>
-                                        <li> content 1</li>
-                                        <li> content 2</li>
-                                        <li> content 3</li> 
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <Card className="projectTypeCard">
-                                <Card.Body>
-                                    <Card.Title>On Campus</Card.Title>
-                                    <Card.Text>
-                                        <li> content 1</li>
-                                        <li> content 2</li>
-                                        <li> content 3</li> 
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className="projectTypeCard">
-                                <Card.Body>
-                                    <Card.Title>Community</Card.Title>
+        const FadeUp = batch(Fade(), MoveIn(), Sticky());
+        const FadeUpStay = batch(FadeIn(), MoveIn(), Sticky(50, 40))
+        return (
+            <Container fluid className='contentContainer'>
+                <ScrollContainer> 
+                    <ScrollPage page={0}>
+                        <Animator animation={FadeUp}>
+                            <HeaderScreen /> 
+                        </Animator>
+                    </ScrollPage>
+                    <ScrollPage page={1}>
+                        <Animator>
+                        </Animator>
+                    </ScrollPage>
+                    <ScrollPage page={2}>
+                        <Animator animation={FadeUp}>
+                            <Row>
+                                <Col>
+                                    <Card className="projectTypeCard">
+                                        <Card.Body>
+                                            <Card.Title>Photos/Video</Card.Title>
+                                            <Card.Text>
+                                                Insert photos/videos when they are available
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                                <Col>
+                                    <Card className="projectTypeCard">
+                                        <Card.Body>
+                                            <Card.Title>Our Program</Card.Title>
+                                            <Card.Text>
+                                                <li> content 1</li>
+                                                <li> content 2</li>
+                                                <li> content 3</li> 
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            </Row>
+                        </Animator>
+                    </ScrollPage>
+                    <ScrollPage page={3}>
+                        <Animator>
+                        </Animator>
+                    </ScrollPage>
+                    <ScrollPage page={4}>
+                        <Animator animation={FadeUp}>
+                            <Row>
+                                <Col>
+                                    <Card className="projectTypeCard">
+                                        <Card.Body>
+                                            <Card.Title>On Campus</Card.Title>
+                                            <Card.Text>
+                                                <li> content 1</li>
+                                                <li> content 2</li>
+                                                <li> content 3</li> 
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                                <Col>
+                                    <Card className="projectTypeCard">
+                                        <Card.Body>
+                                            <Card.Title>Community</Card.Title>
 
-                                    <Card.Text>
-                                        <li> content 1</li>
-                                        <li> content 2</li>
-                                        <li> content 3</li> 
-                                    </Card.Text>
+                                            <Card.Text>
+                                                <li> content 1</li>
+                                                <li> content 2</li>
+                                                <li> content 3</li> 
+                                            </Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            </Row>
+                        </Animator>
+                    </ScrollPage>
+                    <ScrollPage page={5}>
+                        <Animator>
+                        </Animator>
+                    </ScrollPage>
+                    <ScrollPage  page={6}>
+                        <Animator  animation={FadeUpStay}>
+                        <Card className="timelineContainer">
+                                <Card.Body>
+                                    <Card.Title>Roles</Card.Title>
+                                    <Row>
+                                        <ToggleButtonGroup type="radio" name="options">
+                                            {this.state.rolelist.map((role, idx) => (
+                                                <Col>
+                                                    <ToggleButton
+                                                        key={idx}
+                                                        id={`radio-${idx}`}
+                                                        type="radio"
+                                                        variant="outline-dark"
+                                                        name="radio"
+                                                        value={role}
+                                                        checked={this.state.rolelist[this.state.role] === this.state.rolelist[idx]}
+                                                        onClick={(event) => this.setState({
+                                                                                            role: this.state.rolelist.indexOf(event.currentTarget.textContent),
+                                                                                            activeStep: 0
+                                                                                            })}
+                                                        className="timelineButton"
+                                                    >
+                                                        {role}
+                                                    </ToggleButton>
+                                                </Col>
+                                            ))}
+                                        </ToggleButtonGroup>
+                                    </Row>
+                                    <Row className="timelineRow">
+                                        <HorizontalNonLinearStepper 
+                                            setActiveStep={this.setActiveStep.bind(this)} 
+                                            activeStep={this.state.activeStep} 
+                                            data={this.state.roleDataList[this.state.role]}
+                                        />
+                                    </Row>
                                 </Card.Body>
                             </Card>
-                        </Col>
-                    </Row>
-                </div>
-                <Card className="projectTypeCard timelineContainer">
-                    <Card.Body>
-                        <Card.Title>Roles</Card.Title>
-                        <Row>
-                            <ToggleButtonGroup type="radio" name="options">
-                                {this.state.rolelist.map((role, idx) => (
-                                    <Col>
-                                        <ToggleButton
-                                            key={idx}
-                                            id={`radio-${idx}`}
-                                            type="radio"
-                                            variant="outline-dark"
-                                            name="radio"
-                                            value={role}
-                                            checked={this.state.rolelist[this.state.role] === this.state.rolelist[idx]}
-                                            onClick={(event) => this.setState({
-                                                                                role: this.state.rolelist.indexOf(event.currentTarget.textContent),
-                                                                                activeStep: 0
-                                                                                })}
-                                            className="timelineButton"
-                                        >
-                                            {role}
-                                        </ToggleButton>
-                                    </Col>
-                                ))}
-                            </ToggleButtonGroup>
-                        </Row>
-                        <Row className="timelineRow">
-                            <HorizontalNonLinearStepper setActiveStep={this.setActiveStep.bind(this)} activeStep={this.state.activeStep} data={this.state.roleDataList[this.state.role]}/>
-                        </Row>
-                    </Card.Body>
-                </Card>
+                        </Animator>
+                    </ScrollPage>
+                </ScrollContainer>
             </Container>
-        </div> 
-      )
+        )
     }
   }
   

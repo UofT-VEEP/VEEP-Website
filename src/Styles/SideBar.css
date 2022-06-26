@@ -1,0 +1,146 @@
+.sideBarCol {
+    position: absolute;
+    width: 15%;
+    height: 200%;
+    background-color: lightblue;
+}
+
+.contentCol {
+    margin-left: 15%;
+    width: 85%;
+    height: 100%;
+}
+
+.sidebar {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.sidebar-item {
+    text-align: center;
+    margin: 15px;
+    margin-top: 50px;
+    background-color: lightgreen;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    --speed: 500ms;
+    transition: background var(--speed);
+}
+
+.sidebar-item:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+
+.dropdown-box {
+    margin: 15px;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 1px;
+}
+
+.dropdown-box-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: lightgreen;
+    text-align: center;
+    --speed: 500ms;
+    transition: background var(--speed);
+}
+
+.dropdown-box-item:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+#top-item {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#bottom-item {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.dropdown-primary-enter {
+    height: 0%;
+}
+
+.dropdown-primary-enter-active {
+    height: 100%;
+    --speed: 500ms;
+    transition: all var(--speed) ease;
+    
+}
+
+.dropdown-primary-exit {
+    height: 100%;
+}
+
+.dropdown-primary-exit-active {
+    height: 0%;
+    --speed: 500ms;
+    transition: all var(--speed) ease; 
+}
+
+.dropdown-secondary-enter {
+    position: absolute;
+    height: 100%;
+}
+
+.dropdown-secondary-enter-active {
+    position: absolute;
+    background-color: blue;
+    height: 0;
+    --speed: 2000ms;
+    transition: all var(--speed) ease;
+}
+
+.dropdown-secondary-exit {
+    position: absolute;
+    height: 0%;
+}
+
+.dropdown-secondary-exit-active {
+    position: absolute;
+    height: 100%;
+    --speed: 2000ms;
+    transition: all var(--speed) ease; 
+}
+
+.dropdown {
+    --speed: 500ms;
+    transition: height var(--speed) ease;
+}
+
+.sidebar-accordion {
+    margin-top: 30px;
+    
+}
+
+.accordion-dropdown {
+    padding: 0%;
+}
+
+.dropdown-container {
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+.dropdown-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.dropdown-item:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+

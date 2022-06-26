@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Tabs, Tab} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 
 import EventBox from '../Components/EventPage/EventBox.component';
 
@@ -11,22 +11,11 @@ class EventPage extends React.Component {
     return (
       <div>
         <Container className="eventContainer">
-          <h1>Events</h1>
-          <Tabs defaultActiveKey="thisYear" className="mb-12">
-              <Tab eventKey="thisYear" title="This Year's Events">
-                <div>
-                    <h2>Events This Year</h2>
-                    {this.props.currentEvents.map(event => (
-                        <EventBox key={event.key} event={event} />
-                    ))}
-                </div>
-              </Tab>
-              <Tab eventKey="current" title="Past Events">
-                <div>
-                  
-                </div>
-              </Tab>
-          </Tabs>
+          <div>
+              {this.props.eventsToDisplay.map(event => (
+                  <EventBox key={event.key} event={event} />
+              ))}
+          </div>
         </Container>
       </div>
     )

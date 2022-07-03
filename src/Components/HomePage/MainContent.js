@@ -49,7 +49,7 @@ class MainContent extends React.Component {
 
     render() {
         const FadeUp = batch(Fade(), MoveIn(), Sticky());
-        const FadeUpStay = batch(FadeIn(), MoveIn(), Sticky(50, 40))
+        const FadeUpStay = batch(FadeIn(), MoveIn(), Sticky(50, 31))
         return (
             <Container fluid className='contentContainer'>
                 <ScrollContainer> 
@@ -59,8 +59,6 @@ class MainContent extends React.Component {
                         </Animator>
                     </ScrollPage>
                     <ScrollPage page={1}>
-                        <Animator>
-                        </Animator>
                     </ScrollPage>
                     <ScrollPage page={2}>
                         <Animator animation={FadeUp}>
@@ -88,14 +86,6 @@ class MainContent extends React.Component {
                                     </Card>
                                 </Col>
                             </Row>
-                        </Animator>
-                    </ScrollPage>
-                    <ScrollPage page={3}>
-                        <Animator>
-                        </Animator>
-                    </ScrollPage>
-                    <ScrollPage page={4}>
-                        <Animator animation={FadeUp}>
                             <Row>
                                 <Col>
                                     <Card className="projectTypeCard">
@@ -125,13 +115,11 @@ class MainContent extends React.Component {
                             </Row>
                         </Animator>
                     </ScrollPage>
-                    <ScrollPage page={5}>
-                        <Animator>
-                        </Animator>
+                    <ScrollPage page={3}>
                     </ScrollPage>
-                    <ScrollPage  page={6}>
+                    <ScrollPage  page={4}>
                         <Animator  animation={FadeUpStay}>
-                        <Card className="timelineContainer">
+                        <Card text="dark" className="timelineContainer">
                                 <Card.Body>
                                     <Card.Title>Roles</Card.Title>
                                     <Row>
@@ -150,7 +138,7 @@ class MainContent extends React.Component {
                                                                                             role: this.state.rolelist.indexOf(event.currentTarget.textContent),
                                                                                             activeStep: 0
                                                                                             })}
-                                                        className="timelineButton"
+                                                        className={this.state.rolelist[this.state.role] === this.state.rolelist[idx] ? "timelineButton-active" : "timelineButton-inactive"}
                                                     >
                                                         {role}
                                                     </ToggleButton>

@@ -3,6 +3,9 @@
     padding-bottom: 0;
     margin-bottom: 0;
 }
+.TimelineStep .MuiStepLabel-iconContainer .Mui-active{
+    color: rgba(110, 14, 110, 0.8) !important;
+}
 
 .TimelineDesc{
     margin-top: 0;

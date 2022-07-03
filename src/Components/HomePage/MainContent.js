@@ -2,10 +2,16 @@ import React from 'react';
 import { Container, Row, Col, ToggleButton, ToggleButtonGroup, Card } from 'react-bootstrap';
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
 import HorizontalNonLinearStepper from './Timeline'
+import TextMobileStepper from './TimelineMobile'
 import HeaderScreen from './HeaderScreenv2';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/MainContent.css';
+
+function detectMob() {
+    console.log(window.innerWidth);
+    return (window.innerWidth <= 800);
+}
 
 class MainContent extends React.Component {
     constructor(props){
@@ -49,7 +55,8 @@ class MainContent extends React.Component {
 
     render() {
         const FadeUp = batch(Fade(), MoveIn(), Sticky());
-        const FadeUpStay = batch(FadeIn(), MoveIn(), Sticky(50, 31))
+        const FadeUpStay = batch(FadeIn(), MoveIn(), Sticky(50, 31));
+
         return (
             <Container fluid className='contentContainer'>
                 <ScrollContainer> 
@@ -147,11 +154,22 @@ class MainContent extends React.Component {
                                         </ToggleButtonGroup>
                                     </Row>
                                     <Row className="timelineRow">
-                                        <HorizontalNonLinearStepper 
-                                            setActiveStep={this.setActiveStep.bind(this)} 
-                                            activeStep={this.state.activeStep} 
-                                            data={this.state.roleDataList[this.state.role]}
-                                        />
+                                        {detectMob() ? 
+                                            ( 
+                                                <TextMobileStepper 
+                                                    setActiveStep={this.setActiveStep.bind(this)} 
+                                                    activeStep={this.state.activeStep} 
+                                                    data={this.state.roleDataList[this.state.role]}
+                                                />
+                                            ) : 
+                                            ( 
+                                                <HorizontalNonLinearStepper 
+                                                    setActiveStep={this.setActiveStep.bind(this)} 
+                                                    activeStep={this.state.activeStep} 
+                                                    data={this.state.roleDataList[this.state.role]}
+                                                />
+                                            )
+                                        }
                                     </Row>
                                 </Card.Body>
                             </Card>

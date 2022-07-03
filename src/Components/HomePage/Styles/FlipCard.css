@@ -29,8 +29,7 @@
 }
 
 .carousel-caption {
-  background : rgba(251, 249, 249, 0.45);
-  text-shadow: 0 0 0.8rem black;
+  background : rgba(251, 249, 249, 0.75);
   max-width: 100%;
   width:100%;
   left: 0;

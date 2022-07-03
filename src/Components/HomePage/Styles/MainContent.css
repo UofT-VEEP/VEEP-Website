@@ -32,7 +32,7 @@
     min-height: 92vh;
     max-height: max-content;
     width: 100%;
-    color: white;
+    color: black;
 }
   
 @keyframes gradient-animation {
@@ -61,11 +61,19 @@
     background-color: rgba(255, 255, 255, 0.473);
 }
 
-.timelineButton {
+.timelineButton-inactive {
     display: block;
     max-width: fit-content;
     margin-left: 15vw; 
     box-shadow: none !important;
+}
+
+.timelineButton-active, .timelineButton-inactive:hover{
+    display: block;
+    max-width: fit-content;
+    margin-left: 15vw; 
+    box-shadow: none !important;
+    background-color: rgba(110, 14, 110, 0.8) !important;
 }
 
 .timelineRow{

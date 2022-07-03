@@ -13,7 +13,6 @@ class HorizontalNonLinearStepper extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      popToolTip: new Array(this.props.data.Steps.length).fill(false),
     }  
   }
 

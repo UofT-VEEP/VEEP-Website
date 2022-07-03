@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Button, Row, Col } from 'react-bootstrap';
+import {Button, Row, Col } from 'react-bootstrap';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -9,6 +9,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/HeaderScreen.css';
 import BannerLogo from '../../imgs/logos/banner_logo_no_border.png';
 import CardFlipProjects from './flip_card';
+
+function detectMob() {
+  console.log(window.innerWidth);
+  return (window.innerWidth <= 800);
+}
 
 class HeaderScreen extends React.Component {
     constructor(props){
@@ -41,11 +46,16 @@ class HeaderScreen extends React.Component {
                   </Button>
                 </Row>
               </Col>
-              <Col sm={12} md={8}>
-                <Row className="CarouselContainer">
-                  <CardFlipProjects />
-                </Row>
-              </Col>
+              {detectMob() ?
+                null:
+                ( 
+                  <Col sm={12} md={8}>
+                    <Row className="CarouselContainer">
+                      <CardFlipProjects />
+                    </Row>
+                  </Col>
+                )
+              }
             </Row>
       )
     }

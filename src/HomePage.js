@@ -7,6 +7,11 @@ import MainContent from './Components/HomePage/MainContent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/HomePage.css';
 
+export function detectMob() {
+
+  return (window.innerWidth <= 764);
+}
+
 class HomePage extends React.Component {
   constructor(props){
     super(props);
@@ -22,7 +27,9 @@ class HomePage extends React.Component {
         <NavBar />
         {/* <HeaderScreen />  */}
         <MainContent />
-        <Footer />
+        {
+          detectMob() ? null: <Footer />
+        }
       </div>
     )
   }

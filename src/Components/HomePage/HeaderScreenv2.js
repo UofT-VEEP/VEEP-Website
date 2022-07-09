@@ -9,11 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/HeaderScreen.css';
 import BannerLogo from '../../imgs/logos/banner_logo_no_border.png';
 import CardFlipProjects from './flip_card';
-
-function detectMob() {
-  console.log(window.innerWidth);
-  return (window.innerWidth <= 800);
-}
+import { detectMob } from '../../HomePage';
 
 class HeaderScreen extends React.Component {
     constructor(props){

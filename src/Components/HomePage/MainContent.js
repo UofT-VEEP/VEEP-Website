@@ -1,17 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, ToggleButton, ToggleButtonGroup, Card } from 'react-bootstrap';
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, MoveIn, Sticky } from "react-scroll-motion";
 import HorizontalNonLinearStepper from './Timeline'
 import TextMobileStepper from './TimelineMobile'
 import HeaderScreen from './HeaderScreenv2';
-
+import { detectMob } from '../../HomePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/MainContent.css';
-
-function detectMob() {
-    console.log(window.innerWidth);
-    return (window.innerWidth <= 800);
-}
 
 class MainContent extends React.Component {
     constructor(props){
@@ -56,6 +51,7 @@ class MainContent extends React.Component {
     render() {
         const FadeUp = batch(Fade(), MoveIn(), Sticky());
         const FadeUpStay = batch(FadeIn(), MoveIn(), Sticky(50, 31));
+        const FadeUpStayMob = batch(FadeIn(), MoveIn(), Sticky(50, 50));
 
         return (
             <Container fluid className='contentContainer'>
@@ -125,12 +121,12 @@ class MainContent extends React.Component {
                     <ScrollPage page={3}>
                     </ScrollPage>
                     <ScrollPage  page={4}>
-                        <Animator  animation={FadeUpStay}>
+                        <Animator  animation={detectMob()? FadeUpStayMob : FadeUpStay}>
                         <Card text="dark" className="timelineContainer">
                                 <Card.Body>
                                     <Card.Title>Roles</Card.Title>
                                     <Row>
-                                        <ToggleButtonGroup type="radio" name="options">
+                                        <ToggleButtonGroup className={detectMob()? "timelineButtonContainerMob" : ""} type="radio" name="options">
                                             {this.state.rolelist.map((role, idx) => (
                                                 <Col>
                                                     <ToggleButton
@@ -153,7 +149,7 @@ class MainContent extends React.Component {
                                             ))}
                                         </ToggleButtonGroup>
                                     </Row>
-                                    <Row className="timelineRow">
+                                <Row className={detectMob()? "timelineRowMob" : "timelineRow"}>
                                         {detectMob() ? 
                                             ( 
                                                 <TextMobileStepper 

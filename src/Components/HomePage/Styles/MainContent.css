@@ -53,6 +53,7 @@
 }
 
 .timelineContainer{
+    width: max-content;
     display: grid;
     margin-top: 2rem;
     text-align: center;
@@ -78,6 +79,27 @@
 
 .timelineRow{
     margin-top: 2rem;
+}
+
+.timelineRowMob{
+    margin-top: 0.5rem;
+}
+
+
+.timelineRowMob>div:first-child>div:first-child{
+    justify-content: center !important;
+}
+
+.timelineRowMob button{
+    color:rgba(110, 14, 110, 0.8);
+}
+
+.timelineButtonContainerMob{
+    width: 100%;
+}
+
+.timelineButtonContainerMob *{
+    margin-left: 5vw !important;
 }
 
 .projectTypeCard{

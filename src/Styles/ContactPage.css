@@ -1,33 +1,40 @@
-body{
+.background{
     background-image: url(./../../public/C000BG01.svg);
     background-size: cover;
+    height: 10px;
 }
 
+
+{/**************************Left column******************************/}
 .contactWordLocation{
     float: left;
     width: 55%;
-    padding-left: 120px;
-    padding-top: 80px;
-    padding-right: 0px;
+    padding-left: 10vh;
+    padding-top: 8vh;
+    padding-right: 0vh;
 }
 
 .contactWord h1{
+    margin-top: 5vh;
     font-weight: bold;
     width: 100%;
     font-family: Kristen ITC;
-    font-size: 200xp;
     color: #ffffff;
 }
 
 .contactWord h2{
+    margin-top: 1vh;
     width: 100%;
     font-family: Kristen ITC;
-    font-size: 200xp;
     color: #e6c8fe;
 }
 
 .contactInfo{
-    padding-left: 20px;
+    padding-top: 7vh;
+}
+
+.contactInfo span{
+    padding-left: 2vh;
     width: 100%;
     font-family: helvetica rounded;
     font-size:larger;
@@ -35,44 +42,46 @@ body{
 }
 
 .imgmargin{
-    margin-left: 50px;
+    margin-top: 10vh;
+    margin-left: 5vh;
 }
 
 .Padding{
-    padding-left: 100px;
+    padding-left: 10vh;
 }
 
+{/**************************right column******************************/}
 .contactCardLocation{
     float: right;
     width: 45%;
-    padding-left: 0px;
-    padding-top: 50px;
-    padding-right: 150px;
+    padding-left: 0vh;
+    padding-top: 6vh;
+    padding-right: 16vh;
+    padding-bottom: 6vh;
 }
 
 .contactCard{
     width: 100%;
-    padding: 15px;
+    padding: 2vh;
     background-color: #ffffff;
     border-color: transparent;
-    box-shadow: 5px 5px 15px #000000;
+    box-shadow: 1vh 1vh 2vh #000000;
     border-style: solid;
-    border-width: 1px;
-    border-radius: 15px;
+    border-width: 0.5vh;
+    border-radius: 3vh;
 }
 
 .contactForm .textInput{
-
     display: block;
     box-sizing: border-box;
     width: 100%;
-    border-radius: 8px;
-    border: 3px solid rgba(224, 184, 255, 0.5);
-    padding: 15px;
+    border-radius: 2vh;
+    border: 0.4vh solid rgba(224, 184, 255, 0.5);
+    padding: 2vh;
     font-family: Arial;
-    font-size: 16px;
+    font-size: 2.2vh;
     background: rgba(224, 184, 255, 0.1);
-    margin-top: 2vw;
+    margin-top: 3vh;
     font-weight: bold;
 }
 
@@ -80,11 +89,11 @@ body{
     display: block;
     box-sizing: border-box;
     width: 100%;
-    border-radius: 8px;
-    border: 3px solid rgba(224, 184, 255, 0.5);
-    padding: 15px;
+    border-radius: 2vh;
+    border: 0.4vh solid rgba(224, 184, 255, 0.5);
+    padding: 2vh;
     font-family: Arial;
-    font-size: 16px;
+    font-size: 2.2vh;
     background: rgba(224, 184, 255, 0.1);
     font-weight: bold;
 }
@@ -92,36 +101,35 @@ body{
 .contactForm select{
     box-sizing: border-box;
     width: 100%;
-    border-radius: 8px;
-    border: 3px solid rgba(224, 184, 255, 0.5);
-    padding: 15px;
+    border-radius: 2vh;
+    border: 0.4vh solid rgba(224, 184, 255, 0.5);
+    padding: 2vh;
     color: #71518A;
-    font-size: 16px;
+    font-size: 2.2vh;
     background: rgba(224, 184, 255, 0.1);
-    margin-top: 2vw;
+    margin-top: 3vh;
 }
 
 .contactForm #questionField{
-    height: 15vw;
+    height: 30vh;
 }
 
 .contactForm #submitBtn{
     display: block;
     box-sizing: border-box;
     width: 100%;
-    border-radius: 8px;
-    border: 3px solid rgba(0, 0, 0, 0.048);
-    padding: 15px;
-    font-size: 16px;
+    border-radius: 2vh;
+    border: 0.4vh solid rgba(0, 0, 0, 0.048);
+    padding: 2vh;
+    font-size: 2.2vh;
     background: #71518A;
     color: #ffffff;
     font-weight: bold;
-    margin-top: 2vw;
+    margin-top: 3vh;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 130vh) {
     .contactWordLocation, .contactCardLocation {   
       width: 100%;
-      padding: 0;
     }
   }

@@ -23,41 +23,30 @@ class ContactPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div  className="background">
         <NavBar />
-        <div class="bg-dark"></div>
         {/******WORD******/}
         <div className="contactWordLocation">
           <container className="contactWord">
             <h1 class="display-3">Have any questions ?</h1>
-            <br></br>
+
             <h2 class="display-5">we are happy to help <span class="display-1">:)</span></h2>
 
+            <div className="contactInfo">
+              <img src="C001Email.svg" alt="Email-Logo" width="45" />
+              <span>Email: ############@######</span>
+            </div>
 
-            <br></br>
-            <br></br>
-            <br></br>
+            <div className="contactInfo">
+              <img src="C002WeChat.svg" alt="Wechat-Logo" width="45" />
+              <span>Wechat ID: ############</span>
+            </div>
 
-            <img src="C001Email.svg" alt="Email-Logo" width="45"></img>
-            <span className="contactInfo">Email: ############@######</span>
-
-
-            <br></br>
-            <br></br>
-            <br></br>
-
-            <img src="C002WeChat.svg" alt="Wechat-Logo" width="45"></img>
-            <span className="contactInfo">Wechat ID: ############</span>
-
-
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <img className="imgmargin" src="C003Facebook.svg" alt="Facebook-Logo" width="50"></img>
-            <span className="Padding"></span>
-            <img className="imgmargin" src="C004Instgram.svg" alt="Instgram-Logo" width="50"></img>
+            <div>
+              <img className="imgmargin" src="C003Facebook.svg" alt="Facebook-Logo" width="50"></img>
+              <span className="Padding" />
+              <img className="imgmargin" src="C004Instgram.svg" alt="Instgram-Logo" width="50"></img>
+            </div>
 
           </container>
         </div>
@@ -69,9 +58,6 @@ class ContactPage extends React.Component {
               <ContactForm />
             </Card.Body>
           </Card>
-
-          <br></br>
-
 
         </div>
       </div>

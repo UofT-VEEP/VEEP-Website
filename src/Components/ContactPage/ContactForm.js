@@ -18,7 +18,7 @@ const ContactForm = () => {
         <option value="Sign Up for an Event">Sign Up for an Event</option>
         <option value="Other Question">Other Question</option>
       </select>
-      <input className="textInput" id="questionField" type="text" placeholder="Enter Your Question(s) here" {...register("Question", {required: true})} />
+      <textarea className="textInput" id="questionField" type="text" placeholder="Enter Your Question(s) here" {...register("Question", {required: true})} />
 
       <input id="submitBtn" type="submit" />
     </form>

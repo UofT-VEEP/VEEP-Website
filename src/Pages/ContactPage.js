@@ -20,7 +20,7 @@ class ContactPage extends React.Component {
 
   render() {
     return (
-      <div  className="background">
+      <div>
         <NavBar />
 <<<<<<< HEAD
         <Container className="contactUs">
@@ -31,8 +31,9 @@ class ContactPage extends React.Component {
         <Footer />
 =======
         {/******WORD******/}
+        <div  className="background">
         <div className="contactWordLocation">
-          <container className="contactWord">
+          <Container className="contactWord">
             <h1 class="display-3">Have any questions ?</h1>
 
             <h2 class="display-5">we are happy to help <span class="display-1">:)</span></h2>
@@ -53,7 +54,7 @@ class ContactPage extends React.Component {
               <img className="imgmargin" src="C004Instgram.svg" alt="Instgram-Logo" width="50"></img>
             </div>
 
-          </container>
+          </Container>
         </div>
 
         {/******CARD******/}
@@ -65,7 +66,11 @@ class ContactPage extends React.Component {
           </Card>
 
         </div>
+<<<<<<< HEAD
 >>>>>>> 004f5c2 (Contact Page New update)
+=======
+        </div>
+>>>>>>> 0893659 (Contactpage update02)
       </div>
     )
   }

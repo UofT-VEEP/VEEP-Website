@@ -9,8 +9,7 @@
 =======
 .background{
     background-image: url(./../../public/C000BG01.svg);
-    background-size: cover;
-    height: 10px;
+    height: 100%;
 }
 
 

@@ -1,36 +1,39 @@
+.mainWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContent{
+    flex-grow: 1;
+}
+
+#MediumBannerLogo{
+    width: 85%;
+}
+
 .HeaderEnter{
     width: 100%;
+    margin-top: 5vh;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.headerLeft{
+    margin-top: 8vh;
 }
 
 .HeaderEnter div{
     display: flex;
-    justify-content: center;
-}
-
-#MediumBannerLogo{
-    width: 30%;
+    justify-content: space-around;
 }
 
 .HeaderText{
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    color: rgba(0, 0, 0, 0.54);
+    font-weight: normal;
+    font-style: normal;
+    color: white;
     text-align: center;
-}
-
-@media (min-width: 1280px){
-    .HeaderText{
-        font-size: 5.9983rem;
-    }
-}
-
-@media (min-width: 960px){
-    .HeaderText{
-        font-size: 5.3556rem;
-    }
-}
-
-@media (min-width: 600px){
-    .HeaderText{
-        font-size: 4.7129rem;
-    }
+    text-shadow: 0 0 1rem black;
+    padding-bottom: 0.7rem;
+    font-size: calc(1.2 * (1.9vh + 1.1vw));
 }

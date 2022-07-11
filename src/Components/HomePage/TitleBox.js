@@ -1,8 +1,6 @@
 import React from 'react';
 import FadeIn from 'react-fade-in';
 
-import BannerLogo from '../../imgs/logos/medium.png';
-
 class TitleBox extends React.Component {
     constructor(props){
       super(props);
@@ -19,7 +17,6 @@ class TitleBox extends React.Component {
     render() {
       return (
         <FadeIn className="HeaderEnter">
-            <img src={BannerLogo} alt="VEEP Logo" id="MediumBannerLogo"/>
             {this.state.titles.map(title => (
                 <h1 key={title.number} className="HeaderText">{title.content}</h1>
             ))}

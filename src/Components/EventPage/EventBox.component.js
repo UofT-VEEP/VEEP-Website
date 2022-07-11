@@ -7,16 +7,19 @@ import '../../Styles/EventPage.css';
 
 class ProjectBox extends Component {
     render(){
-        const {eventName, eventTime, onlineEvent, eventLocation, eventDescription, eventDone, eventReplay, eventGuest} = this.props.event;
+        const {eventName, eventTime, onlineEvent, eventLocation, eventDescription, eventDone, eventReplay, 
+            eventGuest, registrationRequired, registrationLink} = this.props.event;
         return(
             <Card className="eventCard">
               <Card.Body>
-                <Card.Title>{eventName}</Card.Title>
-                <Card.Subtitle>
-                    Time: {eventTime} 
+                <div className="event-title-border">
+                    <Card.Title className="event-title">{eventName}</Card.Title>
+                </div>
+                <Card.Subtitle className="event-subtitle">
+                    Event Time: {eventTime}
                     {!onlineEvent && (
                         <div>
-                            Location: {eventLocation}
+                            Event Location: {eventLocation}
                         </div>
                     )}
                 </Card.Subtitle>
@@ -29,8 +32,11 @@ class ProjectBox extends Component {
                             {eventGuest.map(guest => (
                                 <ListGroup.Item key={guest.name}> 
                                     <div className="ms-2 me-auto">
-                                        <div> <b>{guest.name}</b></div>
-                                        {guest.bio} 
+                                        <div className="event-guest-name"> {guest.name }</div>
+                                        <div>
+                                            <img className ="event-guest-image" src={guest.photo} alt="" /> <br/>
+                                            {guest.bio} 
+                                        </div>
                                     </div> 
                                 </ListGroup.Item>
                             ))}
@@ -41,7 +47,15 @@ class ProjectBox extends Component {
                     <Accordion.Item eventKey="replay">
                         <Accordion.Header>Event Replay</Accordion.Header>
                         <Accordion.Body>
-                            {eventReplay}
+                            <a href={eventReplay}> Event Replay Link </a>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    )}
+                    {!eventDone && registrationRequired && (
+                    <Accordion.Item eventKey="registration">
+                        <Accordion.Header>Event Registration</Accordion.Header>
+                        <Accordion.Body>
+                            <a href={registrationLink}> Register Here </a>
                         </Accordion.Body>
                     </Accordion.Item>
                     )}

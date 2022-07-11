@@ -1,0 +1,24 @@
+.FooterRow{
+    text-align: center;
+}
+
+#FirstFooterRow{
+    margin-top: 4vh;
+}
+
+.FooterButton{
+    background-color: transparent;
+    border: none;
+}
+
+.FooterIcon{
+    color: #71518A;
+}
+
+.FooterButton:hover{
+    background-color: lightgrey;
+}
+
+#FooterList .list-group-item{
+    border: none;
+}

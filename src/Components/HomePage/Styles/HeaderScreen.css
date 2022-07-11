@@ -1,9 +1,55 @@
+.BannerLogoContainer{
+    padding-top: calc(0.7 * (6vh + 4vw));
+}
+
+.SocialButtonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2vh;
+}
+
 .SocialButton{
-    background-color: white;
-    height: 100%;
+    background-color: transparent;
+    height: auto;
+    width: auto;
     border-color: white;
 }
 
 .IconButton{
     font-size: 2rem;
+}
+
+.HeaderScreenBox{
+    background: linear-gradient(300deg,#71518A,#BB82EB,#D591DD, #EDC980,#D591DD,#BB82EB,#71518A);
+    background-size: 420% 420%;
+    animation: gradient-animation 15s ease infinite;
+    position: relative;
+    top:0; 
+    left: 0;  
+    min-height: 92vh;
+    max-height: max-content;
+    width: 100%;
+    color: white;
+}
+  
+@keyframes gradient-animation {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+  
+
+.CarouselContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5rem;
 }

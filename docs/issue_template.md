@@ -12,7 +12,7 @@
 ### For Sub-Issue
   
  - Change Proposal 🔺*List what changes will be made in this issue*
-	 1. 
+   - [ ] 
 
 - Deadline of the task 🔺
 

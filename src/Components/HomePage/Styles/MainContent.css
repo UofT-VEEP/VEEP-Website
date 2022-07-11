@@ -23,16 +23,42 @@
 }
 
 .contentContainer{
-    margin-top: 2rem;
+    padding: 1%;
+    background-image: linear-gradient(to right, rgba(76, 0, 255, 0.4), 20%, rgba(76, 0, 255, 0.1));
 }
 
 .projectType{
-    padding: 2%;
-    background-color:#E3E3E3;
+    display: grid;
+    row-gap:  1rem;
 }
 
-.projectType h2{
-    color: #706C75;
+.timelineContainer{
+    display: grid;
+    margin-top: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.timelineButton {
+    display: block;
+    max-width: fit-content;
+    margin-left: 15vw; 
+    box-shadow: none !important;
+}
+
+.timelineRow{
+    margin-top: 2rem;
+}
+
+.projectTypeCard{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    box-shadow: 10px 10px 5px rgb(160, 160, 160);
+    background-color: rgba(255, 255, 255, 0.473);
+}
+
+.projectTypeCard p{
+    text-align: center;
 }
 
 .projectTypeCard .card-title{

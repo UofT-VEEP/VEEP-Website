@@ -5,7 +5,7 @@ import {Routes, Route} from "react-router-dom";
 import HomePage from "./HomePage";
 import Projects from "./Components/ProjectsPage/Projects";
 import Events from "./Components/EventPage/Events";
-import AboutUs from "./Components/TeamPage/Team";
+import AboutUs from "./Components/AboutPage/AboutUs";
 import ContactUs from "./Pages/ContactPage";
 
 class App extends React.Component {
@@ -17,7 +17,7 @@ class App extends React.Component {
           <Route path="/home" element={<HomePage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/teams" element={<AboutUs />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </div>

@@ -14,13 +14,8 @@ import Cony from '../../imgs/teamMembers/ConyQin.JPG';
 import Felix from '../../imgs/teamMembers/FelixDeng.JPG';
 import Iris from '../../imgs/teamMembers/IrisZuo.JPG';
 
-<<<<<<< HEAD:src/Components/TeamPage/Team.js
-class Team extends React.Component {
-    constructor(props) {
-=======
 class AboutUs extends React.Component {
     constructor(props){
->>>>>>> 5d99cb7ed89e08c0e10e98e0e4c67faf7224aaa4:src/Components/AboutPage/AboutUs.js
         super(props);
         this.state = {
             currentTeam: {
@@ -58,12 +53,8 @@ class AboutUs extends React.Component {
         return (
             <div>
                 <NavBar />
-<<<<<<< HEAD:src/Components/TeamPage/Team.js
-                <TeamPage currentTeam={this.state.currentTeam} />
-=======
                 <AboutPage currentTeam={this.state.currentTeam}/>
                 <Footer />
->>>>>>> 5d99cb7ed89e08c0e10e98e0e4c67faf7224aaa4:src/Components/AboutPage/AboutUs.js
             </div>
         )
     }

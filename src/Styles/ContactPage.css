@@ -1,6 +1,7 @@
 .background{
     background-image: url(./../../public/C000BG01.svg);
-    height: 100%;
+    height: 100vh;
+    background-size: cover;
 }
 
 

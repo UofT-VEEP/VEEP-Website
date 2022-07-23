@@ -1,31 +1,31 @@
 .title_1 {
     display: block;
-    width: 200px;
-    margin-top: 50px;
-    margin-left: 250px;
+    max-width: 25%;
+    margin-top: 10%;
+    margin-left: 10%;
+    height: auto;
     position: relative;
-    height: 50px;
     background-color:purple;
     color: white;
 }
 
 .title_2{
     display: block;
-    width: 250px;
-    margin-top: 50px;
-    margin-left: 800px;
+    max-width: 35%;
+    margin-top: 5%;
+    margin-left: 55%;
+    height:auto;
     position: relative;
-    height: 50px;
     background-color:rgb(84, 109, 219);
     color: white;
 }
 .aboutInfo {
     display: block;
-    width: 800px;
-    position: relative;
-    margin-left: 250px;
-    height: 130px;
-    padding: 10px 20px 20px 10px;
+    max-width: 80%;
+    position: center;
+    margin-left: 10%;
+    height: auto;
+    padding:  20px 20px 10px;
     border: 10px solid;
     border-image: linear-gradient(45deg, purple, lightblue) 1;
     background-color: white;
@@ -33,10 +33,10 @@
 
 .purposeInfo{
     display: block;
-    width: 800px;
-    margin-left: 250px;
-    position: relative;
-    height: 100px;
+    max-width: 80%;
+    margin-left: 10%;
+    position: center;
+    height: auto;
     padding: 10px 20px 20px 10px;
     border: 10px solid;
     border-image: linear-gradient(45deg, purple, lightblue) 1;

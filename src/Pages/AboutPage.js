@@ -9,10 +9,23 @@ import '../Styles/AboutPage.css';
 
 class AboutPage extends React.Component {
     render() {
+
         //const { icon } = this.props;
         const { president, BD, Event, Marketing, Technical } = this.props.currentTeam;
         return (
             <div>
+                <div class= "title_1"><h1>About Us</h1></div>
+                <div class="aboutInfo">
+                    <p>
+                        The Volunteer Engineering Experience Program (VEEP) pairs local, community oriented organizations with student teams who have technical expertise to create a product that will improve our partner organizations’ impact on their community.
+                    </p>
+                </div>
+                <div class = "title_2"><h1>Our Purpose</h1></div>
+                <div class="purposeInfo">
+                    <p>
+                        Our purpose is twofold - facilitate impact in social contexts through public good oriented projects hosted for technically adept student
+                    </p>
+                </div>
                 <h1 className="teamTitle">2021-2022 Executives Team</h1>
                 <Container className="teamIntro">
                     <h2 className="teamTitle">President</h2>

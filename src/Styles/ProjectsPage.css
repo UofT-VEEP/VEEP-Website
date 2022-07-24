@@ -1,10 +1,11 @@
-.projectContainer h1{
-    width: 100%;
-    text-align: center;
-    color: #71518A;
-}
+
 
 .projectContainer .tab-content {
+    position:relative;
+    top:40px;
+    width:100%;
+    left: 85px;
+    border-top: 1px solid #ddd;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -12,12 +13,46 @@
     padding: 10px;
 }
 
-.projectContainer .nav-tabs {
-    margin-bottom: -1;
+
+.upcomingProjects{
+    position: absolute;
+    left:0;
+    top:150px;
+    width: 175px;
+    height:60px;
+    color: #71518A;
 }
 
-.projectContainer .nav-link{
+.currentProjects{
+    position: absolute;
+    left:0;
+    top:210px;
+    width:175px;
+    height:60px;
+
     color: #71518A;
+}
+
+
+.previousProjects{
+    position: absolute;
+    left:0;
+    top:270px;
+    width:175px;
+    height:60px;
+    color: #71518A;
+
+}
+
+
+.projectContainer .nav-link{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    color: #71518A;
+    
+
     font-weight: bold;
 }
 
@@ -28,6 +63,7 @@
     font-weight: bold;
 }
 
+
 .projectTypeTitle{
     width: 100%;
     text-align: center;
@@ -35,6 +71,7 @@
 }
 
 .projectCard{
+
     margin-top: 2rem;
 }
 
@@ -49,12 +86,15 @@
     box-shadow: 0 0 0 0.15rem #bb99b7;
 }
 
+/*drop down menu sign after clicking*/
 .projectCard .accordion-button:not(.collapsed)::after{
     background-image: url(https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-plus-user-interface-tanah-basah-glyph-tanah-basah-2.pnghttps://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-minus-user-interface-tanah-basah-glyph-tanah-basah.png);
 }
 
+/*drop down menu sign before clicking*/
 .projectCard .accordion-button::after{
     background-image: url(https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-plus-user-interface-tanah-basah-glyph-tanah-basah-2.png);
+
 }
 
 .projectCard .cardButton{

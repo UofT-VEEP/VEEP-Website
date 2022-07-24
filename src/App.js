@@ -8,6 +8,7 @@ import Events from "./Components/EventPage/Events";
 import AboutUs from "./Components/AboutPage/AboutUs";
 import ContactUs from "./Pages/ContactPage";
 
+
 class App extends React.Component {
   render() {
     return(

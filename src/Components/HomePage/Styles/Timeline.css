@@ -4,7 +4,7 @@
     margin-bottom: 0;
 }
 .TimelineStep .MuiStepLabel-iconContainer .Mui-active{
-    color: rgba(110, 14, 110, 0.8) !important;
+    color: #71518a !important;
 }
 
 .TimelineDesc{

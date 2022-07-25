@@ -4,6 +4,8 @@ import {Button, Row, Col } from 'react-bootstrap';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/HeaderScreen.css';
@@ -43,7 +45,14 @@ class HeaderScreen extends React.Component {
                 </Row>
               </Col>
               {detectMob() ?
-                null:
+                (
+                  <Row className="ProjectButtonMobContainer">
+                    <Button className="ProjectButtonMob" variant='dark' onClick={() =>(window.location.href = "/projects")}>
+                      Go to Projects
+                      <KeyboardArrowRightIcon />
+                    </Button>
+                  </Row>
+                ):
                 ( 
                   <Col sm={12} md={8}>
                     <Row className="CarouselContainer">

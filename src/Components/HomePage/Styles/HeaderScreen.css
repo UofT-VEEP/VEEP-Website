@@ -41,7 +41,21 @@
     background-position: 0% 50%;
 }
 }
-  
+
+.ProjectButtonMobContainer{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+
+}
+
+.ProjectButtonMob, .ProjectButtonMob:active, .ProjectButtonMob:focus{
+    width: fit-content;
+    height: fit-content;
+    border-color: white;
+    background-color: transparent;
+    font-weight: bold;
+}
 
 .CarouselContainer{
     display: flex;

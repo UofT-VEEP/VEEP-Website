@@ -74,7 +74,7 @@
     max-width: fit-content;
     margin-left: 15vw; 
     box-shadow: none !important;
-    background-color: rgba(110, 14, 110, 0.8) !important;
+    background-color: #71518a !important;
 }
 
 .timelineRow{
@@ -91,7 +91,7 @@
 }
 
 .timelineRowMob button{
-    color:rgba(110, 14, 110, 0.8);
+    color:#71518a;
 }
 
 .timelineButtonContainerMob{

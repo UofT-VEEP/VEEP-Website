@@ -1,12 +1,15 @@
 import React from 'react';
 import { Container, Row, Col, ToggleButton, ToggleButtonGroup, Card } from 'react-bootstrap';
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, MoveIn, Sticky } from "react-scroll-motion";
+import Link from '@mui/material/Link';
 import HorizontalNonLinearStepper from './Timeline'
 import TextMobileStepper from './TimelineMobile'
 import HeaderScreen from './HeaderScreenv2';
 import { detectMob } from '../../HomePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/MainContent.css';
+const proj1_source = require(`../../imgs/mainContentProjects/proj1.jpg`);
+
 
 class MainContent extends React.Component {
     constructor(props){
@@ -67,23 +70,15 @@ class MainContent extends React.Component {
                         <Animator animation={FadeUp}>
                             <Row>
                                 <Col>
-                                    <Card className="projectTypeCard">
-                                        <Card.Body>
-                                            <Card.Title>Photos/Video</Card.Title>
-                                            <Card.Text>
-                                                Insert photos/videos when they are available
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </Card>
-                                </Col>
-                                <Col>
-                                    <Card className="projectTypeCard">
+                                    <Card className="projectTypeCard mainContainerImageCard mainContainerCard">
+                                        <Card.Img variant="top" src={proj1_source} alt=""/>
                                         <Card.Body>
                                             <Card.Title>Our Program</Card.Title>
                                             <Card.Text>
-                                                <li> content 1</li>
-                                                <li> content 2</li>
-                                                <li> content 3</li> 
+                                                <li>6-8 month project period (Sept to Apr/May)</li>
+                                                <li>A team of 4-6 students with a project manager</li>
+                                                <li>Monthly reports to the client of the progress.</li>
+                                                <li>Showcase at mid-year and end-of-year</li> 
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
@@ -91,26 +86,28 @@ class MainContent extends React.Component {
                             </Row>
                             <Row>
                                 <Col>
-                                    <Card className="projectTypeCard">
+                                    <Card className="projectTypeCard mainContainerCard">
                                         <Card.Body>
                                             <Card.Title>On Campus</Card.Title>
                                             <Card.Text>
-                                                <li> content 1</li>
-                                                <li> content 2</li>
-                                                <li> content 3</li> 
+                                                <li>Work with campus club</li>
+                                                <li>Collabs between other student clubs</li>
+                                                <li>Contribute to the UofT community</li> 
+                                                <li><Link href="mailto:business@veep.skule.ca">Contact Us</Link> if you are interested</li>
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
                                 </Col>
                                 <Col>
-                                    <Card className="projectTypeCard">
+                                    <Card className="projectTypeCard mainContainerCard">
                                         <Card.Body>
                                             <Card.Title>Community</Card.Title>
 
                                             <Card.Text>
-                                                <li> content 1</li>
-                                                <li> content 2</li>
-                                                <li> content 3</li> 
+                                                <li>Work with Not-for-Profit(NFP) organizations or startups</li>
+                                                <li>Contribute to the local Toronto community</li>
+                                                <li>Volunteer to help our clients and give the students a chance to gain experience</li>
+                                                <li><Link href="mailto:business@veep.skule.ca">Contact Us</Link> if you are interested</li> 
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>

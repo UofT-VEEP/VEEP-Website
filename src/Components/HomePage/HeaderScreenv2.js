@@ -48,7 +48,7 @@ class HeaderScreen extends React.Component {
                 (
                   <Row className="ProjectButtonMobContainer">
                     <Button className="ProjectButtonMob" variant='dark' onClick={() =>(window.location.href = "/projects")}>
-                      Go to Projects
+                      View Projects
                       <KeyboardArrowRightIcon />
                     </Button>
                   </Row>

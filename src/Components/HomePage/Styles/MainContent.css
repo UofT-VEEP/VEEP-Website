@@ -137,6 +137,11 @@
 .mainContainerCard .card-title {
     font-weight: bold;
 }
+.mainContainerCard .card-text div{
+    display: grid;
+    justify-items: left;
+    justify-content: center;
+}
 .mainContainerCard img {
     width: 50%;
     border-top-right-radius: 0;
@@ -156,31 +161,24 @@
     }
 }
 
-.mainContainerCard a {
-    position: relative;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
+.mainContainerCarouselMob{
+    width: 90vw;
 }
-
-.mainContainerCard a:hover {
-    color: #000;
-}
-
-.mainContainerCard a::before {
-    content: "";
-    position: absolute;
-    display: block;
+.mainContainerCarouselMob img{
     width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    transform: scaleX(0);
-    transform-origin: top left;
-    transition: transform 0.3s ease;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
-
-.mainContainerCard a:hover::before {
-    transform: scaleX(1);
+.mainContainerCarouselMob .card-body{
+    height: 50vh;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 7vw;
+    margin-right: 7vw;
 }

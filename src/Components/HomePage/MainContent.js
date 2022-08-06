@@ -67,18 +67,10 @@ class MainContent extends React.Component {
                         </Animator>
                     </ScrollPage>
                     <ScrollPage page={1}>
-                    </ScrollPage>
-                    <ScrollPage page={2}>
                         <Animator animation={FadeUp}>
                             {detectMob() ?
                                 (
                                     <Carousel className="mainContainerCarouselMob" variant="dark">
-                                        <Carousel.Item>
-                                            <img
-                                                src={proj1_source} 
-                                                alt=""
-                                            />
-                                        </Carousel.Item>
                                         <Carousel.Item>
                                             <Card className="projectTypeCard mainContainerCard">
                                                 <Card.Body>
@@ -103,14 +95,14 @@ class MainContent extends React.Component {
                                                             <li>Work with campus club</li>
                                                             <li>Collabs between other student clubs</li>
                                                             <li>Contribute to the UofT community</li> 
-                                                            <Row className="ProjectButtonMobContainer">
-                                                                <Button className="ProjectButtonMob" variant='dark' onClick={() =>(window.location.href = "mailto:business@veep.skule.ca")}>
-                                                                Contact Us
-                                                                <KeyboardArrowRightIcon />
-                                                                </Button>
-                                                            </Row>
                                                         </div>
                                                     </Card.Text>
+                                                    <Row className="ProjectButtonMobContainer">
+                                                        <Button className="ProjectButtonMob" variant='dark' onClick={() =>(window.location.href = "mailto:business@veep.skule.ca")}>
+                                                        Contact Us
+                                                        <KeyboardArrowRightIcon />
+                                                        </Button>
+                                                    </Row>
                                                 </Card.Body>
                                             </Card>
                                         </Carousel.Item>
@@ -123,14 +115,14 @@ class MainContent extends React.Component {
                                                             <li>Work with Not-for-Profit(NFP) organizations or startups</li>
                                                             <li>Contribute to the local Toronto community</li>
                                                             <li>Volunteer to help our clients and give the students a chance to gain experience</li>
-                                                            <Row className="ProjectButtonMobContainer">
-                                                                <Button className="ProjectButtonMob" variant='dark' onClick={() =>(window.location.href = "mailto:business@veep.skule.ca")}>
-                                                                Contact Us
-                                                                <KeyboardArrowRightIcon />
-                                                                </Button>
-                                                            </Row>
                                                         </div>
                                                     </Card.Text>
+                                                    <Row className="ProjectButtonMobContainer">
+                                                        <Button className="ProjectButtonMob" variant='dark' onClick={() =>(window.location.href = "mailto:business@veep.skule.ca")}>
+                                                        Contact Us
+                                                        <KeyboardArrowRightIcon />
+                                                        </Button>
+                                                    </Row>
                                                 </Card.Body>
                                             </Card>
                                         </Carousel.Item>
@@ -203,9 +195,7 @@ class MainContent extends React.Component {
                             }
                         </Animator>
                     </ScrollPage>
-                    <ScrollPage page={3}>
-                    </ScrollPage>
-                    <ScrollPage  page={4}>
+                    <ScrollPage  page={2}>
                         <Animator  animation={detectMob()? FadeUpStayMob : FadeUpStay}>
                         <Card text="dark" className="timelineContainer">
                                 <Card.Body>

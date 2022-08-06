@@ -135,7 +135,10 @@
     width: 80vw;
 }
 .mainContainerCard .card-title {
+    display: flex;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
 }
 .mainContainerCard .card-text div{
     display: grid;
@@ -179,6 +182,6 @@
     display: grid;
     justify-items: center;
     justify-content: center;
-    margin-left: 7vw;
-    margin-right: 7vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }

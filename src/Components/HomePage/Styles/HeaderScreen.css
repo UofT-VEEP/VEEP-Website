@@ -53,7 +53,8 @@
 .ProjectButtonMob, .ProjectButtonMob:active, .ProjectButtonMob:focus{
     width: fit-content;
     height: fit-content;
-    border-color: white;
+    border-color: rgb(92, 91, 91);
+    color: black;
     background-color: transparent;
     font-weight: bold;
 }

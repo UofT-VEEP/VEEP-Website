@@ -169,7 +169,7 @@
 /******************** RIGHT ********************/
 =======
 .CU_left_p6 img{
-    margin-top: 6vw;
+    margin-top: 8vw;
     margin-left: 3vw;
     width: 7%;
 }
@@ -476,12 +476,16 @@
 
     .CU_phone_bottom_p2{
 <<<<<<< HEAD
+<<<<<<< HEAD
         margin-top: 1.5vh;
     }
 }
 >>>>>>> 026d78e (ContactUS update0809)
 =======
         margin-top: 1vh;
+=======
+        margin-top: 1.5vh;
+>>>>>>> 7f3f05d (ContactUS update)
     }
 }
 >>>>>>> a5191a2 (ContactUs UI UPdate02)

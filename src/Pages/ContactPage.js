@@ -68,14 +68,19 @@ class ContactPage extends React.Component {
               <div className="CU_left_p4">
                 <img src="C001EmailLight.svg" alt="Email-Logo" width="45" />
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <span>Email: president@veep.skule.ca</span>
 =======
                 <span>Email: ############@######</span>
 >>>>>>> a5191a2 (ContactUs UI UPdate02)
+=======
+                <span>Email: president@veep.skule.ca</span>
+>>>>>>> 7f3f05d (ContactUS update)
               </div>
 
               <div className="CU_left_p5">
                 <img src="C002WeChatLight.svg" alt="Wechat-Logo" width="45" />
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <span>Wechat Official Account: UofT VEEP</span>
               </div>
@@ -126,13 +131,24 @@ class ContactPage extends React.Component {
                 </div>
 =======
                 <span>Wechat ID: ############</span>
+=======
+                <span>Wechat (UofT VEEP): gh_aede419c3c5e</span>
+>>>>>>> 7f3f05d (ContactUS update)
               </div>
 
               <div className="CU_left_p6">
-                <img src="C003Facebook.svg" alt="Facebook-Logo" width="50" />
+                <a href="https://www.facebook.com/uoftveep/" target="_blank">
+                  <img src="C003Facebook.svg" alt="Facebook-Logo" width="50" />
+                </a>
                 <span />
+<<<<<<< HEAD
                 <img src="C004Instgram.svg" alt="Instgram-Logo" width="50" />
 >>>>>>> a5191a2 (ContactUs UI UPdate02)
+=======
+                <a href="https://instagram.com/uoft_veep" target="_blank">
+                  <img src="C004Instgram.svg" alt="Instgram-Logo" width="50" />
+                </a>
+>>>>>>> 7f3f05d (ContactUS update)
               </div>
             </div>
 
@@ -146,6 +162,7 @@ class ContactPage extends React.Component {
 
                 <div className="CU_phone_top_right">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <a href="https://instagram.com/uoft_veep">
                     <img src="C004InstgramLight.svg" alt="Instgram-Logo" width="50" />
                   </a>
@@ -158,6 +175,15 @@ class ContactPage extends React.Component {
                   <span />
                   <img src="C004InstgramLight.svg" alt="Instgram-Logo" width="50" />
 >>>>>>> a5191a2 (ContactUs UI UPdate02)
+=======
+                  <a href="https://www.facebook.com/uoftveep/">
+                    <img src="C003FacebookLight.svg" alt="Facebook-Logo" width="50" />
+                  </a>
+                  <span />
+                  <a href="https://instagram.com/uoft_veep">
+                    <img src="C004InstgramLight.svg" alt="Instgram-Logo" width="50" />
+                  </a>
+>>>>>>> 7f3f05d (ContactUS update)
                 </div>
               </div>
             </div>
@@ -185,19 +211,27 @@ class ContactPage extends React.Component {
             <div className="CU_phone_bottom_p1">
               <img src="C001Email.svg" alt="Email-Logo" width="45" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <span>Email: president@veep.skule.ca</span>
 =======
               <span>Email: ############@######</span>
 >>>>>>> a5191a2 (ContactUs UI UPdate02)
+=======
+              <span>Email: president@veep.skule.ca</span>
+>>>>>>> 7f3f05d (ContactUS update)
             </div>
             
             <div className="CU_phone_bottom_p2">
               <img src="C002WeChat.svg" alt="Wechat-Logo" width="45" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <span>Wechat Official Account: UofT VEEP</span>
 =======
               <span>Wechat ID: ############</span>
 >>>>>>> a5191a2 (ContactUs UI UPdate02)
+=======
+              <span>Wechat (UofT VEEP): gh_aede419c3c5e</span>
+>>>>>>> 7f3f05d (ContactUS update)
             </div>
           </div>
 

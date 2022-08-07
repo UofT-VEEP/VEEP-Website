@@ -1,13 +1,29 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
+=======
+//! External Imports
+import React from 'react';
+import { Container, Card } from 'react-bootstrap';
+
+//! Internal Item Imports
+>>>>>>> a5191a2 (ContactUs UI UPdate02)
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
 import ContactForm from '../Components/ContactPage/ContactForm';
 
+<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styles/ContactPage.css';
 
+=======
+//! Internal Style Imports
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Styles/ContactPage.css';
+
+
+>>>>>>> a5191a2 (ContactUs UI UPdate02)
 class ContactPage extends React.Component {
   constructor(props){
     super(props);
@@ -20,6 +36,7 @@ class ContactPage extends React.Component {
       <div>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <NavBar />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <Container className="contactUs">
@@ -37,6 +54,9 @@ class ContactPage extends React.Component {
 =======
         <div className="CU_background">
 >>>>>>> efd3fdc (ContactUs Update0809)
+=======
+        <div className="CU_background">
+>>>>>>> a5191a2 (ContactUs UI UPdate02)
 
           {/***************************** CONTENT *****************************/}
           <div className="CU_row">
@@ -47,11 +67,16 @@ class ContactPage extends React.Component {
               
               <div className="CU_left_p4">
                 <img src="C001EmailLight.svg" alt="Email-Logo" width="45" />
+<<<<<<< HEAD
                 <span>Email: president@veep.skule.ca</span>
+=======
+                <span>Email: ############@######</span>
+>>>>>>> a5191a2 (ContactUs UI UPdate02)
               </div>
 
               <div className="CU_left_p5">
                 <img src="C002WeChatLight.svg" alt="Wechat-Logo" width="45" />
+<<<<<<< HEAD
                 <span>Wechat Official Account: UofT VEEP</span>
               </div>
 
@@ -99,6 +124,15 @@ class ContactPage extends React.Component {
                   <p className="CU_left_p6_right_p1">Facebook</p>
                   <p className="CU_left_p6_right_p2">VEEP - Volunteer Engineering Experience Program</p>
                 </div>
+=======
+                <span>Wechat ID: ############</span>
+              </div>
+
+              <div className="CU_left_p6">
+                <img src="C003Facebook.svg" alt="Facebook-Logo" width="50" />
+                <span />
+                <img src="C004Instgram.svg" alt="Instgram-Logo" width="50" />
+>>>>>>> a5191a2 (ContactUs UI UPdate02)
               </div>
             </div>
 
@@ -111,6 +145,7 @@ class ContactPage extends React.Component {
                 </div>
 
                 <div className="CU_phone_top_right">
+<<<<<<< HEAD
                   <a href="https://instagram.com/uoft_veep">
                     <img src="C004InstgramLight.svg" alt="Instgram-Logo" width="50" />
                   </a>
@@ -118,6 +153,11 @@ class ContactPage extends React.Component {
                   <a href="https://www.facebook.com/uoftveep/">
                     <img src="C003FacebookLight.svg" alt="Facebook-Logo" width="50" />
                   </a>
+=======
+                  <img src="C003FacebookLight.svg" alt="Facebook-Logo" width="50" />
+                  <span />
+                  <img src="C004InstgramLight.svg" alt="Instgram-Logo" width="50" />
+>>>>>>> a5191a2 (ContactUs UI UPdate02)
                 </div>
               </div>
             </div>
@@ -125,34 +165,52 @@ class ContactPage extends React.Component {
             {/******************** RIGHT ********************/}
             <div className="CU_right">
               <Card className="CU_right_card">
+<<<<<<< HEAD
 >>>>>>> efd3fdc (ContactUs Update0809)
+=======
+>>>>>>> a5191a2 (ContactUs UI UPdate02)
                 <ContactForm />
               </Card>
             </div>
           </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> deb0910 (Adjusted background image)
 =======
+=======
+>>>>>>> a5191a2 (ContactUs UI UPdate02)
 
           {/*************** PHONE BOTTOM ***************/}
           <div className="CU_phone_bottom">
             <div className="CU_phone_bottom_p1">
               <img src="C001Email.svg" alt="Email-Logo" width="45" />
+<<<<<<< HEAD
               <span>Email: president@veep.skule.ca</span>
+=======
+              <span>Email: ############@######</span>
+>>>>>>> a5191a2 (ContactUs UI UPdate02)
             </div>
             
             <div className="CU_phone_bottom_p2">
               <img src="C002WeChat.svg" alt="Wechat-Logo" width="45" />
+<<<<<<< HEAD
               <span>Wechat Official Account: UofT VEEP</span>
+=======
+              <span>Wechat ID: ############</span>
+>>>>>>> a5191a2 (ContactUs UI UPdate02)
             </div>
           </div>
 
           {/***************************** FOOTER *****************************/}
           <hr className='CU_footer'/>
           <Footer />
+<<<<<<< HEAD
 >>>>>>> efd3fdc (ContactUs Update0809)
         </div>
 >>>>>>> 0893659 (Contactpage update02)
+=======
+        </div>
+>>>>>>> a5191a2 (ContactUs UI UPdate02)
       </div>
     )
   }

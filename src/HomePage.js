@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
-import HeaderScreen from './Components/HomePage/HeaderScreenv2';
 import MainContent from './Components/HomePage/MainContent';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,7 +24,6 @@ class HomePage extends React.Component {
     return (
       <div>
         <NavBar />
-        {/* <HeaderScreen />  */}
         <MainContent />
         {
           detectMob() ? null: <Footer />

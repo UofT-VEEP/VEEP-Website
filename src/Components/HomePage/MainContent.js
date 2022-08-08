@@ -5,7 +5,7 @@ import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, MoveIn, Sti
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import HorizontalNonLinearStepper from './Timeline'
 import TextMobileStepper from './TimelineMobile'
-import HeaderScreen from './HeaderScreenv2';
+import HeaderScreen from './HeaderScreen';
 import { detectMob } from '../../HomePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/MainContent.css';
@@ -65,6 +65,8 @@ class MainContent extends React.Component {
                         <Animator animation={FadeUp}>
                             <HeaderScreen /> 
                         </Animator>
+                    </ScrollPage>
+                    <ScrollPage>
                     </ScrollPage>
                     <ScrollPage page={1}>
                         <Animator animation={FadeUp}>
@@ -194,6 +196,8 @@ class MainContent extends React.Component {
                                 )
                             }
                         </Animator>
+                    </ScrollPage>
+                    <ScrollPage>
                     </ScrollPage>
                     <ScrollPage  page={2}>
                         <Animator  animation={detectMob()? FadeUpStayMob : FadeUpStay}>

@@ -126,6 +126,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .CU_left_p6{
     margin-top: 6.5vw;
     margin-left: 3vw;
@@ -170,12 +171,46 @@
 =======
 .CU_left_p6 img{
     margin-top: 8vw;
+=======
+.CU_left_p6{
+    margin-top: 6.5vw;
+>>>>>>> 8ca9aae (ContactUs Update03)
     margin-left: 3vw;
-    width: 7%;
 }
 
-.CU_left_p6 span{
-    margin-left: 10vw;
+.CU_left_p6_left{
+    float: left;
+    width: 10%;
+}
+
+.CU_left_p6_left img{
+    width: 75%;
+}
+
+.CU_left_p6_right{
+    float: left;
+    width: 90%;
+}
+
+.CU_left_p6_right p{
+    font-family: helvetica rounded;
+    font-weight: bold;
+    color: #71518A;
+}
+
+.CU_left_p6_right_p1{
+    margin-top: -0.3vw;
+    font-size: 1.5vw;
+}
+
+.CU_left_p6_right_p2{
+    margin-top: -1.6vw;
+    font-size: 1.3vw;
+}
+
+.CU_left_p7{
+    margin-top: 13vw;
+    margin-left: 3vw;
 }
 
 <<<<<<< HEAD

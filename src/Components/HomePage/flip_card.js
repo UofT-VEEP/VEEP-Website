@@ -26,7 +26,7 @@ const CardItem = ({ project }) => {
         <div className="CardBack CarouselCard" onClick={()=> setIsFlipped((prev) => !prev)}>
           <img className="FlipCardImage flippedImage" src={project.img_source} alt="" />
           <Carousel.Caption className='projectDetails'>
-            <h3>{project.projectTitle} - Project description</h3>
+            <h3>{project.projectTitle}</h3>
             {project.desc.map((item) => (
               <p>{item}</p>
             ))}

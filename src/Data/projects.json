@@ -14,8 +14,8 @@
       "projectTitle": "CRM System Development",
       "img_filename": "proj9.jpg",
       "desc": [
-        "This project encompasses the development of a GEM specific CRM system to include data from all mentees/mentors, committee & board members, partners, donors.", 
-        "Specific emphasis and importance placed on the quality and governance of the data and potentially developing a tool/GUI to easily get analytics"
+        "This project encompassed the development of a GEM specific CRM system to include data from all mentees/mentors, committee & board members, partners, donors.", 
+        "Specific emphasis was placed on the quality and governance of the data and potentially developing a tool/GUI to easily get analytics"
       ],
       "description": "This project encompasses the development of a GEM specific CRM system to include data from all mentees/mentors, committee & board members, partners, donors. Specific emphasis and importance placed on the quality and governance of the data and potentially developing a tool/GUI to easily get analytics",
       "key": "Girls eMentorship (GEM) - CRM System Development",
@@ -32,9 +32,9 @@
       "projectTitle": "Web Development",
       "img_filename": "proj8.jpg",
       "desc": [
-        "The 180 Degree Consulting Group hopes to either improve the existing website or design a new website which is consistent with their branding and is easy to navigate.", 
-        "The existing website is not up-to-date and is rarely used due to the cluttering of information.", 
-        "180 would like to improve the design of the website and include new features so that students can follow up on events and apply to be a consultant more easily."
+        "The 180 Degree Consulting Group hoped to either improve the existing website or design a new website, which would be consistent with their branding and easy to navigate.", 
+        "The existing website was not up-to-date and rarely used due to the cluttering of information.", 
+        "The group requested for improvement on the design of the website and the inclusion of new features, such that students can follow up on events and apply to be a consultant more easily."
       ],
       "description": "The 180 Degree Consulting Group hopes to either improve the existing website or design a new website which is consistent with their branding and is easy to navigate. The existing website is not up-to-date and is rarely used due to the cluttering of information. 180 would like to improve the design of the website and include new features so that students can follow up on events and apply to be a consultant more easily.",
       "key": "180 Degrees Consulting - Web Development",
@@ -48,8 +48,8 @@
       "projectTitle": "Process Improvement",
       "img_filename": "proj7.jpg",
       "desc": [
-        "Automation/Process Improvement/Tools to increase accuracy, level of detail and overall reduction of time spent on the task would have a lot of value. (think bag security check in, but for donated computers)",
-        "It would be great to track everything that comes in, and everything that leaves too."
+        "The client requested for automation, process improvement, and/or new tools to increase accuracy, level of detail and overall reduction of time spent on the tasks such as think bag security check in (but for donated computers).",
+        "Main requested functionality included the ability to track everything that comes in and everything that leaves."
       ],
       "description": "Automation/Process Improvement/Tools to increase accuracy, level of detail and overall reduction of time spent on the task would have a lot of value. (think bag security check in, but for donated computers). It would be great to track everything that comes in, and everything that leaves too.",
       "key": "reBoot Canada - Process Improvement",
@@ -77,7 +77,7 @@
       "projectTitle": "Web App Development",
       "img_filename": "proj5.jpg",
       "desc": [
-        "To support the enrichment of youth literacy, SBOC offers a website learning platform which engages children with flashcards, practice tests, and various learning games.", 
+        "To support the enrichment of youth literacy, SBOC offers a web-based learning platform which engages children with flashcards, practice tests, and various learning games.", 
         "However, the website only supports PC.", 
         "This project improved their learning platform by making it compatible across all devices"
       ],
@@ -96,8 +96,8 @@
       "projectTitle": "Mentor Based Networking Site",
       "img_filename": "proj4.jpg",
       "desc": [
-        "Currently, they are looking to improve the experience of mentors and mentees (Bigs and Littles) by supporting their pursuit for a rewarding career. BBBST hopes to do this through a networking site where Bigs, or youth who have aged out of the program, can access professionals in a mentorship capacity.",
-        "This project is incredibly multifaceted, with a strong technical aspect of developing the web application through the creation of profile pages and querying capabilities, as well as key design thinking/human factors principles involving empathy-based preliminary research and usability testing before deploying the production version."
+        "The organization looked for help to improve the experience of mentors and mentees (Bigs and Littles) by supporting their pursuit for a rewarding career. BBBST hoped to do this through a networking site where Bigs, or youth who have aged out of the program, can access professionals in a mentorship capacity.",
+        "This project was incredibly multifaceted, with a strong technical aspect of developing the web application through the creation of profile pages and querying capabilities, key design thinking/human factors principles involving empathy-based preliminary research, and usability testing before deploying the production version."
       ],
       "description": "Currently, they are looking to improve the experience of mentors and mentees (Bigs and Littles) by supporting their pursuit for a rewarding career. BBBST hopes to do this through a networking site where Bigs, or youth who have aged out of the program, can access professionals in a mentorship capacity. This project is incredibly multifaceted, with a strong technical aspect of developing the web application through the creation of profile pages and querying capabilities, as well as key design thinking/human factors principles involving empathy-based preliminary research and usability testing before deploying the production version.",
       "key": "Big Brothers Big Sisters of Toronto - Mentor Based Networking Site",
@@ -112,9 +112,9 @@
       "img_filename": "proj3.jpg",
       "desc": [
         "Since 2010, YWS has run Time4Change (T4C - formerly Tokens for Change) involving a fusion of art activism and fundraising at TTC subways stations in February, primarily led by student volunteers.",
-        "YWS is looking to partner with VEEP to revitalize their strategy for execution of the original vision; youth supporting youth.", 
-        "VEEP students will play a pivotal role in the digital transformation of a $750,000+ and 4,500+ person initiative.", 
-        "Students will translate research insights based on human factors research (particularly Human Computer Interaction) into a software deliverable which will be used in the new campaign next year."
+        "YWS looked for partnership with VEEP to revitalize their strategy for execution of the original vision: youth supporting youth.", 
+        "VEEP students played a pivotal role in the digital transformation of a $750,000+ and 4,500+ person initiative.", 
+        "Students translated research insights based on human factors research (particularly Human Computer Interaction) into a software deliverable which would be used in the new campaign for the coming year."
       ],
       "description": "Since 2010, YWS has run Time4Change (T4C - formerly Tokens for Change) involving a fusion of art activism and fundraising at TTC subways stations in February, primarily led by student volunteers. As consumer habits change and we are transforming into a cashless society, in addition to lower ridership this year, YWS is looking to partner with VEEP to revitalize their strategy for execution of the original vision; youth supporting youth. VEEP students will play a pivotal role in the digital transformation of a $750,000+ and 4,500+ person initiative. This project involves an initial research phase which will culminate in a report with insights based on human factors research (particularly Human Computer Interaction) using key ideas in user experience design and design thinking. Students will translate research insight into a software deliverable which will be used in the new campaign next year.",
       "key": "Youth Without Shelter - Outreach Revitilization",
@@ -128,9 +128,9 @@
       "projectTitle": "Database Consultation",
       "img_filename": "proj2.jpg",
       "desc": [
-        "Currently, all their information required to run their operations (programs, space-use, membership, donors, volunteers data etc) is decentralized making it difficult and time consuming to collate, analyze and report on. To address this, VEEP is proposing a project consisting of two core parts to be completed in series.", 
-        "The first, a technical consultation report summarizing the needs of the organization with regards to their data and recommendations for improvement.", 
-        "The second, working in tandem with the organization to craft an RFP and time permitting, promoting the project directly to senior leadership at the organization."
+        "Originally, all of their information required to run their operations (programs, space-use, membership, donors, volunteers data etc) was decentralized, making it difficult and time-consuming to collate, analyze and report on. To address this, VEEP proposed a project consisting of two core parts to be completed in series.", 
+        "(1) A technical consultation report summarizing the needs of the organization with regards to their data and recommendations for improvement.", 
+        "(2) Working in tandem with the organization to craft an RFP and time permitting, promoting the project directly to senior leadership at the organization."
       ],
       "description": "Currently, all their information required to run their operations (programs, space-use, membership, donors, volunteers data etc) is decentralized making it difficult and time consuming to collate, analyze and report on. To address this, VEEP is proposing a project consisting of two core parts to be completed in series. The first, a technical consultation process culminating in a report summarizing the needs of the organization with regards to their data, how their current implementation is falling short, and recommendations for improvement. The second, working in tandem with the organization to craft an RFP and time permitting, promoting the project directly to senior leadership at the organization.",
       "key": "The 519 - Database Consultation",

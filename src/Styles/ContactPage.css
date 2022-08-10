@@ -1,36 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-.contactUs h1,h2{
-    width: 100%;
-    text-align: center;
-}
-
-.contactUs h1{
-    color: #71518A;
-=======
-.background{
-    background-image: url(./../../public/C000BG01.svg);
-    height: 100vh;
-    background-size: cover;
-=======
-*{
-    box-sizing: border-box;
->>>>>>> 026d78e (ContactUS update0809)
-}
-
-/******************************* PC VIEW *******************************/
-=======
 *{
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-{/******************************* PC VIEW *******************************/}
->>>>>>> a5191a2 (ContactUs UI UPdate02)
-=======
 /******************************* PC VIEW *******************************/
->>>>>>> 4ba695b (Contact Us UI update)
 .CU_background{
     background-image: url(./../../public/C000BG01.svg);
     background-size: contain;
@@ -44,15 +16,7 @@
     display: block;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 /******************** LEFT ********************/
-=======
-{/******************** LEFT ********************/}
->>>>>>> a5191a2 (ContactUs UI UPdate02)
-=======
-/******************** LEFT ********************/
->>>>>>> 4ba695b (Contact Us UI update)
 .CU_left{
     float: left;
     width: 55%;
@@ -125,8 +89,6 @@
     }
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .CU_left_p6{
     margin-top: 6.5vw;
     margin-left: 3vw;
@@ -168,57 +130,6 @@
 }
 
 /******************** RIGHT ********************/
-=======
-.CU_left_p6 img{
-    margin-top: 8vw;
-=======
-.CU_left_p6{
-    margin-top: 6.5vw;
->>>>>>> 8ca9aae (ContactUs Update03)
-    margin-left: 3vw;
-}
-
-.CU_left_p6_left{
-    float: left;
-    width: 10%;
-}
-
-.CU_left_p6_left img{
-    width: 75%;
-}
-
-.CU_left_p6_right{
-    float: left;
-    width: 90%;
-}
-
-.CU_left_p6_right p{
-    font-family: helvetica rounded;
-    font-weight: bold;
-    color: #71518A;
-}
-
-.CU_left_p6_right_p1{
-    margin-top: -0.3vw;
-    font-size: 1.5vw;
-}
-
-.CU_left_p6_right_p2{
-    margin-top: -1.6vw;
-    font-size: 1.3vw;
-}
-
-.CU_left_p7{
-    margin-top: 13vw;
-    margin-left: 3vw;
-}
-
-<<<<<<< HEAD
-{/******************** RIGHT ********************/}
->>>>>>> a5191a2 (ContactUs UI UPdate02)
-=======
-/******************** RIGHT ********************/
->>>>>>> 4ba695b (Contact Us UI update)
 .CU_right{
     float: left;
     width: 45%;
@@ -229,46 +140,16 @@
     margin-right: 5vw;
     padding: 2vw;
     background-color: #ffffff;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    border-color: transparent;
-    box-shadow: 1vh 1vh 2vh #000000;
-    border-style: solid;
-    border-width: 0.5vh;
-    border-radius: 3vh;
->>>>>>> 004f5c2 (Contact Page New update)
-=======
     box-shadow: 0.5vw 0.5vw 1vw #000000;
     border-radius: 2.5vw;
->>>>>>> 026d78e (ContactUS update0809)
-=======
-    box-shadow: 0.5vw 0.5vw 1vw #000000;
-    border-radius: 2.5vw;
->>>>>>> a5191a2 (ContactUs UI UPdate02)
 }
 
 .contactForm .textInput{
     display: block;
     box-sizing: border-box;
     width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    border-radius: 8px;
-    border: 3px solid rgba(0, 0, 0, 0.048);
-    padding: 15px;
-    font-size: 16px;
-    background: #F3F6FA;
-    margin-top: 2vw;
-=======
-=======
     margin-top: 1.7vw;
     border: 0.2vw solid rgba(224, 184, 255, 0.5);
->>>>>>> 026d78e (ContactUS update0809)
-=======
-    margin-top: 1.7vw;
-    border: 0.2vw solid rgba(224, 184, 255, 0.5);
->>>>>>> a5191a2 (ContactUs UI UPdate02)
     border-radius: 2vh;
     padding: 0.9vw;
     font-size: 1vw;
@@ -287,51 +168,19 @@
     font-size: 1vw;
     font-family: Arial;
     font-weight: bold;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 004f5c2 (Contact Page New update)
-=======
     background: rgba(224, 184, 255, 0.1);
->>>>>>> 026d78e (ContactUS update0809)
-=======
-    background: rgba(224, 184, 255, 0.1);
->>>>>>> a5191a2 (ContactUs UI UPdate02)
 }
 
 .contactForm select{
     box-sizing: border-box;
     width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    border-radius: 8px;
-    border: 3px solid rgba(0, 0, 0, 0.048);
-    padding: 15px;
-    font-size: 16px;
-    background: #F3F6FA;
-    margin-top: 2vw;
-=======
-=======
     margin-top: 1.7vw;
     border: 0.2vw solid rgba(224, 184, 255, 0.5);
->>>>>>> 026d78e (ContactUS update0809)
-=======
-    margin-top: 1.7vw;
-    border: 0.2vw solid rgba(224, 184, 255, 0.5);
->>>>>>> a5191a2 (ContactUs UI UPdate02)
     border-radius: 2vh;
     padding: 0.9vw;
     font-size: 1.2vw;
     color: #71518A;
     background: rgba(224, 184, 255, 0.1);
-<<<<<<< HEAD
-<<<<<<< HEAD
-    margin-top: 3vh;
->>>>>>> 004f5c2 (Contact Page New update)
-=======
->>>>>>> 026d78e (ContactUS update0809)
-=======
->>>>>>> a5191a2 (ContactUs UI UPdate02)
 }
 
 .contactForm #questionField{
@@ -345,32 +194,12 @@
     margin-top: 1.7vw;
     border: 0.2vw solid rgba(0, 0, 0, 0.048);
     border-radius: 2vh;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    border: 0.4vh solid rgba(0, 0, 0, 0.048);
-    padding: 2vh;
-    font-size: 2.2vh;
-    background: #71518A;
-    color: #F3F6FA;
-    font-weight: bold;
-<<<<<<< HEAD
-    margin-top: 2vw;
-}
-=======
-    margin-top: 3vh;
-=======
-=======
->>>>>>> a5191a2 (ContactUs UI UPdate02)
     padding: 0.9vw;
     font-size: 1.3vw;
     color: #ffffff;
     font-family: Arial;
     font-weight: bold;
     background: #71518A;
-<<<<<<< HEAD
->>>>>>> 026d78e (ContactUS update0809)
-=======
->>>>>>> a5191a2 (ContactUs UI UPdate02)
 }
 
 .CU_footer{
@@ -380,26 +209,11 @@
     border: 0.05vw solid #2b004c;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 /******************************* PHONE VIEW *******************************/
-=======
-{/******************************* PHONE VIEW *******************************/}
->>>>>>> a5191a2 (ContactUs UI UPdate02)
-=======
-/******************************* PHONE VIEW *******************************/
->>>>>>> 4ba695b (Contact Us UI update)
 @media only screen and (min-width: 600px){
     .CU_phone_top{
         display: none;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-  }
->>>>>>> 004f5c2 (Contact Page New update)
-=======
-=======
->>>>>>> a5191a2 (ContactUs UI UPdate02)
 
     .CU_phone_bottom{
         display: none;
@@ -510,17 +324,6 @@
     }
 
     .CU_phone_bottom_p2{
-<<<<<<< HEAD
-<<<<<<< HEAD
         margin-top: 1.5vh;
     }
 }
->>>>>>> 026d78e (ContactUS update0809)
-=======
-        margin-top: 1vh;
-=======
-        margin-top: 1.5vh;
->>>>>>> 7f3f05d (ContactUS update)
-    }
-}
->>>>>>> a5191a2 (ContactUs UI UPdate02)

@@ -1,8 +1,4 @@
 .NavBar{
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9b1a935 (ContactUs Update0809)
     height: 8vh;
     width: 100%;
     background-color: rgba(0, 0, 9, 0.892);
@@ -10,15 +6,6 @@
 
 .navbar-collapse{
     flex-grow: unset;
-<<<<<<< HEAD
-=======
-    background-color: #ffffff;
-    height: 20%;
-    width: 101.1%;
-    padding-right: 6vw;
->>>>>>> 004f5c2 (Contact Page New update)
-=======
->>>>>>> 9b1a935 (ContactUs Update0809)
 }
 
 .NavBar img{

@@ -139,10 +139,12 @@ class Events extends React.Component {
                 }
             ]
         }
-        
     }
 
+
     render() {
+        const self = this; // To access this in function
+
         const switchToUpcoming = () => {
             this.setState({
                 eventType: 'upcoming'
@@ -163,75 +165,188 @@ class Events extends React.Component {
                 eventType: 'past_2020'
             })
         }
+        
+
+        function SideBar(props) {
+
+            return (
+                <div className="sidebar">
+                    { props.children }
+                </div>
+            );
+        }
+
+        function DesktopPage() {
+        
+            return (
+                <div>
+                    <NavBar />
+                    <div>
+                        <Col className="sideBarCol">
+                            <SideBar>
+                                <Accordion defaultActiveKey={['0']} alwaysOpen>
+                                    <Accordion.Item eventKey="0" className="sidebar-accordion" onClick={switchToUpcoming}>
+                                        <Accordion.Header>
+                                            Upcoming Events
+                                        </Accordion.Header>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="1" className="sidebar-accordion">
+                                        <Accordion.Header>
+                                            Past Events
+                                        </Accordion.Header>
+                                        <Accordion.Body className="accordion-dropdown">
+                                            <div className="dropdown-container">
+                                                <div className="dropdown-item" onClick={switchToPast_2022}> 2022 - 2023 </div>
+                                                <div className="dropdown-item" onClick={switchToPast_2021}> 2021 - 2022 </div>
+                                                <div className="dropdown-item" onClick={switchToPast_2020}> 2020 - 2021 </div>
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </Accordion>
+                            </SideBar>
+                            
+                        </Col>
+                        <Col className="contentCol">
+                            { self.state.eventType==='upcoming' && (
+                                <div>
+                                    <h1> Upcoming Events </h1>
+                                    <EventPage eventsToDisplay={self.state.upcomingEvents}/>
+                                </div>
+                            )}
+                            { self.state.eventType==='past_2022' && (
+                                <div>
+                                    <h1> Past Events 2022 - 2023 </h1>
+                                    <EventPage eventsToDisplay={self.state.pastEvents_2022}/>
+                                </div>
+                            )}
+                            { self.state.eventType==='past_2021' && (
+                                <div>
+                                    <h1> Past Events 2021 - 2022 </h1>
+                                    <EventPage eventsToDisplay={self.state.pastEvents_2021}/>
+                                </div>
+                            )}
+                            { self.state.eventType==='past_2020' && (
+                                <div>
+                                    <h1> Past Events 2020 - 2021 </h1>
+                                    <EventPage eventsToDisplay={self.state.pastEvents_2020}/>
+                                </div>
+                            )}
+                            <Footer />
+                        </Col>
+                    </div>
+                </div>
+            );
+        }
+
+        function MobileDropdown() {
+
+            return (
+                <div>
+                    <Accordion defaultActiveKey={['0']} className="mobileDropdown">
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header>
+                                All Events
+                            </Accordion.Header>
+                            <Accordion.Body>
+                                <div>
+                                    <Accordion defaultActiveKey={['0']}>
+                                        <Accordion.Item eventKey="0" onClick={switchToUpcoming}>
+                                            <Accordion.Header>
+                                                Upcoming Events
+                                            </Accordion.Header>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="1">
+                                            <Accordion.Header>
+                                                Past Events
+                                            </Accordion.Header>
+                                            <Accordion.Body className="accordion-dropdown">
+                                                <div className="dropdown-container">
+                                                    <div className="dropdown-item" onClick={switchToPast_2022}> 2022 - 2023 </div>
+                                                    <div className="dropdown-item" onClick={switchToPast_2021}> 2021 - 2022 </div>
+                                                    <div className="dropdown-item" onClick={switchToPast_2020}> 2020 - 2021 </div>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                 </Accordion>
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+                </div>
+            );
+            
+        }
+
+        function MobilePage() {
+
+            return (
+                <div>
+                    <NavBar />
+                    <div>
+                        <MobileDropdown />
+                        <div className="mobileContent">
+                            { self.state.eventType==='upcoming' && (
+                                <div>
+                                    <h1> Upcoming Events </h1>
+                                    <EventPage eventsToDisplay={self.state.upcomingEvents}/>
+                                </div>
+                            )}
+                            { self.state.eventType==='past_2022' && (
+                                <div>
+                                    <h1> Past Events 2022 - 2023 </h1>
+                                    <EventPage eventsToDisplay={self.state.pastEvents_2022}/>
+                                </div>
+                            )}
+                            { self.state.eventType==='past_2021' && (
+                                <div>
+                                    <h1> Past Events 2021 - 2022 </h1>
+                                    <EventPage eventsToDisplay={self.state.pastEvents_2021}/>
+                                </div>
+                            )}
+                            { self.state.eventType==='past_2020' && (
+                                <div>
+                                    <h1> Past Events 2020 - 2021 </h1>
+                                    <EventPage eventsToDisplay={self.state.pastEvents_2020}/>
+                                </div>
+                            )}
+                        </div>
+                        
+                        <Footer />
+                    </div>
+                </div>
+            );
+        }
+
+        function MyComponent() {
+            const [width, setWidth] = React.useState(window.innerWidth);
+            const breakpoint = 500;
+        
+            React.useEffect(() => {
+
+                window.addEventListener("resize", () => setWidth(window.innerWidth));
+            
+              }, []);
+        
+              if (width > breakpoint) {
+                    return (
+                        <DesktopPage />
+                    );
+              }
+              else {
+                return (
+                    <MobilePage />
+                );
+              }
+        }
 
         return(
+
             <div>
-                <NavBar />
-                <div>
-                    <Col className="sideBarCol">
-                        <SideBar>
-                            <Accordion defaultActiveKey={['0']} alwaysOpen>
-                                <Accordion.Item eventKey="0" className="sidebar-accordion" onClick={switchToUpcoming}>
-                                    <Accordion.Header>
-                                        Upcoming Events
-                                    </Accordion.Header>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="1" className="sidebar-accordion">
-                                    <Accordion.Header>
-                                        Past Events
-                                    </Accordion.Header>
-                                    <Accordion.Body className="accordion-dropdown">
-                                        <div className="dropdown-container">
-                                            <div className="dropdown-item" onClick={switchToPast_2022}> 2022 - 2023 </div>
-                                            <div className="dropdown-item" onClick={switchToPast_2021}> 2021 - 2022 </div>
-                                            <div className="dropdown-item" onClick={switchToPast_2020}> 2020 - 2021 </div>
-                                        </div>
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                            </Accordion>
-                        </SideBar>
-                        
-                    </Col>
-                    <Col className="contentCol">
-                        { this.state.eventType==='upcoming' && (
-                            <div>
-                                <h1> Upcoming Events </h1>
-                                <EventPage eventsToDisplay={this.state.upcomingEvents}/>
-                            </div>
-                        )}
-                        { this.state.eventType==='past_2022' && (
-                            <div>
-                                <h1> Past Events 2022 - 2023 </h1>
-                                <EventPage eventsToDisplay={this.state.pastEvents_2022}/>
-                            </div>
-                        )}
-                        { this.state.eventType==='past_2021' && (
-                            <div>
-                                <h1> Past Events 2021 - 2022 </h1>
-                                <EventPage eventsToDisplay={this.state.pastEvents_2021}/>
-                            </div>
-                        )}
-                        { this.state.eventType==='past_2020' && (
-                            <div>
-                                <h1> Past Events 2020 - 2021 </h1>
-                                <EventPage eventsToDisplay={this.state.pastEvents_2020}/>
-                            </div>
-                        )}
-                        <Footer />
-                    </Col>
-                </div>
+                <MyComponent />
             </div>
         )
     }
 }
 
-function SideBar(props) {
-
-    return (
-        <div className="sidebar">
-            { props.children }
-        </div>
-    );
-}
 
 export default Events;

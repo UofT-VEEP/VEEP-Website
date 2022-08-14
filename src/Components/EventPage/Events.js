@@ -145,6 +145,7 @@ class Events extends React.Component {
     render() {
         const self = this; // To access this in function
 
+        // Functions to switch between different event types on button click
         const switchToUpcoming = () => {
             this.setState({
                 eventType: 'upcoming'
@@ -165,8 +166,41 @@ class Events extends React.Component {
                 eventType: 'past_2020'
             })
         }
-        
 
+        function EventContent() {
+
+            return (
+                <div>
+                    { self.state.eventType==='upcoming' && (
+                        <div>
+                            <h1> Upcoming Events </h1>
+                            <EventPage eventsToDisplay={self.state.upcomingEvents}/>
+                        </div>
+                    )}
+                    { self.state.eventType==='past_2022' && (
+                        <div>
+                            <h1> Past Events 2022 - 2023 </h1>
+                            <EventPage eventsToDisplay={self.state.pastEvents_2022}/>
+                        </div>
+                    )}
+                    { self.state.eventType==='past_2021' && (
+                        <div>
+                            <h1> Past Events 2021 - 2022 </h1>
+                            <EventPage eventsToDisplay={self.state.pastEvents_2021}/>
+                        </div>
+                    )}
+                    { self.state.eventType==='past_2020' && (
+                        <div>
+                            <h1> Past Events 2020 - 2021 </h1>
+                            <EventPage eventsToDisplay={self.state.pastEvents_2020}/>
+                        </div>
+                    )}
+                    <Footer />
+                </div>
+            );
+        }
+        
+        // Sidebar in desktop view
         function SideBar(props) {
 
             return (
@@ -184,7 +218,7 @@ class Events extends React.Component {
                     <div>
                         <Col className="sideBarCol">
                             <SideBar>
-                                <Accordion defaultActiveKey={['0']} alwaysOpen>
+                                <Accordion defaultActiveKey={['0']}>
                                     <Accordion.Item eventKey="0" className="sidebar-accordion" onClick={switchToUpcoming}>
                                         <Accordion.Header>
                                             Upcoming Events
@@ -207,31 +241,7 @@ class Events extends React.Component {
                             
                         </Col>
                         <Col className="contentCol">
-                            { self.state.eventType==='upcoming' && (
-                                <div>
-                                    <h1> Upcoming Events </h1>
-                                    <EventPage eventsToDisplay={self.state.upcomingEvents}/>
-                                </div>
-                            )}
-                            { self.state.eventType==='past_2022' && (
-                                <div>
-                                    <h1> Past Events 2022 - 2023 </h1>
-                                    <EventPage eventsToDisplay={self.state.pastEvents_2022}/>
-                                </div>
-                            )}
-                            { self.state.eventType==='past_2021' && (
-                                <div>
-                                    <h1> Past Events 2021 - 2022 </h1>
-                                    <EventPage eventsToDisplay={self.state.pastEvents_2021}/>
-                                </div>
-                            )}
-                            { self.state.eventType==='past_2020' && (
-                                <div>
-                                    <h1> Past Events 2020 - 2021 </h1>
-                                    <EventPage eventsToDisplay={self.state.pastEvents_2020}/>
-                                </div>
-                            )}
-                            <Footer />
+                            <EventContent />
                         </Col>
                     </div>
                 </div>
@@ -242,14 +252,14 @@ class Events extends React.Component {
 
             return (
                 <div>
-                    <Accordion defaultActiveKey={['0']} className="mobileDropdown">
+                    <Accordion className="mobileDropdown">
                         <Accordion.Item eventKey="0">
                             <Accordion.Header>
                                 All Events
                             </Accordion.Header>
                             <Accordion.Body>
                                 <div>
-                                    <Accordion defaultActiveKey={['0']}>
+                                    <Accordion>
                                         <Accordion.Item eventKey="0" onClick={switchToUpcoming}>
                                             <Accordion.Header>
                                                 Upcoming Events
@@ -267,7 +277,7 @@ class Events extends React.Component {
                                                 </div>
                                             </Accordion.Body>
                                         </Accordion.Item>
-                                 </Accordion>
+                                    </Accordion>
                                 </div>
                             </Accordion.Body>
                         </Accordion.Item>
@@ -285,41 +295,17 @@ class Events extends React.Component {
                     <div>
                         <MobileDropdown />
                         <div className="mobileContent">
-                            { self.state.eventType==='upcoming' && (
-                                <div>
-                                    <h1> Upcoming Events </h1>
-                                    <EventPage eventsToDisplay={self.state.upcomingEvents}/>
-                                </div>
-                            )}
-                            { self.state.eventType==='past_2022' && (
-                                <div>
-                                    <h1> Past Events 2022 - 2023 </h1>
-                                    <EventPage eventsToDisplay={self.state.pastEvents_2022}/>
-                                </div>
-                            )}
-                            { self.state.eventType==='past_2021' && (
-                                <div>
-                                    <h1> Past Events 2021 - 2022 </h1>
-                                    <EventPage eventsToDisplay={self.state.pastEvents_2021}/>
-                                </div>
-                            )}
-                            { self.state.eventType==='past_2020' && (
-                                <div>
-                                    <h1> Past Events 2020 - 2021 </h1>
-                                    <EventPage eventsToDisplay={self.state.pastEvents_2020}/>
-                                </div>
-                            )}
+                            <EventContent />
                         </div>
                         
-                        <Footer />
                     </div>
                 </div>
             );
         }
 
-        function MyComponent() {
+        function AdaptiveEventPage() {
             const [width, setWidth] = React.useState(window.innerWidth);
-            const breakpoint = 500;
+            const switchPointWidth = 700;
         
             React.useEffect(() => {
 
@@ -327,7 +313,7 @@ class Events extends React.Component {
             
               }, []);
         
-              if (width > breakpoint) {
+              if (width > switchPointWidth) {
                     return (
                         <DesktopPage />
                     );
@@ -342,7 +328,7 @@ class Events extends React.Component {
         return(
 
             <div>
-                <MyComponent />
+                <AdaptiveEventPage />
             </div>
         )
     }

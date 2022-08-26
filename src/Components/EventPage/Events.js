@@ -37,12 +37,12 @@ class Events extends React.Component {
                     onlineEvent: true,
                     eventDescription:
                         "This event",
-                    key:"resume",
+                    key:"resume4",
                     eventGuest:[
                         {name: "Loewe Ke", bio: "Founder of", photo: "guest-photo-1.jpeg"},
                         {name :"Catherine", bio: "President of VEEP", photo: "guest-photo-2.jpeg"}
                     ],
-                    eventDone: true,
+                    eventDone: false,
                     eventReplay: "link here",
                     registrationRequired: true,
                     registrationLink: "link"
@@ -54,7 +54,7 @@ class Events extends React.Component {
                     eventLocation: "SF",
                     eventDescription:
                         "This event is a recruitment event",
-                    key:"recruitment",
+                    key:"recruitment1",
                     eventGuest:[
                         {name: "Catherine", bio: "President of VEEP", photo: "guest-photo-2.jpeg"},
                     ],
@@ -78,14 +78,14 @@ class Events extends React.Component {
                     registrationLink: "link"
                 }
             ],
-            pastEvents: [
+            pastEvents_2022: [
                 {
                     eventName: "Elevator Pitch",
                     eventTime: "2022.May",
                     onlineEvent: true,
                     eventDescription:
                         "This workshop is designed for an elevator pitch, which is a short, well-crafted pitch that often accompanies the introduction and provides key information about who you are and why a potential employer would want to hire you.",
-                    key:"resume",
+                    key:"resume2",
                     eventGuest:[
                         {name: "Tan Lin", bio: "", photo: "guest-photo-1.jpeg"},
                         {name :"Saron Nigusie", bio: "", photo: "guest-photo-1.jpeg"}
@@ -94,10 +94,12 @@ class Events extends React.Component {
                     eventReplay: "https://drive.google.com/file/d/1H28wMr3f951ErPYTtekdaKKft3NgUH8u/view?usp=sharing",
                     registrationRequired: true,
                     registrationLink: "https://docs.google.com/forms/d/17Z1iJ0rO8GcNpGqVuFPlEiQd9SAfsurjE3-WXcY60aU/edit"
-                },
+                }
+            ],
+            pastEvents_2021: [
                 {
                     eventName: "Mock Interview",
-                    eventTime: "2022.Feb",
+                    eventTime: "2021.Feb",
                     onlineEvent: true,
                     eventDescription:
                         "This workshop is aiming to improve applicants' interview skills by having mock interviews with our guest interviewers who have rich experience",
@@ -114,14 +116,16 @@ class Events extends React.Component {
                     eventReplay: "None",
                     registrationRequired: true,
                     registrationLink: "link"
-                },
+                }
+            ],
+            pastEvents_2020: [
                 {
                     eventName: "Resume & Interview Workshop",
-                    eventTime: "2022.Jan",
+                    eventTime: "2020.Jan",
                     onlineEvent: true,
                     eventDescription:
                         "Invite alumni or students who had worked in a popular company to our online seminar, and share experience with our audience about how to write resume, cover letter or do interview targeted to these specified companies.",
-                    key:"resume",
+                    key:"resume1",
                     eventGuest:[
                         {name: "Wilison Deng", bio: "Founder of", photo: "guest-photo-1.jpeg"},
                         {name :"Yiran Liang", bio: "MARS Indy2T2 +PEY", photo: "guest-photo-1.jpeg"},
@@ -135,94 +139,200 @@ class Events extends React.Component {
                 }
             ]
         }
-        
     }
 
+
     render() {
+        const self = this; // To access this in function
+
+        // Functions to switch between different event types on button click
         const switchToUpcoming = () => {
             this.setState({
                 eventType: 'upcoming'
             })
         }
-        const switchToPast = () => {
+        const switchToPast_2022 = () => {
             this.setState({
-                eventType: 'past'
+                eventType: 'past_2022'
+            })
+        }
+        const switchToPast_2021 = () => {
+            this.setState({
+                eventType: 'past_2021'
+            })
+        }
+        const switchToPast_2020 = () => {
+            this.setState({
+                eventType: 'past_2020'
             })
         }
 
-        return(
-            <div>
-                <NavBar />
+        function EventContent() {
+
+            return (
                 <div>
-                    <Col className="sideBarCol">
-                        <SideBar>
-                            <Accordion defaultActiveKey={['0']} alwaysOpen>
-                                <Accordion.Item eventKey="0" className="sidebar-accordion" onClick={switchToUpcoming}>
-                                    <Accordion.Header>
-                                        Upcoming Events
-                                    </Accordion.Header>
-                                </Accordion.Item>
-                                <Accordion.Item eventKey="1" className="sidebar-accordion" onClick={switchToPast}>
-                                    <Accordion.Header>
-                                        Past Events
-                                    </Accordion.Header>
-                                    <Accordion.Body className="accordion-dropdown">
-                                        <PastEventsDropdown/>
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                            </Accordion>
-                        </SideBar>
-                        
-                    </Col>
-                    <Col className="contentCol">
-                        { this.state.eventType==='upcoming' && (
-                            <div>
-                                <h1> Upcoming Events </h1>
-                                <EventPage eventsToDisplay={this.state.upcomingEvents}/>
-                            </div>
-                        )}
-                        { this.state.eventType==='past' && (
-                            <div>
-                                <h1> Past Events </h1>
-                                <EventPage eventsToDisplay={this.state.pastEvents}/>
-                            </div>
-                        )}
-                    </Col>
+                    { self.state.eventType==='upcoming' && (
+                        <div>
+                            <h1> Upcoming Events </h1>
+                            <EventPage eventsToDisplay={self.state.upcomingEvents}/>
+                        </div>
+                    )}
+                    { self.state.eventType==='past_2022' && (
+                        <div>
+                            <h1> Past Events 2022 - 2023 </h1>
+                            <EventPage eventsToDisplay={self.state.pastEvents_2022}/>
+                        </div>
+                    )}
+                    { self.state.eventType==='past_2021' && (
+                        <div>
+                            <h1> Past Events 2021 - 2022 </h1>
+                            <EventPage eventsToDisplay={self.state.pastEvents_2021}/>
+                        </div>
+                    )}
+                    { self.state.eventType==='past_2020' && (
+                        <div>
+                            <h1> Past Events 2020 - 2021 </h1>
+                            <EventPage eventsToDisplay={self.state.pastEvents_2020}/>
+                        </div>
+                    )}
+                    <Footer />
                 </div>
-                <Footer />
+            );
+        }
+        
+        // Sidebar in desktop view
+        function SideBar(props) {
+
+            return (
+                <div className="sidebar">
+                    { props.children }
+                </div>
+            );
+        }
+
+        function DesktopPage() {
+        
+            return (
+                <div>
+                    <NavBar />
+                    <div>
+                        <Col className="sideBarCol">
+                            <SideBar>
+                                <Accordion defaultActiveKey={['0']}>
+                                    <Accordion.Item eventKey="0" className="sidebar-accordion" onClick={switchToUpcoming}>
+                                        <Accordion.Header>
+                                            Upcoming Events
+                                        </Accordion.Header>
+                                    </Accordion.Item>
+                                    <Accordion.Item eventKey="1" className="sidebar-accordion">
+                                        <Accordion.Header>
+                                            Past Events
+                                        </Accordion.Header>
+                                        <Accordion.Body className="accordion-dropdown">
+                                            <div className="dropdown-container">
+                                                <div className="dropdown-item" onClick={switchToPast_2022}> 2022 - 2023 </div>
+                                                <div className="dropdown-item" onClick={switchToPast_2021}> 2021 - 2022 </div>
+                                                <div className="dropdown-item" onClick={switchToPast_2020}> 2020 - 2021 </div>
+                                            </div>
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                </Accordion>
+                            </SideBar>
+                            
+                        </Col>
+                        <Col className="contentCol">
+                            <EventContent />
+                        </Col>
+                    </div>
+                </div>
+            );
+        }
+
+        function MobileDropdown() {
+
+            return (
+                <div>
+                    <Accordion className="mobileDropdown">
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header>
+                                All Events
+                            </Accordion.Header>
+                            <Accordion.Body>
+                                <div>
+                                    <Accordion>
+                                        <Accordion.Item eventKey="0" onClick={switchToUpcoming}>
+                                            <Accordion.Header>
+                                                Upcoming Events
+                                            </Accordion.Header>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="1">
+                                            <Accordion.Header>
+                                                Past Events
+                                            </Accordion.Header>
+                                            <Accordion.Body className="accordion-dropdown">
+                                                <div className="dropdown-container">
+                                                    <div className="dropdown-item" onClick={switchToPast_2022}> 2022 - 2023 </div>
+                                                    <div className="dropdown-item" onClick={switchToPast_2021}> 2021 - 2022 </div>
+                                                    <div className="dropdown-item" onClick={switchToPast_2020}> 2020 - 2021 </div>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                    </Accordion>
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+                </div>
+            );
+            
+        }
+
+        function MobilePage() {
+
+            return (
+                <div>
+                    <NavBar />
+                    <div>
+                        <MobileDropdown />
+                        <div className="mobileContent">
+                            <EventContent />
+                        </div>
+                        
+                    </div>
+                </div>
+            );
+        }
+
+        function AdaptiveEventPage() {
+            const [width, setWidth] = React.useState(window.innerWidth);
+            const switchPointWidth = 700;
+        
+            React.useEffect(() => {
+
+                window.addEventListener("resize", () => setWidth(window.innerWidth));
+            
+              }, []);
+        
+              if (width > switchPointWidth) {
+                    return (
+                        <DesktopPage />
+                    );
+              }
+              else {
+                return (
+                    <MobilePage />
+                );
+              }
+        }
+
+        return(
+
+            <div>
+                <AdaptiveEventPage />
             </div>
         )
     }
-} 
-
-function PastEventsDropdown() {
-
-    function DropdownItem(props) {
-        return (
-            <div className="dropdown-item">
-                {props.children}
-            </div>
-        );
-    }
-
-    return (
-        <div className="dropdown-container">
-            <DropdownItem> 2021 - 2022 </DropdownItem>
-            <DropdownItem> 2020 - 2021 </DropdownItem>
-            <DropdownItem> 2019 - 2020 </DropdownItem>
-            <DropdownItem> 2018 - 2019 </DropdownItem>
-        </div>
-    );
 }
 
-
-function SideBar(props) {
-
-    return (
-        <div className="sidebar">
-            { props.children }
-        </div>
-    );
-}
 
 export default Events;

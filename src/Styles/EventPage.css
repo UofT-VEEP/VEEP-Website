@@ -84,3 +84,13 @@
 .eventCard .registration-link{
     margin-top: 1rem;
 }
+
+.mobileDropdown{
+    margin-bottom: 10mm;
+}
+
+.mobileContent{
+    width: 100%;
+    text-align: center;
+    color: #71518A;
+}

@@ -1,49 +1,329 @@
-.contactUs h1,h2{
-    width: 100%;
-    text-align: center;
+*{
+    box-sizing: border-box;
 }
 
-.contactUs h1{
+/******************************* PC VIEW *******************************/
+.CU_background{
+    background-image: url(./../../public/C000BG01.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+.CU_row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/******************** LEFT ********************/
+.CU_left{
+    float: left;
+    width: 55%;
+    padding-left: 5vw;
+    padding-top: 3vw;
+    padding-right: 0vw;
+}
+
+.CU_left_p1{
+    font-family: helvetica rounded;
+    font-size: 4.3vw;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.CU_left_p2{
+    margin-top: -1.5vw;
+    font-family: helvetica rounded;
+    font-size: 3.4vw;
+    color: #e6c8fe;
+}
+
+.CU_left_p3{
+    margin-left: 1vw;
+    font-family: helvetica rounded;
+    font-size: 5.5vw;
+    font-weight: bold;
+    color: #e6c8fe;
+}
+
+.CU_left_p4{
+    margin-top: 3.4vw;
+    margin-left: 1vw;
+}
+
+.CU_left_p4 img{
+    width: 6%;
+}
+
+.CU_left_p4 span{
+    margin-left: 2vw;
+    font-family: helvetica rounded;
+    font-size: 1.5vw;
+    color: #e6c8fe;
+}
+
+.CU_left_p5{
+    margin-top: 2.4vw;
+    margin-left: 1vw;
+}
+
+.CU_left_p5 img{
+    width: 6%;
+}
+
+.CU_left_p5 span{
+    margin-left: 2vw;
+    font-family: helvetica rounded;
+    font-size: 1.5vw;
+    color: #e6c8fe;
+}
+
+@media only screen and (max-width: 800px){
+    .CU_left_p4{
+        margin-top: 2vw;
+    }
+
+    .CU_left_p5{
+        margin-top: 1.4vw;
+    }
+}
+
+.CU_left_p6{
+    margin-top: 6.5vw;
+    margin-left: 3vw;
+}
+
+.CU_left_p6_left{
+    float: left;
+    width: 10%;
+}
+
+.CU_left_p6_left img{
+    width: 75%;
+}
+
+.CU_left_p6_right{
+    float: left;
+    width: 90%;
+}
+
+.CU_left_p6_right p{
+    font-family: helvetica rounded;
+    font-weight: bold;
     color: #71518A;
+}
+
+.CU_left_p6_right_p1{
+    margin-top: -0.3vw;
+    font-size: 1.5vw;
+}
+
+.CU_left_p6_right_p2{
+    margin-top: -1.6vw;
+    font-size: 1.3vw;
+}
+
+.CU_left_p7{
+    margin-top: 13vw;
+    margin-left: 3vw;
+}
+
+/******************** RIGHT ********************/
+.CU_right{
+    float: left;
+    width: 45%;
+}
+
+.CU_right_card{
+    margin-top: 2.2vw;
+    margin-right: 5vw;
+    padding: 2vw;
+    background-color: #ffffff;
+    box-shadow: 0.5vw 0.5vw 1vw #000000;
+    border-radius: 2.5vw;
 }
 
 .contactForm .textInput{
     display: block;
     box-sizing: border-box;
     width: 100%;
-    border-radius: 8px;
-    border: 3px solid rgba(0, 0, 0, 0.048);
-    padding: 15px;
-    font-size: 16px;
-    background: #F3F6FA;
-    margin-top: 2vw;
+    margin-top: 1.7vw;
+    border: 0.2vw solid rgba(224, 184, 255, 0.5);
+    border-radius: 2vh;
+    padding: 0.9vw;
+    font-size: 1vw;
+    font-family: Arial;
+    font-weight: bold;
+    background: rgba(224, 184, 255, 0.1);
+}
+
+.contactForm #Name{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border: 0.2vw solid rgba(224, 184, 255, 0.5);
+    border-radius: 2vh;
+    padding: 0.9vw;
+    font-size: 1vw;
+    font-family: Arial;
+    font-weight: bold;
+    background: rgba(224, 184, 255, 0.1);
 }
 
 .contactForm select{
     box-sizing: border-box;
     width: 100%;
-    border-radius: 8px;
-    border: 3px solid rgba(0, 0, 0, 0.048);
-    padding: 15px;
-    font-size: 16px;
-    background: #F3F6FA;
-    margin-top: 2vw;
+    margin-top: 1.7vw;
+    border: 0.2vw solid rgba(224, 184, 255, 0.5);
+    border-radius: 2vh;
+    padding: 0.9vw;
+    font-size: 1.2vw;
+    color: #71518A;
+    background: rgba(224, 184, 255, 0.1);
 }
 
 .contactForm #questionField{
-    height: 15vw;
+    height: 20vw;
 }
 
 .contactForm #submitBtn{
     display: block;
     box-sizing: border-box;
     width: 100%;
-    border-radius: 8px;
-    border: 3px solid rgba(0, 0, 0, 0.048);
-    padding: 15px;
-    font-size: 16px;
-    background: #71518A;
-    color: #F3F6FA;
+    margin-top: 1.7vw;
+    border: 0.2vw solid rgba(0, 0, 0, 0.048);
+    border-radius: 2vh;
+    padding: 0.9vw;
+    font-size: 1.3vw;
+    color: #ffffff;
+    font-family: Arial;
     font-weight: bold;
-    margin-top: 2vw;
+    background: #71518A;
+}
+
+.CU_footer{
+    margin-top: 5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    border: 0.05vw solid #2b004c;
+}
+
+/******************************* PHONE VIEW *******************************/
+@media only screen and (min-width: 600px){
+    .CU_phone_top{
+        display: none;
+    }
+
+    .CU_phone_bottom{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .CU_background{
+        background-image: url(./../../public/C000BG02.svg);
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+
+    .CU_left{
+        display: none;
+    }
+
+    .CU_phone_top_left{
+        float: left;
+        width: 60%;
+        padding: 5vw;
+    }
+
+    .CU_left_p1{
+        font-size: 4.5vw;
+    }
+
+    .CU_left_p2{
+        margin-top: -4vw;
+        font-size: 4vw;
+    }
+
+    .CU_left_p3{
+        font-size: 5.5vw;
+    }
+    
+    .CU_phone_top_right{
+        float: left;
+        width: 40%;
+        padding: 5vw;
+    }
+
+    .CU_phone_top_right img{
+        margin-top: 2vw;
+        width: 35%;
+    }
+
+    .CU_phone_top_right span{
+        margin-left: 6vw;
+    }
+
+    .CU_right{
+        width: 100%;
+        padding: 5vw;
+    }
+
+    .CU_right_card{
+        margin: 0vw;
+        margin-top: -10vw;
+        padding: 2vh;
+        background-color: #ffffff;
+        box-shadow: 0.0vw 1vw 1vw #000000;
+        border-radius: 5vw;
+    }
+
+    .contactForm .textInput{
+        margin-top: 2vh;
+        padding: 1vh;
+        font-weight: lighter;
+    }
+
+    .contactForm #Name{
+        padding: 1vh;
+        font-weight: lighter;
+    }
+    
+    .contactForm select{
+        margin-top: 2vh;
+        padding: 1vh;
+        font-weight: lighter;
+    }
+
+    .contactForm #questionField{
+        height: 30vh;
+    }
+
+    .contactForm #submitBtn{
+        margin-top: 2vh;
+        padding: 1vh;
+        font-weight: lighter;
+    }
+
+    .CU_phone_bottom{
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+        text-align: center;
+    }
+
+    .CU_phone_bottom img{
+        width: 5vh;
+    }
+
+    .CU_phone_bottom span{
+        margin-left: 2vw;
+        font-family: helvetica rounded;
+        font-size: 4vw;
+        color: #71518A;
+    }
+
+    .CU_phone_bottom_p2{
+        margin-top: 1.5vh;
+    }
 }

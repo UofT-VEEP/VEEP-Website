@@ -219,13 +219,17 @@ class Events extends React.Component {
                         <Col className="sideBarCol">
                             <SideBar>
                                 <Accordion defaultActiveKey={['0']}>
-                                    <Accordion.Item eventKey="0" className="sidebar-accordion" onClick={switchToUpcoming}>
+                                    {/* <Accordion.Item eventKey="0" className="sidebar-accordion" onClick={switchToUpcoming}>
                                         <Accordion.Header>
                                             Upcoming Events
                                         </Accordion.Header>
-                                    </Accordion.Item>
+                                    </Accordion.Item> */}
+                                    <button type="button" className="sidebar-button" onClick={switchToUpcoming}>
+                                        Upcoming Events
+                                    </button>
+
                                     <Accordion.Item eventKey="1" className="sidebar-accordion">
-                                        <Accordion.Header>
+                                        <Accordion.Header class="text-center">
                                             Past Events
                                         </Accordion.Header>
                                         <Accordion.Body className="accordion-dropdown">

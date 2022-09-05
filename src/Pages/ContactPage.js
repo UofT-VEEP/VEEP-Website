@@ -39,7 +39,7 @@ class ContactPage extends React.Component {
               </div>
 
               <div className="CU_left_p5">
-                <img src="C002WeChatLight.svg" alt="Wechat-Logo" width="45" />
+                <img src="C002WechatLight.svg" alt="Wechat-Logo" width="45" />
                 <span>Wechat Official Account: UofT VEEP</span>
               </div>
 

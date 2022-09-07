@@ -15,7 +15,7 @@ class ProjectBox extends Component {
                 <Card.Subtitle>{projectTitle}</Card.Subtitle>
                 <Card.Text>{description}</Card.Text>
                 {apply && (
-                  <Button className="cardButton">Apply</Button>
+                  <Button className="cardButton" onClick={() =>(window.location.href = "https://forms.gle/kzfH6w9VdHR62VTF9")}>Apply</Button>
                 )}
                 <Accordion>
                   <Accordion.Item eventKey="aboutOrg">

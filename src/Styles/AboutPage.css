@@ -1,3 +1,50 @@
+.title_1 {
+    display: block;
+    max-width: 25%;
+    margin-top: 10%;
+    margin-left: 10%;
+    height: auto;
+    position: relative;
+    background-color:purple;
+    color: white;
+}
+
+.title_2{
+    display: block;
+    max-width: 35%;
+    margin-top: 5%;
+    margin-left: 55%;
+    height:auto;
+    position: relative;
+    background-color:rgb(84, 109, 219);
+    color: white;
+}
+.aboutInfo {
+    display: block;
+    max-width: 80%;
+    position: center;
+    margin-left: 10%;
+    height: auto;
+    padding:  20px 20px 10px;
+    border: 10px solid;
+    border-image: linear-gradient(45deg, purple, lightblue) 1;
+    background-color: white;
+}
+
+.purposeInfo{
+    display: block;
+    max-width: 80%;
+    margin-left: 10%;
+    position: center;
+    height: auto;
+    padding: 10px 20px 20px 10px;
+    border: 10px solid;
+    border-image: linear-gradient(45deg, purple, lightblue) 1;
+    background-color: white;
+}
+
+
+
 .teamIntro .col{
     display: flex;
     justify-content: center;
@@ -7,12 +54,14 @@
     width: 100%;
     text-align: center;
     color:#71518A;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
 }
 
 .teamCard{
     width: 20vw;
+    border: 10px solid;
+    border-image: linear-gradient(45deg, purple, lightblue) 1;
 }
 
 .teamCard .btn{
@@ -22,3 +71,10 @@
     border-color: #71518A;
     margin-top: 1vw;
 }
+
+.teamPage_icon{
+    display:inline;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+

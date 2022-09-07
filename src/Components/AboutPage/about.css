@@ -1,0 +1,13 @@
+.aboutInfo {
+    display: block;
+    width: 800px;
+    margin-top: 200px;
+    margin-left: 150px;
+    position: relative;
+    height: 130px;
+    padding: 10px 20px 20px 10px;
+    border: 10px solid;
+    border-image: linear-gradient(45deg, purple, lightblue) 1;
+    background-color: white;
+}
+

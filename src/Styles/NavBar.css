@@ -1,7 +1,7 @@
 .NavBar{
     height: 8vh;
     width: 100%;
-    background-color: rgba(0, 0, 9, 0.892);
+    background-color: white;
 }
 
 .navbar-collapse{
@@ -10,4 +10,8 @@
 
 .NavBar img{
     width: 30%;
+}
+
+.NavBar .nav-link{
+    color: #71518A;
 }

@@ -4,7 +4,7 @@
     "internal_projects": [8],
     "external_projects": [0, 1, 2, 3, 4, 5, 6, 7],
     "currentProjects": [8],
-    "upcomingProjects": [],
+    "upcomingProjects": [9, 10, 11, 12, 13, 14],
     "Projects2020": [4, 5, 6, 7],
     "Projects2019": [0, 1, 2, 3]
   },
@@ -20,7 +20,7 @@
         "Blah blah Blah blah Blah blah Blah blah Blah blah Project 5-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
       ],
       "description": "This project encompasses the development of a GEM specific CRM system to include data from all mentees/mentors, committee & board members, partners, donors. Specific emphasis and importance placed on the quality and governance of the data and potentially developing a tool/GUI to easily get analytics",
-      "key": "Girls eMentorship (GEM) - CRM System Development",
+      "key": 0,
       "apply": false,
       "projectType": 2,
       "teamMembers": [
@@ -40,7 +40,7 @@
         "Blah blah Blah blah Blah blah Blah blah Blah blah Project 4-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
       ],
       "description": "The 180 Degree Consulting Group hopes to either improve the existing website or design a new website which is consistent with their branding and is easy to navigate. The existing website is not up-to-date and is rarely used due to the cluttering of information. 180 would like to improve the design of the website and include new features so that students can follow up on events and apply to be a consultant more easily.",
-      "key": "180 Degrees Consulting - Web Development",
+      "key": 1,
       "apply": false,
       "projectType": 2,
       "teamMembers": [], 
@@ -57,7 +57,7 @@
         "Blah blah Blah blah Blah blah Blah blah Blah blah Project 4-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
       ],
       "description": "Automation/Process Improvement/Tools to increase accuracy, level of detail and overall reduction of time spent on the task would have a lot of value. (think bag security check in, but for donated computers). It would be great to track everything that comes in, and everything that leaves too.",
-      "key": "reBoot Canada - Process Improvement",
+      "key": 2,
       "apply": false,
       "projectType": 2,
       "teamMembers": [], 
@@ -74,7 +74,7 @@
         "Blah blah Blah blah Blah blah Blah blah Blah blah Project 4-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
       ],
       "description": "VEEP students will work alongside clinicians (ie. physicians, nurses, and social workers), staff from other leading health initiatives (ie. Bell Let’s Talk), and HOL’s existing team to develop an impactful solution for more meaningful conversations – a safe, anonymous, and moderated mobile app that connects people experiencing similar emotions through a hashtag system.",
-      "key": "Sentier - Mental Health Social Media App",
+      "key": 3,
       "apply": false,
       "projectType": 2,
       "teamMembers": [], 
@@ -91,7 +91,7 @@
         "Blah blah Blah blah Blah blah Blah blah Blah blah Project 3-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
       ],
       "description": "To support the enrichment of youth literacy, SBOC offers a website learning platform which engages children with flashcards, practice tests, and various learning games. However, the website only supports PC. This project improved their learning platform by making it compatible across all devices",
-      "key": "SBOC - Web App Development",
+      "key": 4,
       "apply": false,
       "projectType": 2,
       "teamMembers": [
@@ -111,7 +111,7 @@
         "Blah blah Blah blah Blah blah Blah blah Blah blah Project 3-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
       ],
       "description": "Currently, they are looking to improve the experience of mentors and mentees (Bigs and Littles) by supporting their pursuit for a rewarding career. BBBST hopes to do this through a networking site where Bigs, or youth who have aged out of the program, can access professionals in a mentorship capacity. This project is incredibly multifaceted, with a strong technical aspect of developing the web application through the creation of profile pages and querying capabilities, as well as key design thinking/human factors principles involving empathy-based preliminary research and usability testing before deploying the production version.",
-      "key": "Big Brothers Big Sisters of Toronto - Mentor Based Networking Site",
+      "key": 5,
       "apply": false,
       "projectType": 2,
       "teamMembers": [], 
@@ -128,7 +128,7 @@
         "Blah blah Blah blah Blah blah Blah blah Blah blah Project 3-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
       ],
       "description": "Since 2010, YWS has run Time4Change (T4C - formerly Tokens for Change) involving a fusion of art activism and fundraising at TTC subways stations in February, primarily led by student volunteers. As consumer habits change and we are transforming into a cashless society, in addition to lower ridership this year, YWS is looking to partner with VEEP to revitalize their strategy for execution of the original vision; youth supporting youth. VEEP students will play a pivotal role in the digital transformation of a $750,000+ and 4,500+ person initiative. This project involves an initial research phase which will culminate in a report with insights based on human factors research (particularly Human Computer Interaction) using key ideas in user experience design and design thinking. Students will translate research insight into a software deliverable which will be used in the new campaign next year.",
-      "key": "Youth Without Shelter - Outreach Revitilization",
+      "key": 6,
       "apply": false,
       "projectType": 2,
       "teamMembers": [], 
@@ -145,7 +145,7 @@
         "Blah blah Blah blah Blah blah Blah blah Blah blah Project 3-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
       ],
       "description": "Currently, all their information required to run their operations (programs, space-use, membership, donors, volunteers data etc) is decentralized making it difficult and time consuming to collate, analyze and report on. To address this, VEEP is proposing a project consisting of two core parts to be completed in series. The first, a technical consultation process culminating in a report summarizing the needs of the organization with regards to their data, how their current implementation is falling short, and recommendations for improvement. The second, working in tandem with the organization to craft an RFP and time permitting, promoting the project directly to senior leadership at the organization.",
-      "key": "The 519 - Database Consultation",
+      "key": 7,
       "apply": false,
       "projectType": 2,
       "teamMembers": [], 
@@ -162,7 +162,7 @@
         "Blah blah Blah blah Blah blah Blah blah Blah blah Project 1-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
       ],
       "description": "Design and improve the User Interface (UI) of the current club website",
-      "key": "VEEP - Web App Development",
+      "key": 8,
       "apply": false,
       "projectType": 2,
       "teamMembers": [
@@ -170,6 +170,102 @@
         {"name":"Felix Deng", "position":"Technical Manager", "year":"Mechanical 2T3"}
       ],
       "aboutOrg": "VEEP is a student run organization that focuses on providing meaningful services to the community through student led projects design to prepare student for internships in industry."
+    }, 
+    {
+      "organizationName": "Total Mom", 
+      "projectTitle": "Web Development",  
+      "img_filename": "proj1.jpg",
+      "desc": [
+        "Total Mom is looking for improvement to their existing website, including but not limited to the code structure and the user interface design."
+      ], 
+      "description": "Total Mom is looking for improvement to their existing website, including but not limited to the code structure and the user interface design.", 
+      "key": 9, 
+      "apply": true, 
+      "projectType": 1, 
+      "roles": [
+        "Web Developers", "UI/UX Developers"  
+      ], 
+      "aboutOrg": "Total Mom produces transformative personal and professional programs & event experiences, products & resources that empower and support moms globally."
+    }, 
+    {
+      "organizationName": "Total Mom", 
+      "projectTitle": "Venue Layout Design", 
+      "img_filename": "proj1.jpg", 
+      "desc": [
+        "Total Mom is looking for assistance with layout planning and design for their annual festival next summer. A plan layout of the entire event is required to be created with AutoCAD or similar design software."
+      ], 
+      "description": "Total Mom is looking for assistance with layout planning and design for their annual festival next summer. A plan layout of the entire event is required to be created with AutoCAD or similar design software.", 
+      "key": 10, 
+      "apply": true, 
+      "projectType": 1, 
+      "roles": [
+        "Logistics Planners", "Layout Designers", "CAD Designers"
+      ], 
+      "aboutOrg": "Total Mom produces transformative personal and professional programs & event experiences, products & resources that empower and support moms globally."
+    }, 
+    {
+      "organizationName": "Canadian Hearing Society ", 
+      "projectTitle": "Sign Language Capture", 
+      "img_filename": "proj1.jpg", 
+      "desc": [
+        "The Canadian Hearing Society (CHS) is looking for an effective tool that can automatically identify and read sign language to assist people with hearing disability. Available dataset will be learned with advanced machine learning algorithms to improve the existing model. "
+      ], 
+      "description": "The Canadian Hearing Society (CHS) is looking for an effective tool that can automatically identify and read sign language to assist people with hearing disability. Available dataset will be learned with advanced machine learning algorithms to improve the existing model. ", 
+      "key": 11, 
+      "apply": true, 
+      "projectType": 1, 
+      "roles": [
+        "Machine Learning Researchers", "Data Analysts"
+      ], 
+      "aboutOrg": "For over 80 years, Canadian Hearing Services (CHS) has played a significant role in supporting and meeting the needs of Deaf and hard of hearing Canadians. We are an industry-leading provider of services, products and education that empower the Deaf and hard of hearing to overcome barriers to participation, and we are the largest and only Accredited organization of its kind in North America."
+    }, 
+    {
+      "organizationName": "Save Fur Pets", 
+      "projectTitle": "Website Improvement", 
+      "img_filename": "proj1.jpg", 
+      "desc": [
+        "Save Fur Pets (SFP) is looking for improvement to their existing website, including but not limited to the code structure and the user interface design. "
+      ], 
+      "description": "Save Fur Pets (SFP) is looking for improvement to their existing website, including but not limited to the code structure and the user interface design.", 
+      "key": 12, 
+      "apply": true, 
+      "projectType": 1, 
+      "roles": [
+        "Web Developers", "UI/UX Developers"
+      ], 
+      "aboutOrg": "Their mission is to help all furry friends by finding the most suitable new home for them. They ensure that every pet can be treated with kindness. Pets will be healed with the care of loving foster families, medical arrangements when needed, and finally, a forever home where they can be their true selves."
+    }, 
+    {
+      "organizationName": "Spin Master", 
+      "projectTitle": "Sustainability Analysis", 
+      "img_filename": "proj1.jpg", 
+      "desc": [
+        "Spin Master is looking towards conducting environmental impact analysis on its operation to identify potential improvements to their business processes. Such that we can help the company to reduce their carbon footprint, emissions, and waste."
+      ], 
+      "description": "Spin Master is looking towards conducting environmental impact analysis on its operation to identify potential improvements to their business processes. Such that we can help the company to reduce their carbon footprint, emissions, and waste.", 
+      "key": 13, 
+      "apply": true, 
+      "projectType": 1, 
+      "roles": [
+        "Engineering Consultants"
+      ], 
+      "aboutOrg": "Spin Master is a leading global children's entertainment company, creating exceptional play experiences through its three creative centres: Toys, Entertainment and Digital Games."
+    }, 
+    {
+      "organizationName": "Spin Master", 
+      "projectTitle": "Market Research and Product Development", 
+      "img_filename": "proj1.jpg", 
+      "desc": [
+        "As Spin Master invests in new product development of toys for children around the world, the company would like to research into de-stereotyping toys for girls. The scope of this project may range from researching into the global status of gender stereotypes on toys to designing new toys. "
+      ], 
+      "description": "As Spin Master invests in new product development of toys for children around the world, the company would like to research into de-stereotyping toys for girls. The scope of this project may range from researching into the global status of gender stereotypes on toys to designing new toys. ", 
+      "key": 14,  
+      "apply": true, 
+      "projectType": 1, 
+      "roles": [
+        "Engineering Consultants", "Product Designers"
+      ], 
+      "aboutOrg": "Spin Master is a leading global children's entertainment company, creating exceptional play experiences through its three creative centres: Toys, Entertainment and Digital Games."
     }
   ]
 }

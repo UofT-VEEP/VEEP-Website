@@ -14,7 +14,11 @@ class ProjectsPage extends React.Component {
           <h1>Projects</h1>
           <Tabs defaultActiveKey="upcoming">
               <Tab eventKey="upcoming" title="Upcoming Projects">
-                Check back in September for this year's projects.
+                <div>
+                  {this.props.upcomingProjects.map(project => (
+                      <ProjectBox key={project.key} project={project} />
+                  ))}
+                </div>
               </Tab>
               <Tab eventKey="current" title="Current Projects">
                 <div>

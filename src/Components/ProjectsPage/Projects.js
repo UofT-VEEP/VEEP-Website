@@ -48,7 +48,8 @@ class Projects extends React.Component {
         return(
             <div>
                 <NavBar />
-                <ProjectsPage currentProjects={this.state.currentProjects}
+                <ProjectsPage upcomingProjects={this.state.upcomingProjects}
+                              currentProjects={this.state.currentProjects}
                               Projects2020={this.state.Projects2020}
                               Projects2019={this.state.Projects2019}/>
                 <Footer />

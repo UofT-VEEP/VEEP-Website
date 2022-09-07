@@ -1,14 +1,144 @@
 {
   "tags_to_project": {
-    "homepage_carousel": [0, 1],
-    "internal_projects": [0],
-    "external_projects": [1],
-    "currentProjects": [0, 1],
-    "upcomingProjects": [],
-    "Projects2020": [2],
-    "Projects2019": [3]
+    "homepage_carousel": [0, 1, 2, 3, 4, 5, 6, 7],
+    "internal_projects": [8],
+    "external_projects": [0, 1, 2, 3, 4, 5, 6, 7],
+    "currentProjects": [8],
+    "upcomingProjects": [9, 10, 11, 12, 13, 14],
+    "Projects2020": [4, 5, 6, 7],
+    "Projects2019": [0, 1, 2, 3]
   },
   "proj_list": [
+    {
+      "organizationName": "Girls eMentorship (GEM)",
+      "projectTitle": "CRM System Development",
+      "img_filename": "proj9.jpg",
+      "desc": [
+        "This project encompassed the development of a GEM specific CRM system to include data from all mentees/mentors, committee & board members, partners, donors.", 
+        "Specific emphasis was placed on the quality and governance of the data and potentially developing a tool/GUI to easily get analytics"
+      ],
+      "description": "This project encompasses the development of a GEM specific CRM system to include data from all mentees/mentors, committee & board members, partners, donors. Specific emphasis and importance placed on the quality and governance of the data and potentially developing a tool/GUI to easily get analytics",
+      "key": 0,
+      "apply": false,
+      "projectType": 2,
+      "teamMembers": [
+          {"name":"Catherine Zhou", "position":"Technical Manager", "year":"ECE 2T2"},
+          {"name":"Fatima Sadia", "position":"Frontend Developer", "year":"Math 2T4"}
+       ],
+      "aboutOrg": "Girls E-Mentorship (GEM) is a charitable organization that offers an innovative mentorship program for high school girls facing multiple barriers. GEM equips girls with the necessary skills to achieve their grown-up aspirations, building a diverse network of talented, vibrant women and girls to inspire and support one another. "
+    }, 
+    {
+      "organizationName": "180 Degrees Consulting",
+      "projectTitle": "Web Development",
+      "img_filename": "proj8.jpg",
+      "desc": [
+        "The 180 Degree Consulting Group hoped to either improve the existing website or design a new website, which would be consistent with their branding and easy to navigate.", 
+        "The existing website was not up-to-date and rarely used due to the cluttering of information.", 
+        "The group requested for improvement on the design of the website and the inclusion of new features, such that students can follow up on events and apply to be a consultant more easily."
+      ],
+      "description": "The 180 Degree Consulting Group hopes to either improve the existing website or design a new website which is consistent with their branding and is easy to navigate. The existing website is not up-to-date and is rarely used due to the cluttering of information. 180 would like to improve the design of the website and include new features so that students can follow up on events and apply to be a consultant more easily.",
+      "key": 1,
+      "apply": false,
+      "projectType": 2,
+      "teamMembers": [], 
+      "aboutOrg": "The 180 Degrees Consulting group at the University of Toronto is Canada’s first branch of the world’s largest university-based volunteer consultancy. The group aims to help students create a positive long-term social impact via low-cost consulting services to non-profits."
+    }, 
+    {
+      "organizationName": "reBoot Canada",
+      "projectTitle": "Process Improvement",
+      "img_filename": "proj7.jpg",
+      "desc": [
+        "The client requested for automation, process improvement, and/or new tools to increase accuracy, level of detail and overall reduction of time spent on the tasks such as think bag security check in (but for donated computers).",
+        "Main requested functionality included the ability to track everything that comes in and everything that leaves."
+      ],
+      "description": "Automation/Process Improvement/Tools to increase accuracy, level of detail and overall reduction of time spent on the task would have a lot of value. (think bag security check in, but for donated computers). It would be great to track everything that comes in, and everything that leaves too.",
+      "key": 2,
+      "apply": false,
+      "projectType": 2,
+      "teamMembers": [], 
+      "aboutOrg": "reBOOT Canada is a registered charity that refurbishes donated computer equipment to provide non-profits, charities, and individuals, with access to subsidized technology, software, and training. reBOOT Canada relies on donations of retired IT assets. Receiving (identifying, sorting, capturing donor contact info, etc) is a significant resource and time sink."
+    }, 
+    {
+      "organizationName": "Sentier",
+      "projectTitle": "Mental Health Social Media App",
+      "img_filename": "proj6.jpg",
+      "desc": [
+        "VEEP students will work alongside clinicians (ie. physicians, nurses, and social workers), staff from other leading health initiatives (ie. Bell Let’s Talk), and HOL’s existing team to develop an impactful solution for more meaningful conversations – a safe, anonymous, and moderated mobile app that connects people experiencing similar emotions through a hashtag system."
+      ],
+      "description": "VEEP students will work alongside clinicians (ie. physicians, nurses, and social workers), staff from other leading health initiatives (ie. Bell Let’s Talk), and HOL’s existing team to develop an impactful solution for more meaningful conversations – a safe, anonymous, and moderated mobile app that connects people experiencing similar emotions through a hashtag system.",
+      "key": 3,
+      "apply": false,
+      "projectType": 2,
+      "teamMembers": [], 
+      "aboutOrg": "Health Out Loud (HOL) is a CRA-registered charity that innovates health to be fun, relatable, and understandable through novel technological and other products. Building connectedness to improve mental health is a priority for our clients, which is an unmet need based on existing community platforms (ie. Facebook) that tend to foster superficial relationships and conversations."
+    }, 
+    {
+      "organizationName": "Spelling Bee of Canada (SBOC)",
+      "projectTitle": "Web App Development",
+      "img_filename": "proj5.jpg",
+      "desc": [
+        "To support the enrichment of youth literacy, SBOC offers a web-based learning platform which engages children with flashcards, practice tests, and various learning games.", 
+        "However, the website only supports PC.", 
+        "This project improved their learning platform by making it compatible across all devices"
+      ],
+      "description": "To support the enrichment of youth literacy, SBOC offers a website learning platform which engages children with flashcards, practice tests, and various learning games. However, the website only supports PC. This project improved their learning platform by making it compatible across all devices",
+      "key": 4,
+      "apply": false,
+      "projectType": 2,
+      "teamMembers": [
+        {"name":"Catherine Zhou", "position":"Technical Manager", "year":"ECE 2T2"},
+        {"name":"Fatima Sadia", "position":"Frontend Developer", "year":"Math 2T4"}
+      ],
+      "aboutOrg": "Spelling Bee of Canada (SBOC) is an educational organization that inspires youth, parents, teachers and the community at large to participate in the education process and celebrate scholastic achievement through an annual spelling bee and other educational programs."
+    }, 
+    {
+      "organizationName": "Big Brothers Big Sisters of Toronto",
+      "projectTitle": "Mentor Based Networking Site",
+      "img_filename": "proj4.jpg",
+      "desc": [
+        "The organization looked for help to improve the experience of mentors and mentees (Bigs and Littles) by supporting their pursuit for a rewarding career. BBBST hoped to do this through a networking site where Bigs, or youth who have aged out of the program, can access professionals in a mentorship capacity.",
+        "This project was incredibly multifaceted, with a strong technical aspect of developing the web application through the creation of profile pages and querying capabilities, key design thinking/human factors principles involving empathy-based preliminary research, and usability testing before deploying the production version."
+      ],
+      "description": "Currently, they are looking to improve the experience of mentors and mentees (Bigs and Littles) by supporting their pursuit for a rewarding career. BBBST hopes to do this through a networking site where Bigs, or youth who have aged out of the program, can access professionals in a mentorship capacity. This project is incredibly multifaceted, with a strong technical aspect of developing the web application through the creation of profile pages and querying capabilities, as well as key design thinking/human factors principles involving empathy-based preliminary research and usability testing before deploying the production version.",
+      "key": 5,
+      "apply": false,
+      "projectType": 2,
+      "teamMembers": [], 
+      "aboutOrg": "Big Brothers Big Sisters of Toronto (BBBST) is a Maclean’s Top 100 Charity focused on building thriving communities by empowering lives through mentorship. In 2017, they empowered over 2500 children and youth in our city."
+    }, 
+    {
+      "organizationName": "Youth Without Shelter",
+      "projectTitle": "Outreach Revitilization",
+      "img_filename": "proj3.jpg",
+      "desc": [
+        "Since 2010, YWS has run Time4Change (T4C - formerly Tokens for Change) involving a fusion of art activism and fundraising at TTC subways stations in February, primarily led by student volunteers.",
+        "YWS looked for partnership with VEEP to revitalize their strategy for execution of the original vision: youth supporting youth.", 
+        "VEEP students played a pivotal role in the digital transformation of a $750,000+ and 4,500+ person initiative.", 
+        "Students translated research insights based on human factors research (particularly Human Computer Interaction) into a software deliverable which would be used in the new campaign for the coming year."
+      ],
+      "description": "Since 2010, YWS has run Time4Change (T4C - formerly Tokens for Change) involving a fusion of art activism and fundraising at TTC subways stations in February, primarily led by student volunteers. As consumer habits change and we are transforming into a cashless society, in addition to lower ridership this year, YWS is looking to partner with VEEP to revitalize their strategy for execution of the original vision; youth supporting youth. VEEP students will play a pivotal role in the digital transformation of a $750,000+ and 4,500+ person initiative. This project involves an initial research phase which will culminate in a report with insights based on human factors research (particularly Human Computer Interaction) using key ideas in user experience design and design thinking. Students will translate research insight into a software deliverable which will be used in the new campaign next year.",
+      "key": 6,
+      "apply": false,
+      "projectType": 2,
+      "teamMembers": [], 
+      "aboutOrg": "Youth Without Shelter (YWS) is a 2020 Top 100 Maclean’s National Charity which provides emergency housing and support programs to help youth develop skills to secure long term housing and jobs."
+    }, 
+    {
+      "organizationName": "The 519",
+      "projectTitle": "Database Consultation",
+      "img_filename": "proj2.jpg",
+      "desc": [
+        "Originally, all of their information required to run their operations (programs, space-use, membership, donors, volunteers data etc) was decentralized, making it difficult and time-consuming to collate, analyze and report on. To address this, VEEP proposed a project consisting of two core parts to be completed in series.", 
+        "(1) A technical consultation report summarizing the needs of the organization with regards to their data and recommendations for improvement.", 
+        "(2) Working in tandem with the organization to craft an RFP and time permitting, promoting the project directly to senior leadership at the organization."
+      ],
+      "description": "Currently, all their information required to run their operations (programs, space-use, membership, donors, volunteers data etc) is decentralized making it difficult and time consuming to collate, analyze and report on. To address this, VEEP is proposing a project consisting of two core parts to be completed in series. The first, a technical consultation process culminating in a report summarizing the needs of the organization with regards to their data, how their current implementation is falling short, and recommendations for improvement. The second, working in tandem with the organization to craft an RFP and time permitting, promoting the project directly to senior leadership at the organization.",
+      "key": 7,
+      "apply": false,
+      "projectType": 2,
+      "teamMembers": [], 
+      "aboutOrg": "The 519 is a City of Toronto agency, a registered charity, and a community centre committed to the health, happiness and full participation of the LGBTQ2S communities."
+    }, 
     {
       "organizationName": "Volunteer Engineering Experience Program (VEEP)",
       "projectTitle": "Web App Development",
@@ -20,7 +150,7 @@
         "Blah blah Blah blah Blah blah Blah blah Blah blah Project 1-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
       ],
       "description": "Design and improve the User Interface (UI) of the current club website",
-      "key": "VEEP",
+      "key": 8,
       "apply": false,
       "projectType": 2,
       "teamMembers": [
@@ -28,66 +158,102 @@
         {"name":"Felix Deng", "position":"Technical Manager", "year":"Mechanical 2T3"}
       ],
       "aboutOrg": "VEEP is a student run organization that focuses on providing meaningful services to the community through student led projects design to prepare student for internships in industry."
-    },
+    }, 
     {
-      "organizationName": "test",
-      "projectTitle": "Web App Development",
-      "img_filename": "proj2.jpg",
+      "organizationName": "Total Mom", 
+      "projectTitle": "Web Development",  
+      "img_filename": "proj1.jpg",
       "desc": [
-        "Something random about the project 2", 
-        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 2-1 Blah blah Blah blah Blah blah Blah blah Blah blah",
-        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 2-2 Blah blah Blah blah Blah blah Blah blah Blah blah",
-        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 2-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
-      ],
-      "description": "Design",
-      "key": "web",
-      "apply": true,
-      "projectType": 2,
+        "Total Mom is looking for improvement to their existing website, including but not limited to the code structure and the user interface design."
+      ], 
+      "description": "Total Mom is looking for improvement to their existing website, including but not limited to the code structure and the user interface design.", 
+      "key": 9, 
+      "apply": true, 
+      "projectType": 1, 
       "roles": [
-          "Frontend",
-          "designer"
-      ],
-      "aboutOrg": "VEEP is a student run organization that focuses on providing meaningful services to the community through student led projects design to prepare student for internships in industry."
-    },
+        "Web Developers", "UI/UX Developers"  
+      ], 
+      "aboutOrg": "Total Mom produces transformative personal and professional programs & event experiences, products & resources that empower and support moms globally."
+    }, 
     {
-      "organizationName": "Spelling Bee of Canada (SBOC)",
-      "projectTitle": "Web App Development",
-      "img_filename": "proj3.jpg",
+      "organizationName": "Total Mom", 
+      "projectTitle": "Venue Layout Design", 
+      "img_filename": "proj1.jpg", 
       "desc": [
-        "Something random about the project 3", 
-        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 3-1 Blah blah Blah blah Blah blah Blah blah Blah blah",
-        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 3-2 Blah blah Blah blah Blah blah Blah blah Blah blah",
-        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 3-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
-      ],
-      "description": "To support the enrichment of youth literacy, SBOC offers a website learning platform which engages children with flashcards, practice tests, and various learning games. However, the website only supports PC. This project improved their learning platform by making it compatible across all devices",
-      "key": "sbocWeb",
-      "apply": false,
-      "projectType": 2,
-      "teamMembers": [
-        {"name":"Catherine Zhou", "position":"Technical Manager", "year":"ECE 2T2"},
-        {"name":"Fatima Sadia", "position":"Frontend Developer", "year":"Math 2T4"}
-      ],
-      "aboutOrg": "Spelling Bee of Canada (SBOC) is an educational organization that inspires youth, parents, teachers and the community at large to participate in the education process and celebrate scholastic achievement through an annual spelling bee and other educational programs."
-    },
+        "Total Mom is looking for assistance with layout planning and design for their annual festival next summer. A plan layout of the entire event is required to be created with AutoCAD or similar design software."
+      ], 
+      "description": "Total Mom is looking for assistance with layout planning and design for their annual festival next summer. A plan layout of the entire event is required to be created with AutoCAD or similar design software.", 
+      "key": 10, 
+      "apply": true, 
+      "projectType": 1, 
+      "roles": [
+        "Logistics Planners", "Layout Designers", "CAD Designers"
+      ], 
+      "aboutOrg": "Total Mom produces transformative personal and professional programs & event experiences, products & resources that empower and support moms globally."
+    }, 
     {
-      "organizationName": "Girls eMentorship (GEM)",
-      "projectTitle": "CRM System Development",
-      "img_filename": "proj4.jpg",
+      "organizationName": "Canadian Hearing Society ", 
+      "projectTitle": "Sign Language Capture", 
+      "img_filename": "proj1.jpg", 
       "desc": [
-        "Something random about the project 4", 
-        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 4-1 Blah blah Blah blah Blah blah Blah blah Blah blah",
-        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 4-2 Blah blah Blah blah Blah blah Blah blah Blah blah",
-        "Blah blah Blah blah Blah blah Blah blah Blah blah Project 4-3 Blah blah Blah blah Blah blah Blah blah Blah blah"
-      ],
-      "description": "This project encompasses the development of a GEM specific CRM system to include data from all mentees/mentors, committee & board members, partners, donors. Specific emphasis and importance placed on the quality and governance of the data and potentially developing a tool/GUI to easily get analytics",
-      "key": "Girls eMentorship (GEM) - CRM System Development",
-      "apply": false,
-      "projectType": 2,
-      "teamMembers": [
-          {"name":"Catherine Zhou", "position":"Technical Manager", "year":"ECE 2T2"},
-          {"name":"Fatima Sadia", "position":"Frontend Developer", "year":"Math 2T4"}
-       ],
-      "aboutOrg": "Girls E-Mentorship (GEM) is a charitable organization that offers an innovative mentorship program for high school girls facing multiple barriers. GEM equips girls with the necessary skills to achieve their grown-up aspirations, building a diverse network of talented, vibrant women and girls to inspire and support one another. "
+        "The Canadian Hearing Society (CHS) is looking for an effective tool that can automatically identify and read sign language to assist people with hearing disability. Available dataset will be learned with advanced machine learning algorithms to improve the existing model. "
+      ], 
+      "description": "The Canadian Hearing Society (CHS) is looking for an effective tool that can automatically identify and read sign language to assist people with hearing disability. Available dataset will be learned with advanced machine learning algorithms to improve the existing model. ", 
+      "key": 11, 
+      "apply": true, 
+      "projectType": 1, 
+      "roles": [
+        "Machine Learning Researchers", "Data Analysts"
+      ], 
+      "aboutOrg": "For over 80 years, Canadian Hearing Services (CHS) has played a significant role in supporting and meeting the needs of Deaf and hard of hearing Canadians. We are an industry-leading provider of services, products and education that empower the Deaf and hard of hearing to overcome barriers to participation, and we are the largest and only Accredited organization of its kind in North America."
+    }, 
+    {
+      "organizationName": "Save Fur Pets", 
+      "projectTitle": "Website Improvement", 
+      "img_filename": "proj1.jpg", 
+      "desc": [
+        "Save Fur Pets (SFP) is looking for improvement to their existing website, including but not limited to the code structure and the user interface design. "
+      ], 
+      "description": "Save Fur Pets (SFP) is looking for improvement to their existing website, including but not limited to the code structure and the user interface design.", 
+      "key": 12, 
+      "apply": true, 
+      "projectType": 1, 
+      "roles": [
+        "Web Developers", "UI/UX Developers"
+      ], 
+      "aboutOrg": "Their mission is to help all furry friends by finding the most suitable new home for them. They ensure that every pet can be treated with kindness. Pets will be healed with the care of loving foster families, medical arrangements when needed, and finally, a forever home where they can be their true selves."
+    }, 
+    {
+      "organizationName": "Spin Master", 
+      "projectTitle": "Sustainability Analysis", 
+      "img_filename": "proj1.jpg", 
+      "desc": [
+        "Spin Master is looking towards conducting environmental impact analysis on its operation to identify potential improvements to their business processes. Such that we can help the company to reduce their carbon footprint, emissions, and waste."
+      ], 
+      "description": "Spin Master is looking towards conducting environmental impact analysis on its operation to identify potential improvements to their business processes. Such that we can help the company to reduce their carbon footprint, emissions, and waste.", 
+      "key": 13, 
+      "apply": true, 
+      "projectType": 1, 
+      "roles": [
+        "Engineering Consultants"
+      ], 
+      "aboutOrg": "Spin Master is a leading global children's entertainment company, creating exceptional play experiences through its three creative centres: Toys, Entertainment and Digital Games."
+    }, 
+    {
+      "organizationName": "Spin Master", 
+      "projectTitle": "Market Research and Product Development", 
+      "img_filename": "proj1.jpg", 
+      "desc": [
+        "As Spin Master invests in new product development of toys for children around the world, the company would like to research into de-stereotyping toys for girls. The scope of this project may range from researching into the global status of gender stereotypes on toys to designing new toys. "
+      ], 
+      "description": "As Spin Master invests in new product development of toys for children around the world, the company would like to research into de-stereotyping toys for girls. The scope of this project may range from researching into the global status of gender stereotypes on toys to designing new toys. ", 
+      "key": 14,  
+      "apply": true, 
+      "projectType": 1, 
+      "roles": [
+        "Engineering Consultants", "Product Designers"
+      ], 
+      "aboutOrg": "Spin Master is a leading global children's entertainment company, creating exceptional play experiences through its three creative centres: Toys, Entertainment and Digital Games."
     }
   ]
 }

@@ -1,11 +1,15 @@
 import React from 'react';
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
-import HeaderScreen from './Components/HomePage/HeaderScreen';
 import MainContent from './Components/HomePage/MainContent';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/HomePage.css';
+
+export function detectMob() {
+
+  return (window.innerWidth <= 764);
+}
 
 class HomePage extends React.Component {
   constructor(props){
@@ -20,9 +24,10 @@ class HomePage extends React.Component {
     return (
       <div>
         <NavBar />
-        <HeaderScreen /> 
         <MainContent />
-        <Footer />
+        {
+          detectMob() ? null: <Footer />
+        }
       </div>
     )
   }

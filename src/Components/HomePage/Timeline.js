@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepButton from '@mui/material/StepButton';
-import ArrowDropUpRoundedIcon from '@mui/icons-material/ArrowDropUpRounded';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { Card } from 'react-bootstrap';
 
 import './Styles/Timeline.css';
@@ -13,7 +13,6 @@ class HorizontalNonLinearStepper extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      popToolTip: new Array(this.props.data.Steps.length).fill(false),
     }  
   }
 
@@ -29,17 +28,17 @@ class HorizontalNonLinearStepper extends React.Component {
               Steps.map(
                 (label, index) => (
                   <Step key={label}>
-                    <StepButton color="inherit" onClick= {() => this.props.setActiveStep(index)}>
+                    <StepButton className="TimelineStep" color="inherit" onClick= {() => this.props.setActiveStep(index)}>
                       {label}<br/>({Important_Dates[index]})
                     </StepButton>
-                    {this.props.activeStep === index && <ArrowDropUpRoundedIcon style={{fontSize: 60}}/>}
+                    {this.props.activeStep === index && <KeyboardArrowUpIcon style={{fill: "black", fontSize: 60}}/>}
                   </Step>
                 )
               )
             }
           </Stepper>
         </Box>
-        <Card className="TimelineDesc">
+        <Card text="dark" className="TimelineDesc">
           <Card.Body>
             <Card.Text>
               {Important_Desc[activeStep]} 

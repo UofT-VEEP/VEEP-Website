@@ -1,14 +1,17 @@
 import React from 'react';
 
-import { Container, Button, Row, Col } from 'react-bootstrap';
+import {Button, Row, Col } from 'react-bootstrap';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/HeaderScreen.css';
 import BannerLogo from '../../imgs/logos/banner_logo_no_border.png';
 import CardFlipProjects from './flip_card';
+import { detectMob } from '../../HomePage';
 
 class HeaderScreen extends React.Component {
     constructor(props){
@@ -21,13 +24,11 @@ class HeaderScreen extends React.Component {
     
     render() {
       return (
-        <div>
-          <Container fluid className='HeaderScreenBox'>
-            <Row>
+            <Row className='HeaderScreenBox'>
               <Col sm={12} md={4} className="headerLeft">
-                <Row className="justify-content-center BannerLogoContainer"> 
-                  <img src={BannerLogo} alt="VEEP Logo" id="MediumBannerLogo"/>
-                </Row>
+                  <Row className="justify-content-center BannerLogoContainer">
+                      <img src={BannerLogo} alt="VEEP Logo" id="MediumBannerLogo"/>
+                  </Row>
                 <Row className="SocialButtonContainer">
                   <Button className="SocialButton col-4" fullwidth="true" variant="dark"
                       onClick={() =>(window.location.href = 'https://www.facebook.com/uoftveep')}>
@@ -43,14 +44,24 @@ class HeaderScreen extends React.Component {
                   </Button>
                 </Row>
               </Col>
-              <Col sm={12} md={8}>
-                <Row className="CarouselContainer">
-                  <CardFlipProjects />
-                </Row>
-              </Col>
+              {detectMob() ?
+                (
+                  <Row className="ProjectButtonMobContainer">
+                    <Button className="ProjectButtonMobHeader" variant='dark' onClick={() =>(window.location.href = "/projects")}>
+                      View Projects
+                      <KeyboardArrowRightIcon />
+                    </Button>
+                  </Row>
+                ):
+                ( 
+                  <Col sm={12} md={8}>
+                    <Row className="CarouselContainer">
+                      <CardFlipProjects />
+                    </Row>
+                  </Col>
+                )
+              }
             </Row>
-          </Container> 
-        </div>
       )
     }
   }

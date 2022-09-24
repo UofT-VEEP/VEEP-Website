@@ -103,7 +103,54 @@ class Events extends React.Component {
                     eventReplay: "https://drive.google.com/file/d/1H28wMr3f951ErPYTtekdaKKft3NgUH8u/view?usp=sharing",
                     registrationRequired: true,
                     registrationLink: "https://docs.google.com/forms/d/17Z1iJ0rO8GcNpGqVuFPlEiQd9SAfsurjE3-WXcY60aU/edit"
+                },
+                {
+                    eventName: "Mock Interview",
+                    eventTime: "2022.Feb",
+                    onlineEvent: true,
+                    eventDescription:
+                        "This workshop is aiming to improve applicants' interview skills by having mock interviews with our guest interviewers who have rich experience",
+                    key:"resume",
+                    eventManager:[
+                        {name: "Ziyu (Lucy) Qu", discipline: "Computer Engineering", linkedIn:"https://www.linkedin.com/in/ziyu-qu",photo:LucyQu},
+                        {name :"Shujie Li", discipline: "Civil Engineering", linkedIn:"www.linkedin.com/in/shujie-li-8a377923b", photo:ShujieLi}
+                    ],
+                    eventGuest:[
+                        {name: "Yibo Chen", bio: "Currently Computer Science (Previously studying in Software Engineering)", photo: "guest-photo-1.jpeg"},
+                        {name :"Cony Qin ", bio: "Chem 2T3 Minors in Advanced Manufacturing and Business Engineering", photo: "guest-photo-1.jpeg"},
+                        {name :"Felix Deng ", bio: "Mech 2T3 PTC Inc", photo: "guest-photo-1.jpeg"},
+                        {name :"Catherine ", bio: "ECE 2T3 IBM", photo: "guest-photo-2.jpeg"},
+                        {name :"Loewe and Cindy", bio: "obster.io", photo: "guest-photo-1.jpeg"},
+                        {name :"Jane ", bio: "Civil Engineering", photo: "guest-photo-1.jpeg"}
+                    ],
+                    eventDone: true,
+                    eventReplay: "None",
+                    registrationRequired: true,
+                    registrationLink: "link"
+                },
+                {
+                    eventName: "Resume & Interview Workshop",
+                    eventTime: "2022.Jan",
+                    onlineEvent: true,
+                    eventDescription:
+                        "Invite alumni or students who had worked in a popular company to our online seminar, and share experience with our audience about how to write resume, cover letter or do interview targeted to these specified companies.",
+                    key:"resume1",
+                    eventManager:[
+                        {name: "Litao (John) Zhou", discipline: "Electrical and Computer Engineering", linkedIn:"https://www.linkedin.com/in/john-litao-zhou",photo:JohnZhou},
+                        {name :"Mavis (Siting) Chen", discipline: "Industrial Engineering", linkedIn:"", photo: "guest-photo-1.jpeg"}
+                    ],
+                    eventGuest:[
+                        {name: "Wilison Deng", bio: "Founder of", photo: "guest-photo-1.jpeg"},
+                        {name :"Yiran Liang", bio: "MARS Indy2T2 +PEY", photo: "guest-photo-1.jpeg"},
+                        {name: "Annie Gao ", bio: "Intel ECE2T2 +PEY", photo: "guest-photo-1.jpeg"},
+                        {name: "Jackie Cheng ", bio: "Cheng Ontario Power Generation Material Science Engineering 2T1 + PEY", photo: "guest-photo-1.jpeg"}
+                    ],
+                    eventDone: true,
+                    eventReplay: "None",
+                    registrationRequired: true,
+                    registrationLink: "link"
                 }
+
             ],
             pastEvents_2021: [
                 {

@@ -84,7 +84,7 @@
 
 .eventCard .event-guest-image{
     width: 14rem;
-    height: 16rem;
+    height: 100%;
     margin-bottom: 2mm;
 }
 

@@ -8,7 +8,7 @@ import '../../Styles/EventPage.css';
 class ProjectBox extends Component {
     render(){
         const {eventName, eventTime, onlineEvent, eventLocation, eventDescription, eventDone, eventReplay, 
-            eventGuest, registrationRequired, registrationLink} = this.props.event;
+            eventGuest, eventManager, registrationRequired, registrationLink} = this.props.event;
         return(
             <Card className="eventCard">
               <Card.Body>
@@ -56,6 +56,29 @@ class ProjectBox extends Component {
                         <Accordion.Header>Event Registration</Accordion.Header>
                         <Accordion.Body>
                             <a href={registrationLink}> Register Here </a>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    )}
+                    {eventDone && (
+                        <Accordion.Item eventKey="manager">
+                        <Accordion.Header>Event Manager</Accordion.Header>
+                        <Accordion.Body>
+                            <ListGroup>
+                            {eventManager.map(manager => (
+                                <ListGroup.Item key={manager.name}> 
+                                    <div className="ms-2 me-auto">
+                                        <div className="event-guest-name"> {manager.name }</div>
+                                        <div>
+                                            <img className ="event-guest-image" src={manager.photo} alt="" /> <br/>
+                                            {manager.discipline} 
+                                        </div>
+                                        <div>
+                                            <a href={manager.linkedIn}>LinkedIn Profile</a>
+                                        </div>
+                                    </div> 
+                                </ListGroup.Item>
+                            ))}
+                            </ListGroup>
                         </Accordion.Body>
                     </Accordion.Item>
                     )}

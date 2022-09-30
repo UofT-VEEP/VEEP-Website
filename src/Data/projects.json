@@ -4,7 +4,7 @@
     "internal_projects": [8],
     "external_projects": [0, 1, 2, 3, 4, 5, 6, 7],
     "currentProjects": [8],
-    "upcomingProjects": [9, 10, 11, 12, 13, 14],
+    "upcomingProjects": [10, 12, 14, 15],
     "Projects2020": [4, 5, 6, 7],
     "Projects2019": [0, 1, 2, 3]
   },
@@ -193,7 +193,7 @@
     }, 
     {
       "organizationName": "Canadian Hearing Society ", 
-      "projectTitle": "Sign Language Capture", 
+      "projectTitle": "Sign Language Capture (Cancelled)", 
       "img_filename": "proj1.jpg", 
       "desc": [
         "The Canadian Hearing Society (CHS) is looking for an effective tool that can automatically identify and read sign language to assist people with hearing disability. Available dataset will be learned with advanced machine learning algorithms to improve the existing model. "
@@ -254,6 +254,22 @@
         "Engineering Consultants", "Product Designers"
       ], 
       "aboutOrg": "Spin Master is a leading global children's entertainment company, creating exceptional play experiences through its three creative centres: Toys, Entertainment and Digital Games."
+    },
+    {
+      "organizationName": "Volunteer Engineering Experience Program (VEEP)", 
+      "projectTitle": "Website Backend Development",  
+      "img_filename": "proj1.jpg",
+      "desc": [
+        "Our club is looking for setting up a backend for the website. It will require you to code a backend communication and set up databases for the website information."
+      ], 
+      "description": "Our club is looking for setting up a backend for the website. It will require you to code a backend communication and set up databases for the website information.", 
+      "key": 15, 
+      "apply": true, 
+      "projectType": 1, 
+      "roles": [
+        "Backend Developers"  
+      ], 
+      "aboutOrg": "VEEP is a student run organization that focuses on providing meaningful services to the community through student led projects design to prepare student for internships in industry."
     }
   ]
 }
